@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -17,7 +18,16 @@ public class Rewrite
         System.out.println("Contents of the file: "+ fileContents); //иллюстративный вывод старого содержания
         sc.close();
         fileContents = fileContents.replaceAll(oldLine, newLine); // замена старой строки на новую
-        FileWriter writer = new FileWriter(filePath);
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter(filePath);
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
         System.out.println("new data: "+ fileContents);//иллюстративный вывод нового содержания
         writer.append(fileContents);//запись в файл нового текста
         writer.flush();
