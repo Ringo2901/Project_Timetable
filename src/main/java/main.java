@@ -22,13 +22,11 @@ public class main {
 
         functionNumber = input.nextInt(); // ввод номера функции
 
-        switch (functionNumber) {       //выбор функции пользователем
-            case  (1):
-                break;
-            default:
-                System.out.println("This function isn't existing yet :(");
-                break;
-        }
+        Choosing choosing = new Choosing();
+        String r = choosing.cin (functionNumber);
+
+        System.out.println(r);
+
 
 
     }
