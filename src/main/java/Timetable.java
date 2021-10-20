@@ -3,16 +3,16 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Timetable {
-    private static File fileTimetable = new File("src\\main\\resources\\timetable.txt");
+    private static String filePathBeginning = "src\\main\\resources\\week_days\\";
     public static void changeTimetableItem() throws IOException {
 
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        /*System.out.println("Enter number of day");
-        int dayNum = input.nextInt();*/
+        System.out.println("Enter number of day");
+        int dayNum = input.nextInt();
 
         System.out.println("Enter number of item");
         int itemNum = input.nextInt();
-
+        String filePath = filePathBeginning + Integer.toString(dayNum) + ".txt";
         String lessonName = "";
         String teacherName = "";
         System.out.println("Enter lesson name");
@@ -23,7 +23,7 @@ public class Timetable {
 
 
         String newItem = Integer.toString(itemNum) + "|" + lessonName + "|" + teacherName;
-        Rewriter.rewrite(fileTimetable.getPath(), itemNum, newItem); // перезапись файла
+        Rewriter.rewrite(filePath, itemNum, newItem); // перезапись файла
 
         input.close();
     }

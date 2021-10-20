@@ -12,13 +12,15 @@ public class main {
         FileReader in = null;   //классы, хранящие инфу о том в какие файлы осуществляется ввод/вывод
         FileReader out = null;
 
-        File fileTimetable = new File("src\\main\\resources\\timetable.txt"), // файлы в которых хранятся данные
-                fileMarks = new File("src\\main\\resources\\marks.txt"),
-                fileTeachers = new File("src\\main\\resources\\teachers.txt");
+        File    fileMarks = new File("src\\main\\resources\\marks.txt"), // файлы в которых хранятся данные
+                fileTeachers = new File("src\\main\\resources\\teachers.txt"),
+                fileHometask = new File("src\\main\\resources\\hometask.txt"),
+                fileTasks = new File("src\\main\\resources\\tasks.txt");
 
         int functionNumber;    // номер выбранной команды
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("Enter text");// вывод начального текста(можно также сделать из файла)
+        System.out.println("[Start text]");// вывод начального текста(можно также сделать из файла)
+        System.out.println("Please enter the number of function");
 
         functionNumber = input.nextInt(); // ввод номера функции
 
