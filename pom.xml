@@ -7,7 +7,26 @@
     <groupId>org.example</groupId>
     <artifactId>Project_Timetable</artifactId>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
 
+=======
+         <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+
+                    <dependency>
+                        <groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-engine</artifactId>
+                        <version>4.0.0</version>
+                    </dependency>
+
+            </plugin>
+        </plugins>
+    </build>
+>>>>>>> ef245af56ffbd710568e7b860b6c2efe9e38ad73
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
