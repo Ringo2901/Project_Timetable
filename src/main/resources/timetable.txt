@@ -1,2 +1,4 @@
-Hello, my name is
-Igor
+1|logic|Ratnikova
+2|math|Barkova
+
+4|english|Perepelica
