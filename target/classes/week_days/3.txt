@@ -1,2 +1,6 @@
 
+<<<<<<< HEAD
 2|OPI|Paramonov
+=======
+2|english|Perepelica
+>>>>>>> 4db052e218879a740c3fe152d807527313a7dc6c
