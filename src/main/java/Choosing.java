@@ -7,10 +7,19 @@ public class Choosing {
             switch (functionNumber) {       //выбор функции пользователем
                 case  (1):
                 {
-                    Timetable t = new Timetable();
-                    t.changeTimetableItem();
+                    Timetable.changeTimetableItem();
                 }
                     break;
+                case (2):
+                {
+                    TaskList.addTask();
+                }
+                break;
+                case (3):
+                {
+                    TaskList.deleteTask();
+                }
+                break;
                 default:
                     r= "Sorry, this function isn't existing yet :(";
                     break;
