@@ -20,6 +20,11 @@ public class Choosing {
                     TaskList.deleteTask();
                 }
                 break;
+                case (4):
+                {
+                    Teachers.addTeacher();
+                }
+                break;
                 default:
                     r= "Sorry, this function isn't existing yet :(";
                     break;
