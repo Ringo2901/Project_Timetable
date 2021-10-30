@@ -24,6 +24,10 @@ public class Choosing {
                 {
                     Teachers.addTeacher();
                 }
+                case (5):
+                {
+                    Timetable.output();
+                }
                 break;
                 default:
                     r= "Sorry, this function isn't existing yet :(";
