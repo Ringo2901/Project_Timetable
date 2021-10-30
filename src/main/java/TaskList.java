@@ -1,10 +1,12 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class TaskList {
     private static String filePath = "src\\main\\resources\\tasks.txt";
+
     public static void addTask() throws IOException {
-        Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+        Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
         System.out.println("Enter your task");
         String task = input.nextLine();
         System.out.println("Enter the deadline");
@@ -17,19 +19,46 @@ public class TaskList {
 
         input.close();
     }
+
     private static int getNum() throws IOException {
-        return 1;
+        Scanner sc = new Scanner(new File(filePath));
+        int idx = 1;
+        while (sc.hasNextLine()) {  //запись текста
+            String s = sc.nextLine();
+            if (s.length() == 0) return idx;
+            idx++;
+        }
+        return idx;
     }
+
     public static void deleteTask() throws IOException {
-        Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+        Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
         System.out.println("Enter number of the completed task");
         int num = input.nextInt();
         Rewriter.rewrite(filePath, num, "");
         System.out.println("Task deleted");
     }
+
     public static void output() throws IOException {
+        Scanner output = new Scanner (new File(filePath));
 
+        while(output.hasNextLine()){
+            String s = output.nextLine();
+            int idx;
+            String itemNum = "", deadline = "", task = "";
+            for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) deadline += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length(); idx++) task += s.charAt(idx);
+            int itemLen = 3, deadlineLen = 8, taskLen = 10;
+            System.out.print(itemNum + '.');
+            for(int i = 0; i < itemLen - itemNum.length(); i++) {System.out.print(" ");}
+            System.out.print(deadline);
+            for(int i = 0; i < deadlineLen - deadline.length(); i++) {System.out.print(" ");}
+            System.out.print(task);
+            for(int i = 0; i < taskLen - task.length(); i++) {System.out.print(" ");}
+            System.out.println();
+        }
     }
-
 }
-

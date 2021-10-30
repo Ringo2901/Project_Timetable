@@ -28,6 +28,10 @@ public class Choosing {
                 {
                     Timetable.output();
                 }
+                case (6):
+                {
+                    TaskList.output();
+                }
                 break;
                 default:
                     r= "Sorry, this function isn't existing yet :(";
