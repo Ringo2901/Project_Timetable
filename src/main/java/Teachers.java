@@ -29,6 +29,7 @@ public class Teachers {
             if (s.length() == 0) return idx;
             idx++;
         }
+        sc.close();
         return idx;
     }
     public static void output() throws IOException {

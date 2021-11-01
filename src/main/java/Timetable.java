@@ -75,6 +75,7 @@ public class Timetable {
                 System.out.println();
 
             }
+            output.close();
         }
 
     }

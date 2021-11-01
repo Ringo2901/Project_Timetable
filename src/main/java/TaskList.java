@@ -28,6 +28,7 @@ public class TaskList {
             if (s.length() == 0) return idx;
             idx++;
         }
+        sc.close();
         return idx;
     }
 
@@ -37,6 +38,7 @@ public class TaskList {
         int num = input.nextInt();
         SecondaryFunctions.rewrite(filePath, num, "");
         System.out.println("Task deleted");
+        input.close();
     }
 
     public static void output() throws IOException {
@@ -59,5 +61,6 @@ public class TaskList {
             System.out.print(task);
             System.out.println();
         }
+        output.close();
     }
 }
