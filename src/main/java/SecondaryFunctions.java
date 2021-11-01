@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Rewriter
+public class SecondaryFunctions
 {
     public static void rewrite(String filePath, int idx, String newLine) throws IOException {
         Scanner sc = new Scanner(new File(filePath));
@@ -43,4 +43,5 @@ public class Rewriter
         writer.close();
 
     }
+    public static void corectnessChecking(){}
 }

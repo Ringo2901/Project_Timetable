@@ -1,8 +1,7 @@
 import java.io.IOException;
 
 public class Choosing {
-        public String cin (int functionNumber) throws IOException {
-            String r="";
+        public static void cin (int functionNumber) throws IOException {
 
             switch (functionNumber) {       //выбор функции пользователем
                 case  (1):
@@ -32,11 +31,12 @@ public class Choosing {
                 {
                     TaskList.output();
                 }
+
                 break;
                 default:
-                    r= "Sorry, this function isn't existing yet :(";
+                    //r= "Sorry, this function isn't existing yet :(";
                     break;
             }
-            return (r);
+
         }
 }

@@ -15,7 +15,7 @@ public class TaskList {
 
         String newTask = Integer.toString(num) + "|" + deadline + "|" + task;
 
-        Rewriter.rewrite(filePath, num, newTask); // перезапись файла
+        SecondaryFunctions.rewrite(filePath, num, newTask); // перезапись файла
 
         input.close();
     }
@@ -23,7 +23,7 @@ public class TaskList {
     private static int getNum() throws IOException {
         Scanner sc = new Scanner(new File(filePath));
         int idx = 1;
-        while (sc.hasNextLine()) {  //запись текста
+        while (sc.hasNextLine()) {
             String s = sc.nextLine();
             if (s.length() == 0) return idx;
             idx++;
@@ -35,7 +35,7 @@ public class TaskList {
         Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
         System.out.println("Enter number of the completed task");
         int num = input.nextInt();
-        Rewriter.rewrite(filePath, num, "");
+        SecondaryFunctions.rewrite(filePath, num, "");
         System.out.println("Task deleted");
     }
 
@@ -51,13 +51,12 @@ public class TaskList {
             for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) deadline += s.charAt(idx);
             idx++;
             for( ; idx < s.length(); idx++) task += s.charAt(idx);
-            int itemLen = 3, deadlineLen = 8, taskLen = 10;
+            int itemLen = 3, deadlineLen = 8;
             System.out.print(itemNum + '.');
             for(int i = 0; i < itemLen - itemNum.length(); i++) {System.out.print(" ");}
             System.out.print(deadline);
             for(int i = 0; i < deadlineLen - deadline.length(); i++) {System.out.print(" ");}
             System.out.print(task);
-            for(int i = 0; i < taskLen - task.length(); i++) {System.out.print(" ");}
             System.out.println();
         }
     }

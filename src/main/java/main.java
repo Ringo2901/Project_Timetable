@@ -17,21 +17,52 @@ public class main {
                 fileHometask = new File("src\\main\\resources\\hometask.txt"),
                 fileTasks = new File("src\\main\\resources\\tasks.txt");
 
-        int functionNumber;    // номер выбранной команды
+        String functionNumber;    // номер выбранной команды
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
         System.out.println("[Start text]");// вывод начального текста(можно также сделать из файла)
         System.out.println("Please enter the number of function");
 
-        functionNumber = input.nextInt(); // ввод номера функции
+        while(true) {
+            functionNumber = input.nextLine(); // ввод номера функции
+            switch (functionNumber) {       //выбор функции пользователем
+                case ("exit"): {
+                    System.out.println("Goodbye");
+                    return;
+                }
+                case ("1"): {
+                    Timetable.changeTimetableItem();
+                }
+                break;
+                case ("2"): {
+                    TaskList.addTask();
+                }
+                break;
+                case ("3"): {
+                    TaskList.deleteTask();
+                }
+                break;
+                case ("4"): {
+                    Teachers.addTeacher();
+                }
+                break;
+                case ("5"): {
+                    Timetable.output();
+                }
+                break;
+                case ("6"): {
+                    TaskList.output();
+                }
+                default:
+                    System.out.println("Sorry, this function isn't existing yet :(");
+                    break;
+            }
+        }
 
-        Choosing choosing = new Choosing();
-        String r = choosing.cin (functionNumber);
+    }
 
-        System.out.println(r);
 
 
 
     }
 
 
-}

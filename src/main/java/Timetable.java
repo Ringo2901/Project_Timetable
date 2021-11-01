@@ -23,7 +23,7 @@ public class Timetable {
 
 
         String newItem = Integer.toString(itemNum) + "|" + lessonName + "|" + teacherName;
-        Rewriter.rewrite(filePath, itemNum, newItem); // перезапись файла
+        SecondaryFunctions.rewrite(filePath, itemNum, newItem); // перезапись файла
 
         input.close();
     }
@@ -65,13 +65,13 @@ public class Timetable {
                 for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
                 idx++;
                 for( ; idx < s.length(); idx++) teacher += s.charAt(idx);
-                int itemLen = 4, teacherLen = 15, subjectLen = 10;
+
+                int itemLen = 4, subjectLen = 10;
                 System.out.print(itemNum + '.');
-                for(int i = 0; i < itemLen - itemNum.length(); i++) {System.out.print(" ");}
+                for(int i = 0; i < itemLen - itemNum.length(); i++) System.out.print(" ");
                 System.out.print(subject);
-                for(int i = 0; i < subjectLen - subject.length(); i++) {System.out.print(" ");}
+                for(int i = 0; i < subjectLen - subject.length(); i++) System.out.print(" ");
                 System.out.print(teacher);
-                for(int i = 0; i < teacherLen - teacher.length(); i++) {System.out.print(" ");}
                 System.out.println();
 
             }

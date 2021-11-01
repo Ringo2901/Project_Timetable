@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -16,12 +17,19 @@ public class Teachers {
 
         String newTeacher = Integer.toString(num) + "|" + name + "|" + subject + "|" + contactInf;
 
-        Rewriter.rewrite(filePath, num, newTeacher); // перезапись файла
+        SecondaryFunctions.rewrite(filePath, num, newTeacher); // перезапись файла
 
         input.close();
     }
     private static int getNum() throws IOException {
-        return 1;
+        Scanner sc = new Scanner(new File(filePath));
+        int idx = 1;
+        while (sc.hasNextLine()) {
+            String s = sc.nextLine();
+            if (s.length() == 0) return idx;
+            idx++;
+        }
+        return idx;
     }
     public static void output() throws IOException {
     }
