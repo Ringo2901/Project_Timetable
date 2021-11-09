@@ -24,10 +24,13 @@ public class main {
                 "Список доступных функций:\n" +
                 "1. Добаление/редактирование расписания\n" +
                 "2. Добавление/редактирование задач\n" +
-                "3. Удаление задач\n" +
-                "4. Добавление данных о преподавателе\n" +
-                "5. Вывод расписания\n" +
-                "6. Вывод списка задач");// вывод начального текста(можно также сделать из файла)
+                "3. Добавление данных о преподавателе\n" +
+                "4. Добавление/редактирование домашнего задания\n" +
+                "5. Удаление задач\n" +
+                "6. Удаление домашнего задания\n" +
+                "7. Вывод расписания\n" +
+                "8. Вывод домашнего задания\n" +
+                "9. Вывод списка задач");// вывод начального текста(можно также сделать из файла)
 
 
         boolean b = true;
@@ -55,18 +58,30 @@ public class main {
                 }
                 break;
                 case ("3"): {
-                    TaskList.deleteTask(input);
-                }
-                break;
-                case ("4"): {
                     Teachers.addTeacher(input);
                 }
                 break;
+                case ("4"): {
+                    Hometask.addHometask(input);
+                }
+                break;
                 case ("5"): {
-                    Timetable.output();
+                    TaskList.deleteTask(input);
                 }
                 break;
                 case ("6"): {
+                    Hometask.deleteHometask(input);
+                }
+                break;
+                case ("7"): {
+                    Timetable.output();
+                }
+                break;
+                case ("8"): {
+                    Hometask.output();
+                }
+                break;
+                case ("9"): {
                     TaskList.output();
                 }
                 break;
