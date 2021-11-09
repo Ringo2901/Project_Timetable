@@ -20,7 +20,7 @@ public class main {
         String functionNumber = "";    // номер выбранной команды
         int n;
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("Здравствуй пользователь!\n" +
+        System.out.println("Здравствуй, пользователь!\n" +
                 "Список доступных функций:\n" +
                 "1. Добаление/редактирование расписания\n" +
                 "2. Добавление/редактирование задач\n" +
