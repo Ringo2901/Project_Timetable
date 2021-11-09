@@ -3,25 +3,25 @@ import java.io.IOException;
 public class Choosing {
         public static void cin (int functionNumber) throws IOException {
 
-            switch (functionNumber) {       //выбор функции пользователем
+            /*switch (functionNumber) {       //выбор функции пользователем
                 case  (1):
                 {
-                    Timetable.changeTimetableItem();
+                    //Timetable.changeTimetableItem();
                 }
                     break;
                 case (2):
                 {
-                    TaskList.addTask();
+                   // TaskList.addTask(new Scanner);
                 }
                 break;
                 case (3):
                 {
-                    TaskList.deleteTask();
+                    //TaskList.deleteTask();
                 }
                 break;
                 case (4):
                 {
-                    Teachers.addTeacher();
+                    //Teachers.addTeacher();
                 }
                 case (5):
                 {
@@ -36,7 +36,7 @@ public class Choosing {
                 default:
                     //r= "Sorry, this function isn't existing yet :(";
                     break;
-            }
+            }*/
 
         }
 }

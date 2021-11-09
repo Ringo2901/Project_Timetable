@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class Teachers {
     private static String filePath = "src\\main\\resources\\teachers.txt";
-    public static void addTeacher() throws IOException {
-        Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+    public static void addTeacher(Scanner input) throws IOException {
+       // Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+        String name = "", subject = "", contactInf = "";
         System.out.println("Enter the teacher's name");
-        String name = input.nextLine();
+        while(name.isEmpty()) name = input.nextLine();
         System.out.println("Enter the subject");
-        String subject = input.nextLine();
+        while(subject.isEmpty())subject = input.nextLine();
         System.out.println("Enter the contact information");
-        String contactInf = input.nextLine();
+        while(contactInf.isEmpty()) contactInf = input.nextLine();
 
         int num = Teachers.getNum();
 
@@ -19,7 +20,7 @@ public class Teachers {
 
         SecondaryFunctions.rewrite(filePath, num, newTeacher); // перезапись файла
 
-        input.close();
+        //input.close();
     }
     private static int getNum() throws IOException {
         Scanner sc = new Scanner(new File(filePath));

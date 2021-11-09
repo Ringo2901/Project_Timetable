@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Timetable {
     private static String filePathBeginning = "src\\main\\resources\\week_days\\";
-    public static void changeTimetableItem() throws IOException {
+    public static void changeTimetableItem(Scanner input) throws IOException {
 
-        Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+        //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
         System.out.println("Enter number of day");
         int dayNum = input.nextInt();
 
@@ -25,7 +25,7 @@ public class Timetable {
         String newItem = Integer.toString(itemNum) + "|" + lessonName + "|" + teacherName;
         SecondaryFunctions.rewrite(filePath, itemNum, newItem); // перезапись файла
 
-        input.close();
+        //input.close();
     }
     private static String dayOfWeek(int num){
         String result = "";

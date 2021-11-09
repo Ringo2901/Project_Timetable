@@ -17,32 +17,49 @@ public class main {
                 fileHometask = new File("src\\main\\resources\\hometask.txt"),
                 fileTasks = new File("src\\main\\resources\\tasks.txt");
 
-        String functionNumber;    // номер выбранной команды
+        String functionNumber = "";    // номер выбранной команды
+        int n;
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("[Start text]");// вывод начального текста(можно также сделать из файла)
-        System.out.println("Please enter the number of function");
+        System.out.println("Здравствуй пользователь!\n" +
+                "Список доступных функций:\n" +
+                "1. Добаление/редактирование расписания\n" +
+                "2. Добавление/редактирование задач\n" +
+                "3. Удаление задач\n" +
+                "4. Добавление данных о преподавателе\n" +
+                "5. Вывод расписания\n" +
+                "6. Вывод списка задач");// вывод начального текста(можно также сделать из файла)
+
+
+        boolean b = true;
 
         while(true) {
-            functionNumber = input.nextLine(); // ввод номера функции
+
+            System.out.println("Пожалуйста, введите номер функции или введите 'выход', чтобы завершить исполнение программы!");
+            //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+            //while(!input.hasNextLine()){}
+            //functionNumber = input.nextLine(); // ввод номера функции
+            //System.out.println(functionNumber);
+            while(!input.hasNextLine()){}
+            functionNumber = input.nextLine();
             switch (functionNumber) {       //выбор функции пользователем
-                case ("exit"): {
-                    System.out.println("Goodbye");
+                case ("выход"): {
+                    System.out.println("Пока!");
                     return;
                 }
                 case ("1"): {
-                    Timetable.changeTimetableItem();
+                    Timetable.changeTimetableItem(input);
                 }
                 break;
                 case ("2"): {
-                    TaskList.addTask();
+                    TaskList.addTask(input);
                 }
                 break;
                 case ("3"): {
-                    TaskList.deleteTask();
+                    TaskList.deleteTask(input);
                 }
                 break;
                 case ("4"): {
-                    Teachers.addTeacher();
+                    Teachers.addTeacher(input);
                 }
                 break;
                 case ("5"): {
@@ -52,10 +69,13 @@ public class main {
                 case ("6"): {
                     TaskList.output();
                 }
+                break;
                 default:
-                    System.out.println("Sorry, this function isn't existing yet :(");
+                    System.out.println("Извините, эта функция пока недоступна :(");
                     break;
             }
+            functionNumber = "";
+            input.reset();
         }
 
     }
