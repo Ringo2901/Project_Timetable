@@ -19,14 +19,21 @@ public class main {
 
         String functionNumber;    // номер выбранной команды
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("[Start text]");// вывод начального текста(можно также сделать из файла)
-        System.out.println("Please enter the number of function");
+        System.out.println("Здравствуй пользователь!\n" +
+                "Список доступных функций:\n" +
+                "1. Добаление/редактирование расписания\n" +
+                "2. Добавление/редактирование задач\n" +
+                "3. Удаление задач\n" +
+                "4. Добавление данных о преподавателе\n" +
+                "5. Вывод расписания\n" +
+                "6. Вывод списка задач");// вывод начального текста(можно также сделать из файла)
+        System.out.println("Пожалуйста, введите номер функции или введите 'выход', чтобы завершить исполнение программы!");
 
         while(true) {
             functionNumber = input.nextLine(); // ввод номера функции
             switch (functionNumber) {       //выбор функции пользователем
-                case ("exit"): {
-                    System.out.println("Goodbye");
+                case ("выход"): {
+                    System.out.println("Пока!");
                     return;
                 }
                 case ("1"): {
@@ -53,7 +60,7 @@ public class main {
                     TaskList.output();
                 }
                 default:
-                    System.out.println("Sorry, this function isn't existing yet :(");
+                    System.out.println("Извините, эта функция пока недоступна :(");
                     break;
             }
         }
