@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 1|1|1
+=======
+1|Math|EE
+>>>>>>> 3eea35d22d717e8195aaf832f08f6e7fd59ab79c
 2|2|2
 3|Math|Bar
