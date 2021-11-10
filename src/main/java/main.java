@@ -1,13 +1,30 @@
+import javafx.application.Application;
+
 import java.io.IOException;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileInputStream;
 import java.util.Scanner;
 import java.io.*;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class main {
 
+public class main  extends Application {
+
+    public void start(Stage primaryStage) throws Exception
+    {
+        primaryStage.setTitle("Hello world Application");
+        primaryStage.show();
+
+    }
     public static void main(String[] args) throws IOException {
+
+
+        Application.launch();
         //boolean firstRun = false;
         FileReader in = null;   //классы, хранящие инфу о том в какие файлы осуществляется ввод/вывод
         FileReader out = null;
