@@ -11,14 +11,28 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<<<<<<< HEAD
             <junit.version>5.7.2</junit.version>
             <maven.compiler.source>16</maven.compiler.source>
             <maven.compiler.target>16</maven.compiler.target>
             <sonar.organization>ringo2901</sonar.organization>
             <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+=======
+        <junit.version>5.7.1</junit.version>
+>>>>>>> 78199e5a195bc1700db6a0f6677e8949d847a804
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>16</version>
+        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
@@ -78,8 +92,17 @@
             <version>4.13</version>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
 
 
+=======
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+>>>>>>> 78199e5a195bc1700db6a0f6677e8949d847a804
     </dependencies>
 
     <build>
