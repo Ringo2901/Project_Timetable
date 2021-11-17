@@ -11,6 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
         <junit.version>5.7.1</junit.version>
         <sonar.organization>ringo2901</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
