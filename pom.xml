@@ -11,18 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <junit.version>5.7.2</junit.version>
-            <maven.compiler.source>11</maven.compiler.source>
-            <maven.compiler.target>11</maven.compiler.target>
-            <sonar.organization>ringo2901</sonar.organization>
-            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-<<<<<<< HEAD
-=======
-        <junit.version>11</junit.version>
->>>>>>> 78199e5a195bc1700db6a0f6677e8949d847a804
-=======
         <junit.version>5.7.1</junit.version>
->>>>>>> bf8c97373b97bd307eef94d5db6bed3aad1fbff7
     </properties>
 
     <dependencies>
@@ -90,9 +79,9 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -105,10 +94,10 @@
 
     <build>
         <plugins>
-           <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>16</source>
                     <target>16</target>
