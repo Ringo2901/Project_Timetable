@@ -11,13 +11,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <junit.version>5.7.2</junit.version>
-            <maven.compiler.source>11</maven.compiler.source>
-            <maven.compiler.target>11</maven.compiler.target>
-            <sonar.organization>ringo2901</sonar.organization>
-            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <junit.version>11</junit.version>
         <junit.version>5.7.1</junit.version>
+        <sonar.organization>ringo2901</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
