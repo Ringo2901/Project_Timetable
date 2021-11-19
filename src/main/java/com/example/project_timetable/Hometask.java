@@ -8,11 +8,11 @@ public class Hometask {private static String filePath = "src\\main\\resources\\h
     public static void addHometask(Scanner input) throws IOException {
         //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
         String subject = "", hometask = "", deadline = "";
-        System.out.println("Enter subject");
+        System.out.println("Введите предмет.");
         while(subject.isEmpty()) subject = input.nextLine();
-        System.out.println("Enter deadline");
+        System.out.println("Введите срок сдачи.");
         while(deadline.isEmpty()) deadline = input.nextLine();
-        System.out.println("Enter the hometask");
+        System.out.println("Введите домашнее задание.");
         while(hometask.isEmpty()) hometask = input.nextLine();
         int num = Hometask.getNum();
 
@@ -37,11 +37,11 @@ public class Hometask {private static String filePath = "src\\main\\resources\\h
 
     public static void deleteHometask(Scanner input) throws IOException {
         //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
-        System.out.println("Enter number of the completed hometask");
+        System.out.println("Введите номер выплненного задания.");
         output();
         int num = input.nextInt();
         SecondaryFunctions.rewrite(filePath, num, "");
-        System.out.println("Hometask deleted");
+        System.out.println("Выполненное задание удалено.");
         //input.close();
     }
 
@@ -59,7 +59,7 @@ public class Hometask {private static String filePath = "src\\main\\resources\\h
             for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) deadline += s.charAt(idx);
             idx++;
             for( ; idx < s.length(); idx++) hometask += s.charAt(idx);
-            int itemLen = 3, subjectLen = 10, deadlineLen = 8;
+            int itemLen = 3, subjectLen = 15, deadlineLen = 8;
             System.out.print(itemNum + '.');
             for(int i = 0; i < itemLen - itemNum.length(); i++) {System.out.print(" ");}
             System.out.print(subject);

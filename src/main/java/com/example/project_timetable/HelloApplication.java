@@ -76,42 +76,46 @@ public class HelloApplication extends Application {
                             System.out.println("Пока!");
                             return;
                         }
-                case ("1"): {
-                    Timetable.changeTimetableItem(input);
-                }
-                break;
-                case ("2"): {
-                    TaskList.addTask(input);
-                }
-                break;
-                case ("3"): {
-                    Teachers.addTeacher(input);
-                }
-                break;
-                case ("4"): {
-                    Hometask.addHometask(input);
-                }
-                break;
-                case ("5"): {
-                    TaskList.deleteTask(input);
-                }
-                break;
-                case ("6"): {
-                    Hometask.deleteHometask(input);
-                }
-                break;
-                case ("7"): {
-                    Timetable.output();
-                }
-                break;
-                case ("8"): {
-                    Hometask.output();
-                }
-                break;
-                case ("9"): {
-                    TaskList.output();
-                }
-                break;
+                        case ("Выход"): {
+                            System.out.println("Пока!");
+                            return;
+                        }
+                        case ("1"): {
+                            Timetable.changeTimetableItem(input);
+                        }
+                        break;
+                        case ("2"): {
+                            TaskList.addTask(input);
+                        }
+                        break;
+                        case ("3"): {
+                            Teachers.addTeacher(input);
+                        }
+                        break;
+                        case ("4"): {
+                            Hometask.addHometask(input);
+                        }
+                        break;
+                        case ("5"): {
+                            TaskList.deleteTask(input);
+                        }
+                        break;
+                        case ("6"): {
+                            Hometask.deleteHometask(input);
+                        }
+                        break;
+                        case ("7"): {
+                            Timetable.output();
+                        }
+                        break;
+                        case ("8"): {
+                            Hometask.output();
+                        }
+                        break;
+                        case ("9"): {
+                            TaskList.output();
+                        }
+                        break;
                         default:
                             System.out.println("Извините, эта функция пока недоступна :(");
                             break;
@@ -119,10 +123,5 @@ public class HelloApplication extends Application {
                     functionNumber = "";
                     input.reset();
                 }
-
             }
-
-
-
-
         }

@@ -9,10 +9,10 @@ public class TaskList {
 
     public static void addTask(Scanner input) throws IOException {
         //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
-        System.out.println("Enter your task");
+        System.out.println("Введите свою задачу.");
         String deadline = "", task = "";
         while(task.isEmpty()) task = input.nextLine();
-        System.out.println("Enter the deadline");
+        System.out.println("Введите срок исполнения.");
         while(deadline.isEmpty()) deadline = input.nextLine();
         int num = TaskList.getNum();
 
@@ -35,11 +35,19 @@ public class TaskList {
     }
     public static void deleteTask(Scanner input) throws IOException {
         //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
-        System.out.println("Enter number of the completed task");
-        output();
-        int num = input.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int num;
+        do {
+            System.out.println("Введите номер выполненного задания.");
+            while (!sc.hasNextInt()) {
+                System.out.println("Данное выражение не является номером задания. Введите число!");
+                sc.next(); // this is important!
+            }
+            num = sc.nextInt();
+        } while (num <= 0);
+
         SecondaryFunctions.rewrite(filePath, num, "");
-        System.out.println("Task deleted");
+        System.out.println("Задание удалено.");
         //input.close();
     }
     public static void output() throws IOException {
