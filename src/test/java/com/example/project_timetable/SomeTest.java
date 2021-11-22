@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SomeTest {
 
     @Test
-    public void getNumber() {
+    void getNumber() {
         Some obj = new Some();
         obj.setNumber(5);
         assertEquals(5, obj.getNumber());
