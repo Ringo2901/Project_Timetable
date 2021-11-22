@@ -3,7 +3,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Hometask {private static String filePath = "src\\main\\resources\\hometask.txt";
+public class Hometask {
+    private static String filePath = "src\\main\\resources\\hometask.txt";
 
     public static void addHometask(Scanner input) throws IOException {
         //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
@@ -34,6 +35,8 @@ public class Hometask {private static String filePath = "src\\main\\resources\\h
         sc.close();
         return idx;
     }
+
+
 
     public static void deleteHometask(Scanner input) throws IOException {
         //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
