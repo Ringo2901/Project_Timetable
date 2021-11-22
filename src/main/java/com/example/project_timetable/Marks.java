@@ -7,9 +7,9 @@ public class Marks {
     private static String filePath = "src\\main\\resources\\marks.txt";
     public static void addMark() throws IOException {
         Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("Enter the subject");
+        System.out.println("Введите предмет.");
         String subject = input.nextLine();
-        System.out.println("Enter your marks");
+        System.out.println("Введите свои оценки.");
         String marksLine = input.nextLine();
         int num = Marks.getNum();
 

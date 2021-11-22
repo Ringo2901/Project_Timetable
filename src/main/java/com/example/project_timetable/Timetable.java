@@ -8,17 +8,32 @@ public class Timetable {
     public static void changeTimetableItem(Scanner input) throws IOException {
 
         //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("Enter number of day");
-        int dayNum = input.nextInt();
+        Scanner sc = new Scanner (System.in);
+        int dayNum;
+        do {
+            System.out.println("Введите число - номер дня недели.");
+            while (!sc.hasNextInt()) {
+                System.out.println("Данное выражение не является номером дня недели. Введите число!");
+                sc.next(); // this is important!
+            }
+            dayNum = sc.nextInt();
+        } while (dayNum < 1 || dayNum > 7);
 
-        System.out.println("Enter number of item");
-        int itemNum = input.nextInt();
+        int itemNum;
+        do {
+            System.out.println("Введите номер предмета в расписании.");
+            while (!sc.hasNextInt()) {
+                System.out.println("Данное выражение не является номером предмета. Введите число!");
+                sc.next(); // this is important!
+            }
+            itemNum = sc.nextInt();
+        } while (itemNum < 1 || itemNum > 7);
         String filePath = filePathBeginning + Integer.toString(dayNum) + ".txt";
         String lessonName = "";
         String teacherName = "";
-        System.out.println("Enter lesson name");
+        System.out.println("Введите название предмета.");
         while(lessonName.isEmpty()) lessonName = input.nextLine(); //ожидание ввода названия предмета
-        System.out.println("Enter teacher surname");
+        System.out.println("Введите ФИО преподавателя");
         while(teacherName.isEmpty()) teacherName = input.nextLine(); //ожидание ввода фамилии преподаватель
 
 

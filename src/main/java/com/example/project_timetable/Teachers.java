@@ -9,11 +9,11 @@ public class Teachers {
     public static void addTeacher(Scanner input) throws IOException {
         // Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
         String name = "", subject = "", contactInf = "";
-        System.out.println("Enter the teacher's name");
+        System.out.println("Введите ФИО преподавателя.");
         while(name.isEmpty()) name = input.nextLine();
-        System.out.println("Enter the subject");
+        System.out.println("Введите предмет.");
         while(subject.isEmpty())subject = input.nextLine();
-        System.out.println("Enter the contact information");
+        System.out.println("Введите информацию о преподавателе.");
         while(contactInf.isEmpty()) contactInf = input.nextLine();
 
         int num = Teachers.getNum();
