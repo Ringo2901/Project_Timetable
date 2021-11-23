@@ -21,7 +21,7 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.language>java</sonar.language>
         <sonar.coverage.jacoco.xmlReportPaths>../app-it/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-            <java.version>11</java.version>
+            <java.version>16.0.2</java.version>
     </properties>
 
     <dependencies>
@@ -153,7 +153,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
