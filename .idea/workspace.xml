@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.SomeTest.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +30,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/junit-jupiter-5.8.1.jar" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48850575" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
