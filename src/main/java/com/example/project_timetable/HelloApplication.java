@@ -32,7 +32,6 @@ public class HelloApplication extends Application {
             {
                 primaryStage.setTitle("Hello world Application");
                 primaryStage.show();
-
             }*/
                 //Application.launch();
                 //boolean firstRun = false;
@@ -57,13 +56,12 @@ public class HelloApplication extends Application {
                         "6. Удаление домашнего задания\n" +
                         "7. Вывод расписания\n" +
                         "8. Вывод домашнего задания\n" +
-                        "9. Вывод списка задач");// вывод начального текста(можно также сделать из файла)
-
+                        "9. Вывод списка задач\n" +
+                        "10.Вывод информации о преподавателях");// вывод начального текста(можно также сделать из файла)
 
                 boolean b = true;
 
                 while(true) {
-
                     System.out.println("Пожалуйста, введите номер функции или введите 'выход', чтобы завершить исполнение программы!");
                     //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
                     //while(!input.hasNextLine()){}
@@ -72,10 +70,7 @@ public class HelloApplication extends Application {
                     while(!input.hasNextLine()){}
                     functionNumber = input.nextLine();
                     switch (functionNumber) {       //выбор функции пользователем
-                        case ("выход"): {
-                            System.out.println("Пока!");
-                            return;
-                        }
+                        case ("выход"):
                         case ("Выход"): {
                             System.out.println("Пока!");
                             return;
@@ -114,6 +109,10 @@ public class HelloApplication extends Application {
                         break;
                         case ("9"): {
                             TaskList.output();
+                        }
+                        break;
+                        case ("10"): {
+                            Teachers.output();
                         }
                         break;
                         default:

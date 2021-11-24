@@ -22,7 +22,7 @@ public class Marks {
     private static int getNum() throws IOException {
         return 1;
     }
-    /*private static ArrayList<Integer> getMarks(){
+    private static ArrayList<Integer> getMarks(){
         Scanner input = new Scanner (filePath);
         String marksLine = input.nextLine();
         ArrayList<Integer> marksList = new ArrayList<>();
@@ -34,7 +34,7 @@ public class Marks {
         marksList.add(n);
         input.close();
         return marksList;
-    }*/
+    }
     /*public static float averageScore() throws IOException {
 
     }*/

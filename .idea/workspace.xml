@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +44,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.SomeTest">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.HelloApplication" />
       <module name="Project_Timetable" />
@@ -46,6 +54,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SomeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_Timetable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.project_timetable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.project_timetable" />
+      <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.SomeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,11 +94,13 @@
     <list>
       <item itemvalue="Application.HelloApplication" />
       <item itemvalue="JUnit.SomeTest" />
+      <item itemvalue="JUnit.SomeTest (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SomeTest" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.SomeTest (1)" />
+        <item itemvalue="JUnit.SomeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -100,5 +125,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest__1_.ic" NAME="SomeTest (1) Coverage Results" MODIFIED="1637753137777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.project_timetable.*</FILTER>
+    </SUITE>
   </component>
 </project>
