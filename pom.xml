@@ -11,17 +11,17 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <maven.compiler.source>16.0.2</maven.compiler.source>
-        <maven.compiler.target>16.0.2</maven.compiler.target>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
         <!-- Sonar -->
         <sonar.organization>ringo2901</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
         <sonar.coverage.jacoco.xmlReportPaths>C:\Users\Asus\Project_Timetable\target\site\jacoco-aggregate\jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-            <java.version>16.0.2</java.version>
+        <java.version>16.0.2</java.version>
     </properties>
 
     <dependencies>
@@ -101,6 +101,13 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
+            <scope>test</scope>
+        </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
@@ -119,9 +126,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
                 <version>3.0.0-M5</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
             </plugin>
 
             <plugin>
@@ -130,26 +134,49 @@
                 <version>0.8.7</version>
                 <executions>
                     <execution>
-                        <id>prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                     <execution>
                         <id>report</id>
-                        <phase>prepare-package</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>jacoco-check</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <rule>
+                                    <element>PACKAGE</element>
+                                    <limits>
+                                        <limit>
+                                            <counter>LINE</counter>
+                                            <value>COVEREDRATIO</value>
+                                            <minimum>0.0</minimum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
+
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <release>16.0.2</release>
-                    <encoding>UTF-8</encoding>
+                    <debug>false</debug>
+                    <optimize>true</optimize>
+                    <source>16</source>
+                    <target>16</target>
                 </configuration>
             </plugin>
 
@@ -169,6 +196,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
