@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.SomeTest.txt" beforeDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
@@ -18,7 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
->>>>>>> 46d2bb8bf996d67b36f3c9d107e1a20d80f7423a
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.SomeTest.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +41,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.48850575" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.SomeTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.HelloApplication" />
       <module name="Project_Timetable" />
       <extension name="coverage">
@@ -103,9 +102,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SomeTest" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.SomeTest (1)" />
-        <item itemvalue="JUnit.SomeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -131,13 +130,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-<<<<<<< HEAD
-=======
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest__1_.ic" NAME="SomeTest (1) Coverage Results" MODIFIED="1637753137777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.project_timetable.*</FILTER>
     </SUITE>
->>>>>>> 46d2bb8bf996d67b36f3c9d107e1a20d80f7423a
   </component>
 </project>
