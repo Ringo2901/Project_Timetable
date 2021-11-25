@@ -5,44 +5,22 @@ import java.util.Scanner;
 
 public class Timetable {
     private static String filePathBeginning = "src\\main\\resources\\week_days\\";
-    public static void changeTimetableItem(Scanner input) throws IOException {
-
-        //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        Scanner sc = new Scanner (System.in);
-        int dayNum;
-        do {
-            System.out.println("Введите число - номер дня недели.");
-            while (!sc.hasNextInt()) {
-                System.out.println("Данное выражение не является номером дня недели. Введите число!");
-                sc.next(); // this is important!
-            }
-            dayNum = sc.nextInt();
-        } while (dayNum < 1 || dayNum > 7);
-
-        int itemNum;
-        do {
-            System.out.println("Введите номер предмета в расписании.");
-            while (!sc.hasNextInt()) {
-                System.out.println("Данное выражение не является номером предмета. Введите число!");
-                sc.next(); // this is important!
-            }
-            itemNum = sc.nextInt();
-        } while (itemNum < 1 || itemNum > 7);
-        String filePath = filePathBeginning + Integer.toString(dayNum) + ".txt";
-        String lessonName = "";
-        String teacherName = "";
-        System.out.println("Введите название предмета.");
-        while(lessonName.isEmpty()) lessonName = input.nextLine(); //ожидание ввода названия предмета
-        System.out.println("Введите ФИО преподавателя");
-        while(teacherName.isEmpty()) teacherName = input.nextLine(); //ожидание ввода фамилии преподаватель
-
-
-
-        String newItem = Integer.toString(itemNum) + "|" + lessonName + "|" + teacherName;
-        SecondaryFunctions.rewrite(filePath, itemNum, newItem); // перезапись файла
-
-        //input.close();
+    private static String DAY, SUBJECT, TEACHER;
+    private static int ITEMNUM;
+    public static void setDay(String s){
+        DAY = s;
     }
+    public static void setSubject(String s){
+        SUBJECT = s;
+    }
+    public static void setTeacher(String s){
+        TEACHER = s;
+    }
+    public static void setItemNum(int n){
+        ITEMNUM = n;
+    }
+
+
     private static String dayOfWeek(int num){
         String result = "";
         switch (num) {
@@ -66,11 +44,36 @@ public class Timetable {
         }
         return result;
     }
-    public static void output() throws IOException {
+    private static int numOfDay(String s){
+        int result;
+        switch (s) {
+            case  ("Пн"): result = 1;
+                break;
+            case  ("Вт"): result = 2;
+                break;
+            case  ("Ср"): result = 3;
+                break;
+            case  ("Чт"): result = 4;
+                break;
+            case  ("Пт"): result = 5;
+                break;
+            case  ("Сб"): result = 6;
+                break;
+            case  ("Вс"): result = 7;
+                break;
+            default:
+                result = 1;
+                break;
+        }
+        return result;
+    }
+
+    public static String StringOutput() throws IOException {
+        String res = "";
         for(int dayNum = 1; dayNum <= 7; dayNum++){
             String filePath = "src\\main\\resources\\week_days\\" + Integer.toString(dayNum) + ".txt";
             Scanner output = new Scanner (new File(filePath));
-            System.out.print(dayOfWeek(dayNum) + " :" + "\n");
+            res += dayOfWeek(dayNum) + " :" + "\n";
 
             while(output.hasNextLine()){
                 String s = output.nextLine();
@@ -83,17 +86,30 @@ public class Timetable {
                 for( ; idx < s.length(); idx++) teacher += s.charAt(idx);
 
                 int itemLen = 4, subjectLen = 10;
-                System.out.print(itemNum + '.');
-                for(int i = 0; i < itemLen - itemNum.length(); i++) System.out.print(" ");
-                System.out.print(subject);
-                for(int i = 0; i < subjectLen - subject.length(); i++) System.out.print(" ");
-                System.out.print(teacher);
-                System.out.println();
+                res += itemNum + '.';
+                for(int i = 0; i < itemLen - itemNum.length(); i++) res += " ";
+                res += subject;
+                for(int i = 0; i < subjectLen - subject.length(); i++) res += " ";
+                res += teacher + "\n";
 
             }
             output.close();
         }
+        return res;
+    }
+    public static void changeTimetableItem() throws IOException {
 
+        Scanner sc = new Scanner (System.in);
+
+        String filePath = filePathBeginning + Integer.toString(numOfDay(DAY)) + ".txt";
+        String lessonName = "";
+        String teacherName = "";
+
+
+        String newItem = Integer.toString(ITEMNUM) + "|" + SUBJECT + "|" + TEACHER;
+        SecondaryFunctions.rewrite(filePath, ITEMNUM, newItem); // перезапись файла
+
+        sc.close();
     }
 
 }

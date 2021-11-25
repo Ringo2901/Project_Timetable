@@ -1,43 +1,82 @@
 package com.example.project_timetable;
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Marks {
     private static String filePath = "src\\main\\resources\\marks.txt";
-    public static void addMark() throws IOException {
-        Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
-        System.out.println("Введите предмет.");
-        String subject = input.nextLine();
-        System.out.println("Введите свои оценки.");
-        String marksLine = input.nextLine();
-        int num = Marks.getNum();
-
-        // String newMark = Integer.toString(num) + "|" + deadline +  + task;
-
-        SecondaryFunctions.rewrite(filePath, num, ""); // перезапись файла
-
-        input.close();
+    private static String SUBJECT, MARKS;
+    public static void setSubject(String s){
+        SUBJECT = s;
     }
-    private static int getNum() throws IOException {
-        return 1;
+    public static void setMarks(String s){
+        MARKS = s;
     }
-    private static ArrayList<Integer> getMarks(){
-        Scanner input = new Scanner (filePath);
-        String marksLine = input.nextLine();
-        ArrayList<Integer> marksList = new ArrayList<>();
-        int n = 0;
-        for(int i = 0, j = 0; i < marksLine.length();i++) {
-            if(marksLine.charAt(i) != ' ') n = n * 10 + Character.getNumericValue(marksLine.charAt(i));
-            else marksList.add(n);
+    public static void addMarks() throws IOException {
+
+        int num = Marks.getNum(SUBJECT);
+        Scanner sc = new Scanner(new File(filePath));
+        String s = "";
+        for(int i = 0; i < num; i++){
+            s = sc.nextLine();
         }
-        marksList.add(n);
-        input.close();
-        return marksList;
-    }
-    /*public static float averageScore() throws IOException {
+        String newMarks = "";
+        if(s.isEmpty()) newMarks = Integer.toString(num) + "|" + SUBJECT + "|" + Float.toString(averageMark(num)) + "|" + MARKS;
+        else newMarks = s + " " + MARKS;
 
-    }*/
-    public static void output() throws IOException {
+
+        SecondaryFunctions.rewrite(filePath, num, newMarks); // перезапись файла
+
+    }
+    private static int getNum(String subject) throws IOException {
+        int idx, res = 1;
+        String itemNum = "", sub = "";
+        Scanner sc = new Scanner(new File(filePath));
+        while (sc.hasNextLine()) {
+            String s = sc.nextLine();
+            for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) sub += s.charAt(idx);
+
+            if (sub != subject){return res; }
+            res++;
+            sub = "";
+        }
+        sc.close();
+        return res;
+    }
+    public static float averageMark(int numOfSubject) throws IOException {
+        float res = 10;
+        return res;
+    }
+    public static String StringOutput() throws IOException {
+        Scanner output = new Scanner (new File(filePath));
+        String res = "";
+        while(output.hasNextLine()){
+            String s = output.nextLine();
+            int idx;
+            String itemNum ="", subject = "", average = "", marks = "";
+            for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) average += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length(); idx++) marks += s.charAt(idx);
+
+
+            int  NumLen = 3, subjectLen = 15, averageLen = 10;
+            res += itemNum + ".";
+            for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
+            res += subject + ":";
+            for(int i = 0; i < subjectLen - subject.length(); i++) res+=" ";
+            res += average;
+            for(int i = 0; i < averageLen - average.length(); i++) res+=" ";
+            res += marks;
+            res += "\n";
+        }
+        output.close();
+        return res;
     }
 }
