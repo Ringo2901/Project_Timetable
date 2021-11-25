@@ -45,5 +45,4 @@ public class SecondaryFunctions
         writer.close();
 
     }
-    public static void corectnessChecking(){}
 }

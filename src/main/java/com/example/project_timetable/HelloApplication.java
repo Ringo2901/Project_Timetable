@@ -1,8 +1,14 @@
 package com.example.project_timetable;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -20,21 +26,15 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
     }
 
     public static void main(String[] args) throws IOException {
+
         launch();
-            /*public void start(Stage primaryStage) throws Exception
-            {
-                primaryStage.setTitle("Hello world Application");
-                primaryStage.show();
-            }*/
-                //Application.launch();
-                //boolean firstRun = false;
+            /*
                 FileReader in = null;   //классы, хранящие инфу о том в какие файлы осуществляется ввод/вывод
                 FileReader out = null;
 
@@ -56,12 +56,13 @@ public class HelloApplication extends Application {
                         "6. Удаление домашнего задания\n" +
                         "7. Вывод расписания\n" +
                         "8. Вывод домашнего задания\n" +
-                        "9. Вывод списка задач\n" +
-                        "10.Вывод информации о преподавателях");// вывод начального текста(можно также сделать из файла)
+                        "9. Вывод списка задач");// вывод начального текста(можно также сделать из файла)
+
 
                 boolean b = true;
 
                 while(true) {
+
                     System.out.println("Пожалуйста, введите номер функции или введите 'выход', чтобы завершить исполнение программы!");
                     //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
                     //while(!input.hasNextLine()){}
@@ -70,7 +71,10 @@ public class HelloApplication extends Application {
                     while(!input.hasNextLine()){}
                     functionNumber = input.nextLine();
                     switch (functionNumber) {       //выбор функции пользователем
-                        case ("выход"):
+                        case ("выход"): {
+                            System.out.println("Пока!");
+                            return;
+                        }
                         case ("Выход"): {
                             System.out.println("Пока!");
                             return;
@@ -111,16 +115,12 @@ public class HelloApplication extends Application {
                             TaskList.output();
                         }
                         break;
-                        case ("10"): {
-                            Teachers.output();
-                        }
-                        break;
                         default:
                             System.out.println("Извините, эта функция пока недоступна :(");
                             break;
                     }
                     functionNumber = "";
                     input.reset();
-                }
+                }*/
             }
         }
