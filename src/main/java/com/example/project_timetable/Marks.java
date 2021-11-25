@@ -13,39 +13,34 @@ public class Marks {
     public static void setMarks(String s){
         MARKS = s;
     }
+
     public static void addMarks() throws IOException {
 
-        int num = Marks.getNum(SUBJECT);
+        int idx, num = 1;
+        String itemNum = "", sub = "";
         Scanner sc = new Scanner(new File(filePath));
+        boolean newLine = true;
         String s = "";
-        for(int i = 0; i < num; i++){
+        while (sc.hasNextLine() && newLine) {
             s = sc.nextLine();
+            for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+            idx++;
+            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) sub += s.charAt(idx);
+            if (sub.equals(SUBJECT)) {System.out.println("equal"); newLine = false;}
+            else num++;
+            sub = "";
         }
+        sc.close();
+
         String newMarks = "";
-        if(s.isEmpty()) newMarks = Integer.toString(num) + "|" + SUBJECT + "|" + Float.toString(averageMark(num)) + "|" + MARKS;
+        if(newLine) newMarks = Integer.toString(num) + "|" + SUBJECT + "|" + Float.toString(averageMark(num)) + "|" + MARKS;
         else newMarks = s + " " + MARKS;
 
 
         SecondaryFunctions.rewrite(filePath, num, newMarks); // перезапись файла
 
     }
-    private static int getNum(String subject) throws IOException {
-        int idx, res = 1;
-        String itemNum = "", sub = "";
-        Scanner sc = new Scanner(new File(filePath));
-        while (sc.hasNextLine()) {
-            String s = sc.nextLine();
-            for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
-            idx++;
-            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) sub += s.charAt(idx);
 
-            if (sub != subject){return res; }
-            res++;
-            sub = "";
-        }
-        sc.close();
-        return res;
-    }
     public static float averageMark(int numOfSubject) throws IOException {
         float res = 10;
         return res;
@@ -80,3 +75,4 @@ public class Marks {
         return res;
     }
 }
+
