@@ -16,12 +16,10 @@ import java.time.format.DateTimeFormatter;
 public class Controller {
     @FXML
     public static Label errorLabel;
-
     @FXML
     public static void setError(String s) throws IOException {
         errorLabel.setText(s);
     }
-
     @FXML
     public Button timetableAddButton;
     @FXML
