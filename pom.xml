@@ -21,10 +21,10 @@
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
         <sonar.coverage.jacoco.xmlReportPaths>C:\Users\Asus\Project_Timetable\target\site\jacoco-aggregate\jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-        <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.release>17</maven.compiler.release>
+        <java.version>16</java.version>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.release>16</maven.compiler.release>
     </properties>
 
     <dependencies>
