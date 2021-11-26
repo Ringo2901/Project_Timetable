@@ -22,14 +22,14 @@ public class Hometask {
 
     /**
      * setDeadline the method assigns the entered deadline to the string
-     * @param s string, a string that accepts the entered value
+     * @param s a string that accepts the entered value
      */
     public static void setDeadline(String s){
         DEADLINE = s;
     }
     /**
      * setHometask the method assigns the entered hometask to the string
-     * @param s string, a string that accepts the entered value
+     * @param s a string that accepts the entered value
      */
     public static void setHometask(String s){
         HOMETASK = s;
@@ -37,7 +37,7 @@ public class Hometask {
 
     /**
      * setSubject the method assigns the entered subject to the string
-     * @param s string, a string that accepts the entered value
+     * @param s a string that accepts the entered value
      */
     public static void setSubject(String s){
         SUBJECT = s;
