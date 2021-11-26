@@ -9,12 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <name>Project_Timetable</name>
 
-    <properties>
+     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
-        <!-- Sonar -->
-        <sonar.organization>ringo2901</sonar.organization>
+        <junit.version>5.7.1</junit.version>
+        <sonar.organization>captmelancholy-1</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
@@ -22,17 +20,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17.0.0.1</version>
+            <version>16</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>17.0.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-web</artifactId>
-            <version>17.0.0.1</version>
+            <version>16</version>
         </dependency>
         <dependency>
             <groupId>org.controlsfx</groupId>
@@ -88,7 +81,6 @@
 
     <build>
         <plugins>
-
 
             <plugin>
                 <groupId>org.openjfx</groupId>
