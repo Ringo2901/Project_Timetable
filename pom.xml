@@ -10,22 +10,14 @@
     <name>Project_Timetable</name>
 
      <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.7.1</junit.version>
-        <sonar.organization>captmelancholy-1</sonar.organization>
+         <sonar.organization>ringo2901</sonar.organization>
+         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
          <maven.compiler.source>1.8</maven.compiler.source>
          <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
-        <dependency>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.9.0.2155</version>
-            <type>pom</type>
-        </dependency>
 
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -90,7 +82,23 @@
     </dependencies>
 
     <build>
+
         <plugins>
+            <plugin>
+
+                <groupId>org.sonarsource.scanner.maven</groupId>
+
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sonar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
