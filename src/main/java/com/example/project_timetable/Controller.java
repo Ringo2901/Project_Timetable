@@ -31,11 +31,12 @@ public class Controller {
         Timetable.changeTimetableItem();
         changeText(Timetable.StringOutput());
     }
-    @FXML
+   @FXML
     public Button taskListAddButton;
     @FXML
     public void addTaskClick(ActionEvent actionEvent) throws IOException {
         LocalDate localDate = LocalDate.now();
+        localDate = taskDate.getValue();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         TaskList.setDeadline(localDate.format(formatter));
         TaskList.setTask(task.getText());
@@ -47,6 +48,7 @@ public class Controller {
     @FXML
     public void addHometaskClick(ActionEvent actionEvent) throws IOException {
         LocalDate localDate = LocalDate.now();
+        localDate = hometaskDate.getValue();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         Hometask.setDeadline(localDate.format(formatter));
         Hometask.setSubject(subjectHometask.getText());
