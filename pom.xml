@@ -86,6 +86,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
+                    <excludes>
+                        <exclude>**/module-info.java</exclude>
+                    </excludes>
                     <target>1.8</target>
                 </configuration>
             </plugin>
