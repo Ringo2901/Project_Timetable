@@ -189,9 +189,9 @@
                 <configuration>
                         <verbose>true</verbose>
                         <fork>true</fork>
-                    <source>16</source>
+                    <source>17</source>
                     <executable>C:\Program Files\Java\jdk-17.0.1\bin\javac</executable>
-                    <target>16</target>
+                    <target>17</target>
                 </configuration>
             </plugin>
 
