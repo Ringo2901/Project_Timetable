@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
@@ -78,8 +79,9 @@
       <command value="mvn clean verify sonar:sonar -Dsonar.login=b0d1f13bfc06b571ac22d0beec49a44587f7a212" />
       <command value="mvn -v" />
       <command value="mvn -V" />
-      <command value="mvn clean verify sonar:sonar -Dsonar.login=da6bb001b8ebfc2e413f53760fa3ba052146e435" />
       <command value="mvn --version" />
+      <command value="MAVEN_OPTS=&quot;-Xmx4G&quot;" />
+      <command value="mvn clean verify sonar:sonar -Dsonar.login=da6bb001b8ebfc2e413f53760fa3ba052146e435" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SomeTest">
