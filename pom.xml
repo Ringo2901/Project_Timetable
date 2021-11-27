@@ -19,7 +19,7 @@
          <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
          <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
          <sonar.language>java</sonar.language>
-         <java.version>16</java.version>
+         <java.version>1.8</java.version>
          <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 
      </properties>
@@ -191,7 +191,7 @@
                         <verbose>true</verbose>
                         <fork>true</fork>
                     <source>16</source>
-                    
+
                     <target>16</target>
                 </configuration>
             </plugin>
