@@ -183,6 +183,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -190,9 +191,9 @@
                 <configuration>
                         <verbose>true</verbose>
                         <fork>true</fork>
-                    <source>16</source>
+                    <source>1.8</source>
                     <executable>C:\Program Files\Java\jdk-16.0.2\bin\javac</executable>
-                    <target>16</target>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 
