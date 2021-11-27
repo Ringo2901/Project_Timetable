@@ -89,7 +89,9 @@ public class Teachers {
             for( ; idx < s.length(); idx++) contactInf += s.charAt(idx);
 
             int  NumLen = 3, NameLen = 30, subjectLen = 15;
-            res += itemNum + ".";
+            String point = "";
+            if(idx > 3) point = ".";
+            res += itemNum + point;
             for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
             res += Name;
             for(int i = 0; i < NameLen - Name.length(); i++) res+=" ";
@@ -101,5 +103,8 @@ public class Teachers {
         }
         output.close();
         return res;
+    }
+    public static void deleteTeacher(int num) throws IOException {
+        SecondaryFunctions.rewrite(filePath, num, "");
     }
 }

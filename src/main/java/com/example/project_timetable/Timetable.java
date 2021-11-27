@@ -128,7 +128,10 @@ public class Timetable {
                 for( ; idx < s.length(); idx++) teacher += s.charAt(idx);
 
                 int itemLen = 4, subjectLen = 10;
-                res += itemNum + '.';
+                System.out.println(10000 + idx);
+                String point = "";
+                if(idx > 2) point = ".";
+                res += itemNum + point;
                 for(int i = 0; i < itemLen - itemNum.length(); i++) res += " ";
                 res += subject;
                 for(int i = 0; i < subjectLen - subject.length(); i++) res += " ";
@@ -150,6 +153,9 @@ public class Timetable {
         String newItem = Integer.toString(ITEMNUM) + "|" + SUBJECT + "|" + TEACHER;
         SecondaryFunctions.rewrite(filePath, ITEMNUM, newItem); // перезапись файла
         sc.close();
+    }
+    public static void deleteTimetableItem(String day, int num) throws IOException {
+        SecondaryFunctions.rewrite(filePathBeginning  + numOfDay(day) + ".txt", num, "");
     }
 
 }

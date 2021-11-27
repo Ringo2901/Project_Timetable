@@ -127,7 +127,9 @@ public class Marks {
             for( ; idx < s.length(); idx++) marks += s.charAt(idx);
 
             int  NumLen = 3, subjectLen = 15, averageLen = 10;
-            res += itemNum + ".";
+            String point = "";
+            if(idx > 3) point = ".";
+            res += itemNum + point;
             for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
             res += subject + ":";
             for(int i = 0; i < subjectLen - subject.length(); i++) res+=" ";
@@ -139,5 +141,9 @@ public class Marks {
         output.close();
         return res;
     }
+    public static void deleteMarks(int num) throws IOException {
+        SecondaryFunctions.rewrite(filePath, num, "");
+    }
+
 }
 

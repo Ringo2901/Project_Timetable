@@ -94,7 +94,9 @@ public class TaskList {
             for( ; idx < s.length(); idx++) task += s.charAt(idx);
             int itemLen = 3, deadlineLen = 16;
 
-            res += itemNum + ".";
+            String point = "";
+            if(idx > 2) point = ".";
+            res += itemNum + point;
             for(int i = 0; i < itemLen - itemNum.length(); i++) res += " ";
             res += deadline;
             for(int i = 0; i < deadlineLen - deadline.length(); i++) res += " ";
@@ -119,4 +121,7 @@ public class TaskList {
 
         //input.close();
     }*/
+    public static void deleteTask(int num) throws IOException {
+        SecondaryFunctions.rewrite(filePath, num, "");
+    }
 }

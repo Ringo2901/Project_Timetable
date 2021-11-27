@@ -98,7 +98,9 @@ public class Hometask {
             idx++;
             for( ; idx < s.length(); idx++) hometask += s.charAt(idx);
             int itemLen = 3, subjectLen = 12, deadlineLen = 16;
-            res += itemNum + '.';
+            String point = "";
+            if(idx > 3) point = ".";
+            res += itemNum + point;
             for(int i = 0; i < itemLen - itemNum.length(); i++) res += " ";
             res += subject;
             for(int i = 0; i < subjectLen - subject.length(); i++) res += " ";
@@ -109,5 +111,8 @@ public class Hometask {
             System.out.println();
         }
         return res;
+    }
+    public static void deleteHometask(int num) throws IOException {
+        SecondaryFunctions.rewrite(filePath, num, "");
     }
 }

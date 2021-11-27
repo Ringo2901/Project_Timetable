@@ -1,9 +1,9 @@
 package com.example.project_timetable;
 
+import javafx.fxml.FXML;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
@@ -14,12 +14,23 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Controller {
+
+    enum Status{
+        Timetable,
+        Hometask,
+        Tasklist,
+        Marks,
+        Contacts,
+    }
+    Status status;
     @FXML
     public static Label errorLabel;
+
     @FXML
     public static void setError(String s) throws IOException {
         errorLabel.setText(s);
     }
+
     @FXML
     public Button timetableAddButton;
     @FXML
@@ -31,7 +42,7 @@ public class Controller {
         Timetable.changeTimetableItem();
         changeText(Timetable.StringOutput());
     }
-   @FXML
+    @FXML
     public Button taskListAddButton;
     @FXML
     public void addTaskClick(ActionEvent actionEvent) throws IOException {
@@ -77,14 +88,52 @@ public class Controller {
         changeText(Marks.StringOutput());
     }
     @FXML
+    public ComboBox dayDeleting;
+    @FXML
+    public Button deletingButton;
+    @FXML
+    public void deleting(ActionEvent actionEvent) throws IOException {
+        if (status == Status.Timetable){
+            ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
+            day.setItems(days);
+            day.setValue("Пн");
+            Timetable.deleteTimetableItem((String) dayDeleting.getValue(), Integer.parseInt(deleteNum1.getText()));
+            changeText(Timetable.StringOutput());
+        }
+
+            if (status == Status.Hometask){
+                Hometask.deleteHometask(Integer.parseInt(deleteNum.getText()));
+                changeText(Hometask.StringOutput());
+            }
+
+            else if (status == Status.Tasklist){
+                TaskList.deleteTask(Integer.parseInt(deleteNum.getText()));
+                changeText(TaskList.StringOutput());
+            }
+
+            else if (status == Status.Marks){
+                Marks.deleteMarks(Integer.parseInt(deleteNum.getText()));
+                changeText(Marks.StringOutput());
+            }
+
+            else if (status == Status.Contacts){
+                Teachers.deleteTeacher(Integer.parseInt(deleteNum.getText()));
+                changeText(Teachers.StringOutput());
+            }
+
+
+
+    }
+    @FXML
     public ComboBox day;
     @FXML
     public Button TimetableButton;
     @FXML
     public void clickTimetable(ActionEvent actionEvent) throws IOException {
+        status = Status.Timetable;
         ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
-        day.setItems(days);
-        day.setValue("Пн");
+        dayDeleting.setItems(days);
+        dayDeleting.setValue("Пн");
         changeText(Timetable.StringOutput());
 
         Grid1.setVisible(true);
@@ -93,52 +142,67 @@ public class Controller {
         Grid4.setVisible(false);
         Grid5.setVisible(false);
 
+        DeletingGrid.setVisible(false);
+        DeletingGrid2.setVisible(true);
+
     }
     @FXML
     public Button HometaskButton;
     @FXML
     public void clickHometask(ActionEvent actionEvent) throws IOException {
+        status = Status.Hometask;
         changeText(Hometask.StringOutput());
         Grid1.setVisible(false);
         Grid2.setVisible(true);
         Grid3.setVisible(false);
         Grid4.setVisible(false);
         Grid5.setVisible(false);
+        DeletingGrid.setVisible(true);
+        DeletingGrid2.setVisible(false);
 
     }
     @FXML
     public Button TaskListButton;
     @FXML
     public void clickTaskList(ActionEvent actionEvent) throws IOException {
+        status = Status.Tasklist;
         changeText(TaskList.StringOutput());
         Grid1.setVisible(false);
         Grid2.setVisible(false);
         Grid3.setVisible(true);
         Grid4.setVisible(false);
         Grid5.setVisible(false);
+        DeletingGrid.setVisible(true);
+        DeletingGrid2.setVisible(false);
 
     }
     @FXML
     public Button MarksButton;
     @FXML
     public void clickMarks(ActionEvent actionEvent) throws IOException {
+        status = Status.Marks;
         changeText(Marks.StringOutput());
         Grid1.setVisible(false);
         Grid2.setVisible(false);
         Grid3.setVisible(false);
         Grid4.setVisible(true);
         Grid5.setVisible(false);
+        DeletingGrid.setVisible(true);
+        DeletingGrid2.setVisible(false);
     }
     @FXML
     public Button TeachersButton;
     @FXML
     public void clickTeachers(ActionEvent actionEvent) throws IOException {
+        status = Status.Contacts;
         changeText(Teachers.StringOutput());
         Grid1.setVisible(false);
         Grid2.setVisible(false);
         Grid3.setVisible(false);
         Grid4.setVisible(false);
         Grid5.setVisible(true);
+        DeletingGrid.setVisible(true);
+        DeletingGrid2.setVisible(false);
     }
     @FXML
     private TextFlow textflow;
@@ -154,7 +218,7 @@ public class Controller {
         //text.setFont(Font.font("Arial", 30));
     }
     @FXML
-    public GridPane Grid1, Grid2, Grid3, Grid4, Grid5;
+    public GridPane Grid1, Grid2, Grid3, Grid4, Grid5, DeletingGrid, DeletingGrid2;
     @FXML
     public void inputTimetable(String s) throws IOException {
         text.setText(s);
@@ -167,5 +231,6 @@ public class Controller {
     public DatePicker hometaskDate;
     public TextField num, name, subjectTeachers, inf;
     public TextField subject, marks;
+    public TextField deleteNum, deleteNum1;
 
 }
