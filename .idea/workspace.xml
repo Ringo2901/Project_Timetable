@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Something">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
