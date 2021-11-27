@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Something" />
+    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Something">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/HelloApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/SecondaryFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Some.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marks.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days/7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/SomeTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +78,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48850575" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
@@ -61,6 +90,12 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.project_timetable" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager" selected="JUnit.SomeTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

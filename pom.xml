@@ -158,7 +158,6 @@
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>0.01</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
@@ -191,9 +190,9 @@
                 <configuration>
                         <verbose>true</verbose>
                         <fork>true</fork>
-                    <source>1.8</source>
+                    <source>9</source>
                     <executable>C:\Program Files\Java\jdk-16.0.2\bin\javac</executable>
-                    <target>1.8</target>
+                    <target>9</target>
                 </configuration>
             </plugin>
 
