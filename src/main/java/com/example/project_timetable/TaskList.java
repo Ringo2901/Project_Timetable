@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * TaskList class works with task
+ * This class works with task
  * @author Igor Baran
  * @version 2.0
  */
@@ -20,21 +20,21 @@ public class TaskList {
      */
     private static String DEADLINE, TASK;
     /**
-     * setDeadline the method assigns the entered deadline to the string
+     * The method assigns the entered deadline to the string
      * @param s a string that accepts the entered value
      */
     public static void setDeadline(String s){
         DEADLINE = s;
     }
     /**
-     * setTask the method assigns the entered task to the string
+     * The method assigns the entered task to the string
      * @param s a string that accepts the entered value
      */
     public static void setTask(String s){
         TASK = s;
     }
     /**
-     * addTask the method writes task like a string in format "num|subject|deadline|hometask" to a file
+     * The method writes task like a string in format "num|subject|deadline|hometask" to a file
      */
     public static void addTask() throws IOException {
         int num = TaskList.getNum();
@@ -44,7 +44,7 @@ public class TaskList {
     }
 
     /**
-     * getNum the method counts the number of lines written and returns the line number we are writing
+     * The method counts the number of lines written and returns the line number we are writing
      * @return idx the line number we are writing
      */
     private static int getNum() throws IOException {
@@ -77,7 +77,7 @@ public class TaskList {
         //input.close();
     }*/
     /**
-     * StringOutput the method reads information from a file, generates lines for output, outputs lines in format "Num.Deadline Task"
+     * The method reads information from a file, generates lines for output, outputs lines in format "Num.Deadline Task"
      * @return res task output string
      */
     public static String StringOutput() throws IOException{

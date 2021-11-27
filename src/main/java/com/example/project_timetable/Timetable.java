@@ -3,11 +3,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 /**
- * class works with information about timetable
+ * This class works with information about timetable
  */
 public class Timetable {
     /**
-     * * filePath - path to the file where the input data is written
+     * filePath - path to the file where the input data is written
      */
     private static String filePathBeginning = "src\\main\\resources\\week_days\\";
     /**
@@ -21,21 +21,21 @@ public class Timetable {
      */
     private static int ITEMNUM;
     /**
-     * setDay the method assigns the entered day of week to the string
+     * The method assigns the entered day of week to the string
      * @param s a string that accepts the entered value
      */
     public static void setDay(String s){
         DAY = s;
     }
     /**
-     * setSubject the method assigns the entered subject to the string
+     * The method assigns the entered subject to the string
      * @param s a string that accepts the entered value
      */
     public static void setSubject(String s){
         SUBJECT = s;
     }
     /**
-     * setTeacher the method assigns the entered teacher's name to the string
+     * The method assigns the entered teacher's name to the string
      * @param s a string that accepts the entered value
      */
     public static void setTeacher(String s){
@@ -43,7 +43,7 @@ public class Timetable {
     }
 
     /**
-     * setItemNum the method assigns the number of the line into which the next is written to the string
+     * The method assigns the number of the line into which the next is written to the string
      * @param n a number of string that accepts the value
      */
     public static void setItemNum(int n){
@@ -51,7 +51,7 @@ public class Timetable {
     }
 
     /**
-     * dayOfWeek the method selects the name of the day of the week by its number
+     * The method selects the name of the day of the week by its number
      * @param num a number of entered day of week
      * @return result a string - name of day of week
      */
@@ -79,7 +79,7 @@ public class Timetable {
         return result;
     }
     /**
-     * numOfDay the method selects the number of the day of the week by its name
+     * The method selects the number of the day of the week by its name
      * @param s the name of day of week
      * @return result the number of day of week
      */
@@ -107,7 +107,7 @@ public class Timetable {
         return result;
     }
     /**
-     * StringOutput the method reads information from a file, generates lines for output, outputs lines in format "Num. Name Subject ContactInf"
+     * The method reads information from a file, generates lines for output, outputs lines in format "Num. Name Subject ContactInf"
      * @return res timetable output string
      */
     public static String StringOutput() throws IOException {
@@ -140,7 +140,7 @@ public class Timetable {
     }
 
     /**
-     * changeTimetableItem the method changes timetable
+     * The method changes timetable
      */
     public static void changeTimetableItem() throws IOException {
         Scanner sc = new Scanner (System.in);

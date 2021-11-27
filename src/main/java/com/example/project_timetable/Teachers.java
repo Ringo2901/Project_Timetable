@@ -22,35 +22,35 @@ public class Teachers {
      */
     private static int NUM;
     /**
-     * setName the method assigns the entered teacher's name to the string
+     * The method assigns the entered teacher's name to the string
      * @param s a string that accepts the entered value
      */
     public static void setName(String s){
         NAME = s;
     }
     /**
-     * setInf the method assigns the entered information about teacher to the string
+     * The method assigns the entered information about teacher to the string
      * @param s a string that accepts the entered value
      */
     public static void setInf(String s){
         INF = s;
     }
     /**
-     * setSubject the method assigns the entered subject to the string
+     * The method assigns the entered subject to the string
      * @param s a string that accepts the entered value
      */
     public static void setSubject(String s){
         SUBJECT = s;
     }
     /**
-     * setNum the method assigns the number of the line into which the next is written to the string
+     * The method assigns the number of the line into which the next is written to the string
      * @param s a string that accepts the value
      */
     public static void setNum(String s){
         NUM = Integer.parseInt(s);
     }
     /**
-     * addTeacher the method writes task like a string in format "num|name|subject|inf" to a file
+     * The method writes task like a string in format "num|name|subject|inf" to a file
      */
     public static void addTeacher() throws IOException {
         String newTeacher = Integer.toString(NUM) + "|" + NAME + "|" + SUBJECT + "|" + INF;
@@ -70,7 +70,7 @@ public class Teachers {
         return idx;
     }*/
     /**
-     * StringOutput the method reads information from a file, generates lines for output, outputs lines in format "Num. Name Subject ContactInf"
+     * The method reads information from a file, generates lines for output, outputs lines in format "Num. Name Subject ContactInf"
      * @return res teacher output string
      */
     public static String StringOutput() throws IOException {

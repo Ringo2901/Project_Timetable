@@ -116,7 +116,7 @@ public class HelloApplication extends Application {
                         }
                         break;
                         default:
-                            System.out.println("Извините, эта функция пока недоступна :(");
+                            System.out.println("Sorry, this function is not available");
                             break;
                     }
                     functionNumber = "";
