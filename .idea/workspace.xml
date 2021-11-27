@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics" />
+    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,6 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean" />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=25dc711e974c38f6c214297a9ab99f063b0eb204 " />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=b0d1f13bfc06b571ac22d0beec49a44587f7a212" />
       <command value="mvn -v" />
@@ -72,6 +73,7 @@
       <command value="mvn --version" />
       <command value="MAVEN_OPTS=&quot;-Xmx4G&quot;" />
       <command value="mvn install" />
+      <command value="mvn clean" />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=da6bb001b8ebfc2e413f53760fa3ba052146e435" />
     </option>
   </component>
