@@ -191,9 +191,7 @@
                         <verbose>true</verbose>
                         <fork>true</fork>
                     <source>16</source>
-                    <excludes>
-                        <exclude>**/module-info.java</exclude>
-                    </excludes>
+                    
                     <target>16</target>
                 </configuration>
             </plugin>
