@@ -7,12 +7,12 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * SecondaryFunctions class of secondary functions (rewriting)
+ * This class consist of secondary functions (rewriting)
  */
 public class SecondaryFunctions
 {
     /**
-     * rewrite the method of rewriting information in a file
+     * The method of rewriting information in a file
      * @param filePath - path to the file where the input data is written
      * @param idx the number of rewrited line
      * @param newLine the new line

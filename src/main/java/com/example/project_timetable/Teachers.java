@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 /**
- * class works with information about teachers
+ * This class works with information about teachers
  */
 public class Teachers {
     /**

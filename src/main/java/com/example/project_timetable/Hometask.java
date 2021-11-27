@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Class works with hometask
+ * This class works with hometask
  * @author Igor Baran
  * @version 3.0
  */
@@ -21,14 +21,14 @@ public class Hometask {
     private static String DEADLINE, HOMETASK, SUBJECT;
 
     /**
-     * setDeadline the method assigns the entered deadline to the string
+     * The method assigns the entered deadline to the string
      * @param s a string that accepts the entered value
      */
     public static void setDeadline(String s){
         DEADLINE = s;
     }
     /**
-     * setHometask the method assigns the entered hometask to the string
+     * The method assigns the entered hometask to the string
      * @param s a string that accepts the entered value
      */
     public static void setHometask(String s){
@@ -36,7 +36,7 @@ public class Hometask {
     }
 
     /**
-     * setSubject the method assigns the entered subject to the string
+     * The method assigns the entered subject to the string
      * @param s a string that accepts the entered value
      */
     public static void setSubject(String s){
@@ -44,7 +44,7 @@ public class Hometask {
     }
 
     /**
-     * addHometask the method writes hometask like a string in format "num|subject|deadline|hometask" to a file
+     * The method writes hometask like a string in format "num|subject|deadline|hometask" to a file
      */
     public static void addHometask() throws IOException {
         int num = Hometask.getNum();
@@ -54,7 +54,7 @@ public class Hometask {
     }
 
     /**
-     * getNum the method counts the number of lines written and returns the line number we are writing
+     * The method counts the number of lines written and returns the line number we are writing
      * @return idx the line number we are writing
      */
     private static int getNum() throws IOException {
@@ -69,18 +69,18 @@ public class Hometask {
         return idx;
     }
 
-    public static void deleteHometask(Scanner input) throws IOException {
-        /*//Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
+    /*public static void deleteHometask(Scanner input) throws IOException {
+        //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
         System.out.println("Введите номер выплненного задания.");
         output();
         int num = input.nextInt();
         SecondaryFunctions.rewrite(filePath, num, "");
         System.out.println("Выполненное задание удалено.");
-        //input.close();*/
-    }
+        //input.close();
+    }*/
 
     /**
-     * StringOutput the method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Deadline Hometask"
+     * The method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Deadline Hometask"
      * @return res homework output string
      */
     public static String StringOutput() throws IOException{

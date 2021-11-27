@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * Class works with Marks
+ * This class works with Marks
  * @author Igor Baran
  * @version 3.0
  *
@@ -22,7 +22,7 @@ public class Marks {
     private static String SUBJECT, MARKS;
 
     /**
-     * setSubject the method assigns the entered subject to the string
+     * The method assigns the entered subject to the string
      * @param s a string that accepts the entered value
      */
     public static void setSubject(String s){
@@ -30,7 +30,7 @@ public class Marks {
     }
 
     /**
-     * setMarks the method assigns the entered marks to the string
+     * The method assigns the entered marks to the string
      * @param s a string that accepts the entered value
      */
     public static void setMarks(String s){
@@ -38,7 +38,7 @@ public class Marks {
     }
 
     /**
-     * addMarks the method reads information from a file, calculates a newline number, writes a newline in the format "num|subject|AverajeMark|marks"
+     * The method reads information from a file, calculates a newline number, writes a newline in the format "num|subject|AverajeMark|marks"
      */
     public static void addMarks() throws IOException {
         int idx, num = 1;
@@ -65,7 +65,7 @@ public class Marks {
     }
 
     /**
-     * averageMark the method calculates the average score for the selected subject
+     * The method calculates the average score for the selected subject
      * @param numOfSubject the number of the subject, the average mark for which you want to calculate
      * @return res an average mark
      */
@@ -108,7 +108,7 @@ public class Marks {
 
 
     /**
-     * StringOutput the method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Average Marks"
+     * The method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Average Marks"
      * @return res marks output string
      */
     public static String StringOutput() throws IOException {
