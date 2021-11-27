@@ -13,8 +13,8 @@
          <sonar.organization>ringo2901</sonar.organization>
          <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-         <maven.compiler.source>1.8</maven.compiler.source>
-         <maven.compiler.target>1.8</maven.compiler.target>
+         <maven.compiler.source>16</maven.compiler.source>
+         <maven.compiler.target>16</maven.compiler.target>
          <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
          <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
          <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
