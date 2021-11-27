@@ -757,7 +757,7 @@ getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
 javafx.scene.control.Skinnablejava.lang.Object,
 javafx.event.EventTargetjava.lang.Objectz
 javafx.css.Styleablejava.lang.ObjectP
-getStyleableNode():javafx.css.Styleable#getStyleableNode()Ljavafx/scene/Node;•›
+getStyleableNode():javafx.css.Styleable#getStyleableNode()Ljavafx/scene/Node;—‹
 javafx.scene.Nodejavafx.event.EventTargetjava.lang.Objectjavafx.css.Styleableh
 onTouchMovedProperty()Njavafx.scene.Node#onTouchMovedProperty()Ljavafx/beans/property/ObjectProperty;1
 prefHeight(D) javafx.scene.Node#prefHeight(D)D£
@@ -782,8 +782,7 @@ $nodeResolvedOrientationInvalidated()7javafx.scene.Node#nodeResolvedOrientation
 getOnMouseMoved()>javafx.scene.Node#getOnMouseMoved()Ljavafx/event/EventHandler;I
 computeDerivedDepthTest(),javafx.scene.Node#computeDerivedDepthTest()Vh
 treeVisibleProperty()Ojavafx.scene.Node#treeVisibleProperty()Ljavafx/beans/binding/BooleanExpression;/
-processCSS()javafx.scene.Node#processCSS()V=
-updateTreeShowing()&javafx.scene.Node#updateTreeShowing()Vn
+processCSS()javafx.scene.Node#processCSS()Vn
 onTouchReleasedProperty()Qjavafx.scene.Node#onTouchReleasedProperty()Ljavafx/beans/property/ObjectProperty;Ü
 0lookupAll(Ljavafx/css/Selector;Ljava/util/List;)Rjavafx.scene.Node#lookupAll(Ljavafx/css/Selector;Ljava/util/List;)Ljava/util/List;G
 getSubScene()6javafx.scene.Node#getSubScene()Ljavafx/scene/SubScene;S
@@ -999,8 +998,7 @@ getScene()0javafx.scene.Node#getScene()Ljavafx/scene/Scene;Q
 DnotifyAccessibleAttributeChanged(Ljavafx/scene/AccessibleAttribute;)Wjavafx.scene.Node#notifyAccessibleAttributeChanged(Ljavafx/scene/AccessibleAttribute;)VY
 getOnMouseReleased()Ajavafx.scene.Node#getOnMouseReleased()Ljavafx/event/EventHandler;d
 translateYProperty()Ljavafx.scene.Node#translateYProperty()Ljavafx/beans/property/DoubleProperty;?
-isFocusTraversable()'javafx.scene.Node#isFocusTraversable()Z9
-setTreeShowing(Z)$javafx.scene.Node#setTreeShowing(Z)V-
+isFocusTraversable()'javafx.scene.Node#isFocusTraversable()Z-
 getScaleX()javafx.scene.Node#getScaleX()DU
 getOrientationParent();javafx.scene.Node#getOrientationParent()Ljavafx/scene/Node;|
  onContextMenuRequestedProperty()Xjavafx.scene.Node#onContextMenuRequestedProperty()Ljavafx/beans/property/ObjectProperty;-
@@ -1039,8 +1037,7 @@ CaddEventFilter(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)Vjavafx.sce
 setScaleY(D)javafx.scene.Node#setScaleY(D)V{
 2setOnRotationFinished(Ljavafx/event/EventHandler;)Ejavafx.scene.Node#setOnRotationFinished(Ljavafx/event/EventHandler;)V/
 getOpacity()javafx.scene.Node#getOpacity()Dq
--setOnKeyReleased(Ljavafx/event/EventHandler;)@javafx.scene.Node#setOnKeyReleased(Ljavafx/event/EventHandler;)Vh
-treeShowingProperty()Ojavafx.scene.Node#treeShowingProperty()Ljavafx/beans/binding/BooleanExpression;^
+-setOnKeyReleased(Ljavafx/event/EventHandler;)@javafx.scene.Node#setOnKeyReleased(Ljavafx/event/EventHandler;)V^
 opacityProperty()Ijavafx.scene.Node#opacityProperty()Ljavafx/beans/property/DoubleProperty;l
 onMouseEnteredProperty()Pjavafx.scene.Node#onMouseEnteredProperty()Ljavafx/beans/property/ObjectProperty;W
 getOnDragDetected()@javafx.scene.Node#getOnDragDetected()Ljavafx/event/EventHandler;Q
@@ -1087,7 +1084,8 @@ CaddEventFilter(Ljavafx/event/EventType;Ljavafx/event/EventHandler;)Vjavafx.sce
 ,setOnDragExited(Ljavafx/event/EventHandler;)?javafx.scene.Node#setOnDragExited(Ljavafx/event/EventHandler;)V/
 prefWidth(D)javafx.scene.Node#prefWidth(D)D}
 'sceneToLocal(Ljavafx/geometry/Point2D;)Rjavafx.scene.Node#sceneToLocal(Ljavafx/geometry/Point2D;)Ljavafx/geometry/Point2D;l
-onZoomFinishedProperty()Pjavafx.scene.Node#onZoomFinishedProperty()Ljavafx/beans/property/ObjectProperty;;
+onZoomFinishedProperty()Pjavafx.scene.Node#onZoomFinishedProperty()Ljavafx/beans/property/ObjectProperty;ç
+;recalculateRelativeSizeProperties(Ljavafx/scene/text/Font;)Njavafx.scene.Node#recalculateRelativeSizeProperties(Ljavafx/scene/text/Font;)V;
 updateGeomBounds()%javafx.scene.Node#updateGeomBounds()V
 4traverse(Lcom/sun/javafx/scene/traversal/Direction;)Gjavafx.scene.Node#traverse(Lcom/sun/javafx/scene/traversal/Direction;)ZW
 getOnMousePressed()@javafx.scene.Node#getOnMousePressed()Ljavafx/event/EventHandler;i
