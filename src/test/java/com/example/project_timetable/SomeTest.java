@@ -1,4 +1,4 @@
-/*package com.example.project_timetable;
+package com.example.project_timetable;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,4 +13,4 @@ class SomeTest {
         obj.setNumber(5);
         assertEquals(5, obj.getNumber());
     }
-}*/
+}

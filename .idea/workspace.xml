@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Something">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Some.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Some.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
       <recent name="com.example.project_timetable" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.SomeTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -109,8 +105,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.SomeTest" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
