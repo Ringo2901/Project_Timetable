@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days/2.txt" afterDir="false" />
-    </list>
+    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,8 +48,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/conf/settings.xml" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48850575" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -93,18 +65,18 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
-      <command value="mvn install" />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=25dc711e974c38f6c214297a9ab99f063b0eb204 " />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=b0d1f13bfc06b571ac22d0beec49a44587f7a212" />
       <command value="mvn -v" />
       <command value="mvn -V" />
       <command value="mvn --version" />
       <command value="MAVEN_OPTS=&quot;-Xmx4G&quot;" />
+      <command value="mvn install" />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=da6bb001b8ebfc2e413f53760fa3ba052146e435" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SomeTest">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.HelloApplication" />
       <module name="Project_Timetable" />
@@ -144,6 +116,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SomeTest" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -187,9 +160,6 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project_Timetable$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1638043684774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.project_timetable.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1638038706299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.project_timetable.*</FILTER>
     </SUITE>
