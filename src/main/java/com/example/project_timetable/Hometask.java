@@ -97,12 +97,12 @@ public class Hometask {
             for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) deadline += s.charAt(idx);
             idx++;
             for( ; idx < s.length(); idx++) hometask += s.charAt(idx);
-            int itemLen = 3, subjectLen = 15, deadlineLen = 16;
+            int itemLen = 3, subjectLen = 12, deadlineLen = 16;
             res += itemNum + '.';
             for(int i = 0; i < itemLen - itemNum.length(); i++) res += " ";
             res += subject;
             for(int i = 0; i < subjectLen - subject.length(); i++) res += " ";
-            System.out.println(subjectLen - subject.length());
+            //System.out.println(subjectLen - subject.length());
             res += deadline;
             for(int i = 0; i < deadlineLen - deadline.length(); i++) res += " ";
             res += hometask + "\n";
