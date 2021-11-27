@@ -70,9 +70,42 @@ public class Marks {
      * @return res an average mark
      */
     public static float averageMark(int numOfSubject) throws IOException {
+        /*Scanner Marks = new Scanner(new File(filePath));
+        float average = 0;
+        while (Marks.hasNextLine()) {
+
+            String s = Marks.nextLine();
+            int idx;
+            String itemNum = "", subject = "", marksLine = "";
+            for (idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+            idx++;
+            for (; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
+            idx++;
+            for (; idx < s.length(); idx++) marksLine += s.charAt(idx);
+            /*int Sum = 0;
+            int N = 0;
+            String[] marks = marksLine.split(" ");
+            for (String mark : marks) {
+                Sum += Integer.valueOf(mark);
+                N++;
+                res = (float) Sum / N;
+            }*/
+            /*if (Integer.valueOf(itemNum) == numOfSubject) {
+                int Sum = 0;
+                int N = 0;
+                String[] marks = marksLine.split(" ");
+                for (String mark : marks) {
+                    Sum += Integer.valueOf(mark);
+                    N++;
+                    average = (float) Sum / N;
+                }
+            }
+        }*/
         float res = 10;
         return res;
+        //return average;
     }
+
 
     /**
      * StringOutput the method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Average Marks"
