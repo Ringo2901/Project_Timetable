@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Controller.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Project_Timetable</a> &gt; <a href="index.source.html" class="el_package">com.example.project_timetable</a> &gt; <span class="el_source">Controller.java</span></div><h1>Controller.java</h1><pre class="source lang-java linenums">package com.example.project_timetable;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+<span class="nc" id="L16">public class Controller {</span>
+    @FXML
+    public static Label errorLabel;
+    @FXML
+    public static void setError(String s) throws IOException {
+<span class="nc" id="L21">        errorLabel.setText(s);</span>
+<span class="nc" id="L22">    }</span>
+    @FXML
+    public Button timetableAddButton;
+    @FXML
+    public void addItemClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L27">        Timetable.setDay((String) day.getValue());</span>
+<span class="nc" id="L28">        Timetable.setItemNum(Integer.parseInt(numTimetable.getText()));</span>
+<span class="nc" id="L29">        Timetable.setSubject(subjectTimetable.getText());</span>
+<span class="nc" id="L30">        Timetable.setTeacher(teacherTimetable.getText());</span>
+<span class="nc" id="L31">        Timetable.changeTimetableItem();</span>
+<span class="nc" id="L32">        changeText(Timetable.StringOutput());</span>
+<span class="nc" id="L33">    }</span>
+   @FXML
+    public Button taskListAddButton;
+    @FXML
+    public void addTaskClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L38">        LocalDate localDate = LocalDate.now();</span>
+<span class="nc" id="L39">        localDate = taskDate.getValue();</span>
+<span class="nc" id="L40">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;dd.MM.yyyy&quot;);</span>
+<span class="nc" id="L41">        TaskList.setDeadline(localDate.format(formatter));</span>
+<span class="nc" id="L42">        TaskList.setTask(task.getText());</span>
+<span class="nc" id="L43">        TaskList.addTask();</span>
+<span class="nc" id="L44">        changeText(TaskList.StringOutput());</span>
+<span class="nc" id="L45">    }</span>
+    @FXML
+    public Button hometaskAddButton;
+    @FXML
+    public void addHometaskClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L50">        LocalDate localDate = LocalDate.now();</span>
+<span class="nc" id="L51">        localDate = hometaskDate.getValue();</span>
+<span class="nc" id="L52">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;dd.MM.yyyy&quot;);</span>
+<span class="nc" id="L53">        Hometask.setDeadline(localDate.format(formatter));</span>
+<span class="nc" id="L54">        Hometask.setSubject(subjectHometask.getText());</span>
+<span class="nc" id="L55">        Hometask.setHometask(hometask.getText());</span>
+<span class="nc" id="L56">        Hometask.addHometask();</span>
+<span class="nc" id="L57">        changeText(Hometask.StringOutput());</span>
+<span class="nc" id="L58">    }</span>
+    @FXML
+    public Button teachersAddButton;
+    @FXML
+    public void addTeacherClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L63">        Teachers.setNum(num.getText());</span>
+<span class="nc" id="L64">        Teachers.setSubject(subjectTeachers.getText());</span>
+<span class="nc" id="L65">        Teachers.setName(name.getText());</span>
+<span class="nc" id="L66">        Teachers.setInf(inf.getText());</span>
+<span class="nc" id="L67">        Teachers.addTeacher();</span>
+<span class="nc" id="L68">        changeText(Teachers.StringOutput());</span>
+<span class="nc" id="L69">    }</span>
+    @FXML
+    public Button MarksAddButton;
+    @FXML
+    public void addMarksClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L74">        Marks.setSubject(subject.getText());</span>
+<span class="nc" id="L75">        Marks.setMarks(marks.getText());</span>
+<span class="nc" id="L76">        Marks.addMarks();</span>
+<span class="nc" id="L77">        changeText(Marks.StringOutput());</span>
+<span class="nc" id="L78">    }</span>
+    @FXML
+    public ComboBox day;
+    @FXML
+    public Button TimetableButton;
+    @FXML
+    public void clickTimetable(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L85">        ObservableList&lt;String&gt; days = FXCollections.observableArrayList(&quot;Пн&quot;, &quot;Вт&quot;, &quot;Ср&quot;, &quot;Чт&quot;, &quot;Пт&quot;, &quot;Сб&quot;, &quot;Вс&quot;);</span>
+<span class="nc" id="L86">        day.setItems(days);</span>
+<span class="nc" id="L87">        day.setValue(&quot;Пн&quot;);</span>
+<span class="nc" id="L88">        changeText(Timetable.StringOutput());</span>
+
+<span class="nc" id="L90">        Grid1.setVisible(true);</span>
+<span class="nc" id="L91">        Grid2.setVisible(false);</span>
+<span class="nc" id="L92">        Grid3.setVisible(false);</span>
+<span class="nc" id="L93">        Grid4.setVisible(false);</span>
+<span class="nc" id="L94">        Grid5.setVisible(false);</span>
+
+<span class="nc" id="L96">    }</span>
+    @FXML
+    public Button HometaskButton;
+    @FXML
+    public void clickHometask(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L101">        changeText(Hometask.StringOutput());</span>
+<span class="nc" id="L102">        Grid1.setVisible(false);</span>
+<span class="nc" id="L103">        Grid2.setVisible(true);</span>
+<span class="nc" id="L104">        Grid3.setVisible(false);</span>
+<span class="nc" id="L105">        Grid4.setVisible(false);</span>
+<span class="nc" id="L106">        Grid5.setVisible(false);</span>
+
+<span class="nc" id="L108">    }</span>
+    @FXML
+    public Button TaskListButton;
+    @FXML
+    public void clickTaskList(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L113">        changeText(TaskList.StringOutput());</span>
+<span class="nc" id="L114">        Grid1.setVisible(false);</span>
+<span class="nc" id="L115">        Grid2.setVisible(false);</span>
+<span class="nc" id="L116">        Grid3.setVisible(true);</span>
+<span class="nc" id="L117">        Grid4.setVisible(false);</span>
+<span class="nc" id="L118">        Grid5.setVisible(false);</span>
+
+<span class="nc" id="L120">    }</span>
+    @FXML
+    public Button MarksButton;
+    @FXML
+    public void clickMarks(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L125">        changeText(Marks.StringOutput());</span>
+<span class="nc" id="L126">        Grid1.setVisible(false);</span>
+<span class="nc" id="L127">        Grid2.setVisible(false);</span>
+<span class="nc" id="L128">        Grid3.setVisible(false);</span>
+<span class="nc" id="L129">        Grid4.setVisible(true);</span>
+<span class="nc" id="L130">        Grid5.setVisible(false);</span>
+<span class="nc" id="L131">    }</span>
+    @FXML
+    public Button TeachersButton;
+    @FXML
+    public void clickTeachers(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L136">        changeText(Teachers.StringOutput());</span>
+<span class="nc" id="L137">        Grid1.setVisible(false);</span>
+<span class="nc" id="L138">        Grid2.setVisible(false);</span>
+<span class="nc" id="L139">        Grid3.setVisible(false);</span>
+<span class="nc" id="L140">        Grid4.setVisible(false);</span>
+<span class="nc" id="L141">        Grid5.setVisible(true);</span>
+<span class="nc" id="L142">    }</span>
+    @FXML
+    private TextFlow textflow;
+    @FXML
+    public void pasteText() throws IOException {
+<span class="nc" id="L147">        textflow.getChildren().add(text);</span>
+<span class="nc" id="L148">    }</span>
+    @FXML
+    private Text text;
+    @FXML
+    public void changeText(String s) throws IOException {
+<span class="nc" id="L153">        text.setText(s);</span>
+        //text.setFont(Font.font(&quot;Arial&quot;, 30));
+<span class="nc" id="L155">    }</span>
+    @FXML
+    public GridPane Grid1, Grid2, Grid3, Grid4, Grid5;
+    @FXML
+    public void inputTimetable(String s) throws IOException {
+<span class="nc" id="L160">        text.setText(s);</span>
+        //text.setFont(Font.font(&quot;Arial&quot;, 30));
+<span class="nc" id="L162">    }</span>
+    public TextField numTimetable, subjectTimetable, teacherTimetable;
+    public TextField task;
+    public DatePicker taskDate;
+    public TextField hometask, subjectHometask;
+    public DatePicker hometaskDate;
+    public TextField num, name, subjectTeachers, inf;
+    public TextField subject, marks;
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
