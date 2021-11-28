@@ -13,6 +13,9 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * The class calls all objects
+ */
 public class Controller {
 
     enum Status{
@@ -23,16 +26,31 @@ public class Controller {
         Contacts,
     }
     Status status;
+    /**
+     * label, which appears on error
+     */
     @FXML
     public static Label errorLabel;
 
+    /**
+     * the method shows errorLabel when we have an error in line
+     * @param s line, which has a problem
+     */
     @FXML
     public static void setError(String s) throws IOException {
         errorLabel.setText(s);
     }
 
+    /**
+     * button, which calls addItemClick
+     */
     @FXML
     public Button timetableAddButton;
+
+    /**
+     * the method add line in timetable
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void addItemClick(ActionEvent actionEvent) throws IOException {
         Timetable.setDay((String) day.getValue());
@@ -42,8 +60,15 @@ public class Controller {
         Timetable.changeTimetableItem();
         changeText(Timetable.StringOutput());
     }
+    /**
+     * button, which calls addTaskClick
+     */
     @FXML
     public Button taskListAddButton;
+    /**
+     * the method add line in tasklist
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void addTaskClick(ActionEvent actionEvent) throws IOException {
         LocalDate localDate = LocalDate.now();
@@ -54,8 +79,15 @@ public class Controller {
         TaskList.addTask();
         changeText(TaskList.StringOutput());
     }
+    /**
+     * button, which calls hometaskAddButton
+     */
     @FXML
     public Button hometaskAddButton;
+    /**
+     * the method add line in hometask
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void addHometaskClick(ActionEvent actionEvent) throws IOException {
         LocalDate localDate = LocalDate.now();
@@ -67,8 +99,15 @@ public class Controller {
         Hometask.addHometask();
         changeText(Hometask.StringOutput());
     }
+    /**
+     * button, which calls addTeacherClick
+     */
     @FXML
     public Button teachersAddButton;
+    /**
+     * the method add line in teachers
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void addTeacherClick(ActionEvent actionEvent) throws IOException {
         Teachers.setNum(num.getText());
@@ -78,8 +117,15 @@ public class Controller {
         Teachers.addTeacher();
         changeText(Teachers.StringOutput());
     }
+    /**
+     * button, which calls addMarksClick
+     */
     @FXML
     public Button MarksAddButton;
+    /**
+     * the method add line in marks
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void addMarksClick(ActionEvent actionEvent) throws IOException {
         Marks.setSubject(subject.getText());
