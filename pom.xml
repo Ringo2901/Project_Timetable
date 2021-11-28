@@ -12,7 +12,6 @@
     <id>sonar</id>
     <properties>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.organization>ringo2901</sonar.organization>
     </properties>
     <build>
         <plugins>
@@ -32,7 +31,6 @@
      <properties>
          <sonar.organization>ringo2901</sonar.organization>
          <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
          <maven.compiler.source>17</maven.compiler.source>
          <maven.compiler.target>17</maven.compiler.target>
          <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
