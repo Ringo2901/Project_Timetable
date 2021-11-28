@@ -148,7 +148,7 @@ public class Timetable {
     /**
      * The method changes timetable
      */
-    public static void changeTimetableItem() throws IOException {
+    public static void changeTimetableItem() throws IOException {//
         Scanner sc = new Scanner (System.in);
         String filePath = filePathBeginning + Integer.toString(NUMOFWEEK) + "\\" + Integer.toString(numOfDay(DAY)) + ".txt";
         String lessonName = "";
