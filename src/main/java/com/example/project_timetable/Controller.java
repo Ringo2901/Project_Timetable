@@ -133,11 +133,21 @@ public class Controller {
         Marks.addMarks();
         changeText(Marks.StringOutput());
     }
+
+    /**
+     * ComboBox include all buttons for deleting
+     */
     @FXML
     public ComboBox dayDeleting;
+    /**
+     * button, which calls deleting
+     */
     @FXML
     public Button deletingButton;
     @FXML
+    /**
+     * the method deletes line in marks
+     */
     public void deleting(ActionEvent actionEvent) throws IOException {
         if (status == Status.Timetable){
             ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
@@ -170,10 +180,22 @@ public class Controller {
 
 
     }
+
+    /**
+     * ComboBox of days
+     */
     @FXML
     public ComboBox day;
+    /**
+     * button, which calls clickTimetable
+     */
     @FXML
     public Button TimetableButton;
+
+    /**
+     * the method add new line in Timetable
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void clickTimetable(ActionEvent actionEvent) throws IOException {
         status = Status.Timetable;
@@ -192,8 +214,15 @@ public class Controller {
         DeletingGrid2.setVisible(true);
 
     }
+    /**
+     * button, which calls clickHometask
+     */
     @FXML
     public Button HometaskButton;
+    /**
+     * the method add new line in Hometask
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void clickHometask(ActionEvent actionEvent) throws IOException {
         status = Status.Hometask;
@@ -207,8 +236,15 @@ public class Controller {
         DeletingGrid2.setVisible(false);
 
     }
+    /**
+     * button, which calls clickTaskList
+     */
     @FXML
     public Button TaskListButton;
+    /**
+     * the method add new line in Tasklist
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void clickTaskList(ActionEvent actionEvent) throws IOException {
         status = Status.Tasklist;
@@ -222,8 +258,15 @@ public class Controller {
         DeletingGrid2.setVisible(false);
 
     }
+    /**
+     * button, which calls clickMarks
+     */
     @FXML
     public Button MarksButton;
+    /**
+     * the method add new line in Marks
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void clickMarks(ActionEvent actionEvent) throws IOException {
         status = Status.Marks;
@@ -236,8 +279,15 @@ public class Controller {
         DeletingGrid.setVisible(true);
         DeletingGrid2.setVisible(false);
     }
+    /**
+     * button, which calls clickTeachers
+     */
     @FXML
     public Button TeachersButton;
+    /**
+     * the method add new line in Teachers
+     * @param actionEvent pressing the button
+     */
     @FXML
     public void clickTeachers(ActionEvent actionEvent) throws IOException {
         status = Status.Contacts;
@@ -250,6 +300,7 @@ public class Controller {
         DeletingGrid.setVisible(true);
         DeletingGrid2.setVisible(false);
     }
+    
     @FXML
     private TextFlow textflow;
     @FXML
