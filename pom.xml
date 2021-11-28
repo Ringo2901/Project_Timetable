@@ -25,7 +25,33 @@
             </plugin>
         </plugins>
     </build>
-</profile></profiles>
+</profile>
+    <profile>
+        <id>coverage</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.7</version>
+                    <executions>
+                        <execution>
+                            <id>prepare-agent</id>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>report</id>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </profile></profiles>
 
 
      <properties>
@@ -36,6 +62,7 @@
          <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
          <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
          <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
          <sonar.language>java</sonar.language>
          <java.version>17</java.version>
 

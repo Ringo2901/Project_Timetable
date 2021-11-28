@@ -1,4 +1,0 @@
---patch-module
-com.example.project_timetable=_
---add-reads
-com.example.project_timetable=ALL-UNNAMED
