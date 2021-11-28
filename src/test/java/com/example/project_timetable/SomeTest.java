@@ -10,7 +10,6 @@ class SomeTest {
     @Test
     void getNumber() {
         Some obj = new Some();
-        obj.setNumber(5);
-        assertEquals(5, obj.getNumber());
+        assertEquals(5, obj.Sum(5));
     }
 }

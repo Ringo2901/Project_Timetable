@@ -35,7 +35,8 @@ public class HelloApplication extends Application {
 
         launch();
         Some obj = new Some();
-        obj.setNumber(5);
+        System.out.println(obj.Sum(5));
+
 
     }
 }
