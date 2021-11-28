@@ -196,14 +196,7 @@ public class Controller {
 
     }
 
-    /**
-     * ComboBox of days
-     */
-    @FXML
-    public ComboBox day;
-    /**
-     * button, which calls clickTimetable
-     */
+
     @FXML
     public Button timetableButton;
 
@@ -410,6 +403,14 @@ public class Controller {
      * text for deleting something
      */
     public TextField deleteNum, deleteNum1;
+    /**
+     * ComboBox of days
+     */
+    @FXML
+    public ComboBox day;
+    /**
+     * button, which calls clickTimetable
+     */
 
     public Spinner<Integer> weekSpinner;
     public void spinnerInitialize(){
