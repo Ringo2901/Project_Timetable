@@ -8,65 +8,65 @@
     <artifactId>Project_Timetable</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Project_Timetable</name>
-<profiles><profile>
-    <id>sonar</id>
-    <properties>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-</profile>
-    <profile>
-        <id>coverage</id>
+    <profiles><profile>
+        <id>sonar</id>
+        <properties>
+            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        </properties>
         <build>
             <plugins>
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.7</version>
-                    <executions>
-                        <execution>
-                            <id>prepare-agent</id>
-                            <goals>
-                                <goal>prepare-agent</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>report</id>
-                            <goals>
-                                <goal>report</goal>
-                            </goals>
-                        </execution>
-                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
                 </plugin>
             </plugins>
         </build>
-    </profile></profiles>
+    </profile>
+        <profile>
+            <id>coverage</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>0.8.7</version>
+                        <executions>
+                            <execution>
+                                <id>prepare-agent</id>
+                                <goals>
+                                    <goal>prepare-agent</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>report</id>
+                                <goals>
+                                    <goal>report</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile></profiles>
 
 
-     <properties>
-         <sonar.organization>ringo2901</sonar.organization>
-         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-         <maven.compiler.source>17</maven.compiler.source>
-         <maven.compiler.target>17</maven.compiler.target>
-         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-         <sonar.language>java</sonar.language>
-         <java.version>17</java.version>
+    <properties>
+        <sonar.organization>ringo2901</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.language>java</sonar.language>
+        <java.version>17</java.version>
 
-     </properties>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -204,6 +204,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
+                <configuration>
+                    <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
+                    <argLine>--add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED</argLine>
+                    <argLine>--add-opens com.example.project_timetable/com.example.project_timetable=ALL-UNNAMED</argLine>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
