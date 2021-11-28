@@ -56,16 +56,19 @@
 
     <properties>
         <sonar.jdbc.dialect>mssql</sonar.jdbc.dialect>
-        <sonar.binaries>build/classes</sonar.binaries>
+        <sonar.binaries>${project.basedir}/../target/classes</sonar.binaries>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.projectKey>com.example.project_timetable:Project_Timetable</sonar.projectKey>
+        <sonar.projectName>Project_Timetable</sonar.projectName>
+        <sonar.projectVersion>1.0-SNAPSHOT</sonar.projectVersion>
         <sonar.organization>ringo2901</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.binaries>${project.basedir}/../target/classes</sonar.binaries>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.language>java</sonar.language>
         <java.version>17</java.version>
 
@@ -208,6 +211,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
+                    <argLine>@{argLine} --illegal-access=permit</argLine>
                     <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
                     <argLine>--add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED</argLine>
                     <argLine>--add-opens com.example.project_timetable/com.example.project_timetable=ALL-UNNAMED</argLine>
