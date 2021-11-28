@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding 4 types of week">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.SomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.SomeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.SomeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.SomeTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

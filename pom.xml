@@ -55,6 +55,11 @@
 
 
     <properties>
+        <sonar.jdbc.dialect>mssql</sonar.jdbc.dialect>
+
+        <sonar.binaries>build/classes</sonar.binaries>
+
+        <sonar.junit.reportsPath>build/test-reports</sonar.junit.reportsPath>
         <sonar.organization>ringo2901</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <maven.compiler.source>17</maven.compiler.source>
