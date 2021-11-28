@@ -205,23 +205,22 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
                 <configuration>
+                    <dataFile>target/jacoco.exec</dataFile>
                     <append>true</append>
                 </configuration>
                 <executions>
                     <execution>
-                        <id>prepare-agent</id>
+                        <id>pre-unit-test</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <propertyName>jacoco.agent.argLine</propertyName>
+                            <destFile>target/jacoco.exec</destFile>
+                        </configuration>
                     </execution>
                     <execution>
-                        <id>prepare-agent-integration</id>
-                        <goals>
-                            <goal>prepare-agent-integration</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>jacoco-site</id>
+                        <id>default-report</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>report</goal>

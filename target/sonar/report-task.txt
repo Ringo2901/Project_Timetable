@@ -1,0 +1,7 @@
+organization=ringo2901
+projectKey=com.example.project_timetable:Project_Timetable
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.25123
+dashboardUrl=https://sonarcloud.io/dashboard?id=com.example.project_timetable%3AProject_Timetable
+ceTaskId=AX1mqbhnObANQAP1rioc
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX1mqbhnObANQAP1rioc

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HelloApplication.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Project_Timetable</a> &gt; <a href="index.source.html" class="el_package">com.example.project_timetable</a> &gt; <span class="el_source">HelloApplication.java</span></div><h1>HelloApplication.java</h1><pre class="source lang-java linenums">package com.example.project_timetable;
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileInputStream;
+import java.util.Scanner;
+import java.io.*;
+
+<span class="nc" id="L25">public class HelloApplication extends Application {</span>
+    @Override
+    public void start(Stage stage) throws IOException {
+<span class="nc" id="L28">        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(&quot;hello-view.fxml&quot;));</span>
+<span class="nc" id="L29">        Scene scene = new Scene(fxmlLoader.load());</span>
+<span class="nc" id="L30">        stage.setScene(scene);</span>
+<span class="nc" id="L31">        stage.show();</span>
+<span class="nc" id="L32">    }</span>
+
+    public static void main(String[] args) throws IOException {
+
+<span class="nc" id="L36">        launch();</span>
+            /*
+                FileReader in = null;   //классы, хранящие инфу о том в какие файлы осуществляется ввод/вывод
+                FileReader out = null;
+
+                File fileMarks = new File(&quot;src\\main\\resources\\marks.txt&quot;), // файлы в которых хранятся данные
+                        fileTeachers = new File(&quot;src\\main\\resources\\teachers.txt&quot;),
+                        fileHometask = new File(&quot;src\\main\\resources\\hometask.txt&quot;),
+                        fileTasks = new File(&quot;src\\main\\resources\\tasks.txt&quot;);
+
+                String functionNumber = &quot;&quot;;    // номер выбранной команды
+                int n;
+                Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+                System.out.println(&quot;Здравствуй, пользователь!\n&quot; +
+                        &quot;Список доступных функций:\n&quot; +
+                        &quot;1. Добаление/редактирование расписания\n&quot; +
+                        &quot;2. Добавление/редактирование задач\n&quot; +
+                        &quot;3. Добавление данных о преподавателе\n&quot; +
+                        &quot;4. Добавление/редактирование домашнего задания\n&quot; +
+                        &quot;5. Удаление задач\n&quot; +
+                        &quot;6. Удаление домашнего задания\n&quot; +
+                        &quot;7. Вывод расписания\n&quot; +
+                        &quot;8. Вывод домашнего задания\n&quot; +
+                        &quot;9. Вывод списка задач&quot;);// вывод начального текста(можно также сделать из файла)
+
+
+                boolean b = true;
+
+                while(true) {
+
+                    System.out.println(&quot;Пожалуйста, введите номер функции или введите 'выход', чтобы завершить исполнение программы!&quot;);
+                    //Scanner input = new Scanner (System.in); // Сканнер для ввода в консоль
+                    //while(!input.hasNextLine()){}
+                    //functionNumber = input.nextLine(); // ввод номера функции
+                    //System.out.println(functionNumber);
+                    while(!input.hasNextLine()){}
+                    functionNumber = input.nextLine();
+                    switch (functionNumber) {       //выбор функции пользователем
+                        case (&quot;выход&quot;): {
+                            System.out.println(&quot;Пока!&quot;);
+                            return;
+                        }
+                        case (&quot;Выход&quot;): {
+                            System.out.println(&quot;Пока!&quot;);
+                            return;
+                        }
+                        case (&quot;1&quot;): {
+                            Timetable.changeTimetableItem(input);
+                        }
+                        break;
+                        case (&quot;2&quot;): {
+                            TaskList.addTask(input);
+                        }
+                        break;
+                        case (&quot;3&quot;): {
+                            Teachers.addTeacher(input);
+                        }
+                        break;
+                        case (&quot;4&quot;): {
+                            Hometask.addHometask(input);
+                        }
+                        break;
+                        case (&quot;5&quot;): {
+                            TaskList.deleteTask(input);
+                        }
+                        break;
+                        case (&quot;6&quot;): {
+                            Hometask.deleteHometask(input);
+                        }
+                        break;
+                        case (&quot;7&quot;): {
+                            Timetable.output();
+                        }
+                        break;
+                        case (&quot;8&quot;): {
+                            Hometask.output();
+                        }
+                        break;
+                        case (&quot;9&quot;): {
+                            TaskList.output();
+                        }
+                        break;
+                        default:
+                            System.out.println(&quot;Sorry, this function is not available&quot;);
+                            break;
+                    }
+                    functionNumber = &quot;&quot;;
+                    input.reset();
+                }*/
+<span class="nc" id="L125">            }</span>
+        }
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

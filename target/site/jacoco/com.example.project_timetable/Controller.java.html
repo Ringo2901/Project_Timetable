@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Controller.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Project_Timetable</a> &gt; <a href="index.source.html" class="el_package">com.example.project_timetable</a> &gt; <span class="el_source">Controller.java</span></div><h1>Controller.java</h1><pre class="source lang-java linenums">package com.example.project_timetable;
+
+import javafx.fxml.FXML;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+/**
+ * The class calls all objects
+ */
+<span class="nc" id="L19">public class Controller {</span>
+
+<span class="nc" id="L21">    enum Status{</span>
+<span class="nc" id="L22">        Timetable,</span>
+<span class="nc" id="L23">        Hometask,</span>
+<span class="nc" id="L24">        Tasklist,</span>
+<span class="nc" id="L25">        Marks,</span>
+<span class="nc" id="L26">        Contacts,</span>
+    }
+    Status status;
+    /**
+     * label, which appears on error
+     */
+    @FXML
+    public static Label errorLabel;
+
+    /**
+     * the method shows errorLabel when we have an error in line
+     * @param s line, which has a problem
+     */
+    @FXML
+    public static void setError(String s) throws IOException {
+<span class="nc" id="L41">        errorLabel.setText(s);</span>
+<span class="nc" id="L42">    }</span>
+
+    /**
+     * button, which calls addItemClick
+     */
+    @FXML
+    public Button timetableAddButton;
+
+    /**
+     * the method add line in timetable
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void addItemClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L56">        Timetable.setDay((String) day.getValue());</span>
+<span class="nc" id="L57">        Timetable.setItemNum(Integer.parseInt(numTimetable.getText()));</span>
+<span class="nc" id="L58">        Timetable.setSubject(subjectTimetable.getText());</span>
+<span class="nc" id="L59">        Timetable.setTeacher(teacherTimetable.getText());</span>
+<span class="nc" id="L60">        Timetable.changeTimetableItem();</span>
+<span class="nc" id="L61">        changeText(Timetable.StringOutput());</span>
+<span class="nc" id="L62">    }</span>
+    /**
+     * button, which calls addTaskClick
+     */
+    @FXML
+    public Button taskListAddButton;
+    /**
+     * the method add line in tasklist
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void addTaskClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L74">        LocalDate localDate = LocalDate.now();</span>
+<span class="nc" id="L75">        localDate = taskDate.getValue();</span>
+<span class="nc" id="L76">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;dd.MM.yyyy&quot;);</span>
+<span class="nc" id="L77">        TaskList.setDeadline(localDate.format(formatter));</span>
+<span class="nc" id="L78">        TaskList.setTask(task.getText());</span>
+<span class="nc" id="L79">        TaskList.addTask();</span>
+<span class="nc" id="L80">        changeText(TaskList.StringOutput());</span>
+<span class="nc" id="L81">    }</span>
+    /**
+     * button, which calls hometaskAddButton
+     */
+    @FXML
+    public Button hometaskAddButton;
+    /**
+     * the method add line in hometask
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void addHometaskClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L93">        LocalDate localDate = LocalDate.now();</span>
+<span class="nc" id="L94">        localDate = hometaskDate.getValue();</span>
+<span class="nc" id="L95">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;dd.MM.yyyy&quot;);</span>
+<span class="nc" id="L96">        Hometask.setDeadline(localDate.format(formatter));</span>
+<span class="nc" id="L97">        Hometask.setSubject(subjectHometask.getText());</span>
+<span class="nc" id="L98">        Hometask.setHometask(hometask.getText());</span>
+<span class="nc" id="L99">        Hometask.addHometask();</span>
+<span class="nc" id="L100">        changeText(Hometask.StringOutput());</span>
+<span class="nc" id="L101">    }</span>
+    /**
+     * button, which calls addTeacherClick
+     */
+    @FXML
+    public Button teachersAddButton;
+    /**
+     * the method add line in teachers
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void addTeacherClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L113">        Teachers.setNum(num.getText());</span>
+<span class="nc" id="L114">        Teachers.setSubject(subjectTeachers.getText());</span>
+<span class="nc" id="L115">        Teachers.setName(name.getText());</span>
+<span class="nc" id="L116">        Teachers.setInf(inf.getText());</span>
+<span class="nc" id="L117">        Teachers.addTeacher();</span>
+<span class="nc" id="L118">        changeText(Teachers.StringOutput());</span>
+<span class="nc" id="L119">    }</span>
+    /**
+     * button, which calls addMarksClick
+     */
+    @FXML
+    public Button MarksAddButton;
+    /**
+     * the method add line in marks
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void addMarksClick(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L131">        Marks.setSubject(subject.getText());</span>
+<span class="nc" id="L132">        Marks.setMarks(marks.getText());</span>
+<span class="nc" id="L133">        Marks.addMarks();</span>
+<span class="nc" id="L134">        changeText(Marks.StringOutput());</span>
+<span class="nc" id="L135">    }</span>
+
+    /**
+     * ComboBox include all buttons for deleting
+     */
+    @FXML
+    public ComboBox dayDeleting;
+    /**
+     * button, which calls deleting
+     */
+    @FXML
+    public Button deletingButton;
+    @FXML
+    /**
+     * the method deletes line in marks
+     */
+    public void deleting(ActionEvent actionEvent) throws IOException {
+<span class="nc bnc" id="L152" title="All 2 branches missed.">        if (status == Status.Timetable){</span>
+<span class="nc" id="L153">            ObservableList&lt;String&gt; days = FXCollections.observableArrayList(&quot;Пн&quot;, &quot;Вт&quot;, &quot;Ср&quot;, &quot;Чт&quot;, &quot;Пт&quot;, &quot;Сб&quot;, &quot;Вс&quot;);</span>
+<span class="nc" id="L154">            day.setItems(days);</span>
+<span class="nc" id="L155">            day.setValue(&quot;Пн&quot;);</span>
+<span class="nc" id="L156">            Timetable.deleteTimetableItem((String) dayDeleting.getValue(), Integer.parseInt(deleteNum1.getText()));</span>
+<span class="nc" id="L157">            changeText(Timetable.StringOutput());</span>
+        }
+
+<span class="nc bnc" id="L160" title="All 2 branches missed.">            if (status == Status.Hometask){</span>
+<span class="nc" id="L161">                Hometask.deleteHometask(Integer.parseInt(deleteNum.getText()));</span>
+<span class="nc" id="L162">                changeText(Hometask.StringOutput());</span>
+            }
+
+<span class="nc bnc" id="L165" title="All 2 branches missed.">            else if (status == Status.Tasklist){</span>
+<span class="nc" id="L166">                TaskList.deleteTask(Integer.parseInt(deleteNum.getText()));</span>
+<span class="nc" id="L167">                changeText(TaskList.StringOutput());</span>
+            }
+
+<span class="nc bnc" id="L170" title="All 2 branches missed.">            else if (status == Status.Marks){</span>
+<span class="nc" id="L171">                Marks.deleteMarks(Integer.parseInt(deleteNum.getText()));</span>
+<span class="nc" id="L172">                changeText(Marks.StringOutput());</span>
+            }
+
+<span class="nc bnc" id="L175" title="All 2 branches missed.">            else if (status == Status.Contacts){</span>
+<span class="nc" id="L176">                Teachers.deleteTeacher(Integer.parseInt(deleteNum.getText()));</span>
+<span class="nc" id="L177">                changeText(Teachers.StringOutput());</span>
+            }
+
+
+
+<span class="nc" id="L182">    }</span>
+
+    /**
+     * ComboBox of days
+     */
+    @FXML
+    public ComboBox day;
+    /**
+     * button, which calls clickTimetable
+     */
+    @FXML
+    public Button TimetableButton;
+
+    /**
+     * the method add new line in Timetable
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void clickTimetable(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L201">        status = Status.Timetable;</span>
+<span class="nc" id="L202">        ObservableList&lt;String&gt; days = FXCollections.observableArrayList(&quot;Пн&quot;, &quot;Вт&quot;, &quot;Ср&quot;, &quot;Чт&quot;, &quot;Пт&quot;, &quot;Сб&quot;, &quot;Вс&quot;);</span>
+<span class="nc" id="L203">        dayDeleting.setItems(days);</span>
+<span class="nc" id="L204">        dayDeleting.setValue(&quot;Пн&quot;);</span>
+<span class="nc" id="L205">        changeText(Timetable.StringOutput());</span>
+
+<span class="nc" id="L207">        Grid1.setVisible(true);</span>
+<span class="nc" id="L208">        Grid2.setVisible(false);</span>
+<span class="nc" id="L209">        Grid3.setVisible(false);</span>
+<span class="nc" id="L210">        Grid4.setVisible(false);</span>
+<span class="nc" id="L211">        Grid5.setVisible(false);</span>
+
+<span class="nc" id="L213">        DeletingGrid.setVisible(false);</span>
+<span class="nc" id="L214">        DeletingGrid2.setVisible(true);</span>
+
+<span class="nc" id="L216">    }</span>
+    /**
+     * button, which calls clickHometask
+     */
+    @FXML
+    public Button HometaskButton;
+    /**
+     * the method add new line in Hometask
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void clickHometask(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L228">        status = Status.Hometask;</span>
+<span class="nc" id="L229">        changeText(Hometask.StringOutput());</span>
+<span class="nc" id="L230">        Grid1.setVisible(false);</span>
+<span class="nc" id="L231">        Grid2.setVisible(true);</span>
+<span class="nc" id="L232">        Grid3.setVisible(false);</span>
+<span class="nc" id="L233">        Grid4.setVisible(false);</span>
+<span class="nc" id="L234">        Grid5.setVisible(false);</span>
+<span class="nc" id="L235">        DeletingGrid.setVisible(true);</span>
+<span class="nc" id="L236">        DeletingGrid2.setVisible(false);</span>
+
+<span class="nc" id="L238">    }</span>
+    /**
+     * button, which calls clickTaskList
+     */
+    @FXML
+    public Button TaskListButton;
+    /**
+     * the method add new line in Tasklist
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void clickTaskList(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L250">        status = Status.Tasklist;</span>
+<span class="nc" id="L251">        changeText(TaskList.StringOutput());</span>
+<span class="nc" id="L252">        Grid1.setVisible(false);</span>
+<span class="nc" id="L253">        Grid2.setVisible(false);</span>
+<span class="nc" id="L254">        Grid3.setVisible(true);</span>
+<span class="nc" id="L255">        Grid4.setVisible(false);</span>
+<span class="nc" id="L256">        Grid5.setVisible(false);</span>
+<span class="nc" id="L257">        DeletingGrid.setVisible(true);</span>
+<span class="nc" id="L258">        DeletingGrid2.setVisible(false);</span>
+
+<span class="nc" id="L260">    }</span>
+    /**
+     * button, which calls clickMarks
+     */
+    @FXML
+    public Button MarksButton;
+    /**
+     * the method add new line in Marks
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void clickMarks(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L272">        status = Status.Marks;</span>
+<span class="nc" id="L273">        changeText(Marks.StringOutput());</span>
+<span class="nc" id="L274">        Grid1.setVisible(false);</span>
+<span class="nc" id="L275">        Grid2.setVisible(false);</span>
+<span class="nc" id="L276">        Grid3.setVisible(false);</span>
+<span class="nc" id="L277">        Grid4.setVisible(true);</span>
+<span class="nc" id="L278">        Grid5.setVisible(false);</span>
+<span class="nc" id="L279">        DeletingGrid.setVisible(true);</span>
+<span class="nc" id="L280">        DeletingGrid2.setVisible(false);</span>
+<span class="nc" id="L281">    }</span>
+    /**
+     * button, which calls clickTeachers
+     */
+    @FXML
+    public Button TeachersButton;
+    /**
+     * the method add new line in Teachers
+     * @param actionEvent pressing the button
+     */
+    @FXML
+    public void clickTeachers(ActionEvent actionEvent) throws IOException {
+<span class="nc" id="L293">        status = Status.Contacts;</span>
+<span class="nc" id="L294">        changeText(Teachers.StringOutput());</span>
+<span class="nc" id="L295">        Grid1.setVisible(false);</span>
+<span class="nc" id="L296">        Grid2.setVisible(false);</span>
+<span class="nc" id="L297">        Grid3.setVisible(false);</span>
+<span class="nc" id="L298">        Grid4.setVisible(false);</span>
+<span class="nc" id="L299">        Grid5.setVisible(true);</span>
+<span class="nc" id="L300">        DeletingGrid.setVisible(true);</span>
+<span class="nc" id="L301">        DeletingGrid2.setVisible(false);</span>
+<span class="nc" id="L302">    }</span>
+
+    /**
+     * text box
+     */
+    @FXML
+    private TextFlow textflow;
+
+    /**
+     * the method add some text in textbox
+     */
+    @FXML
+    public void pasteText() throws IOException {
+<span class="nc" id="L315">        textflow.getChildren().add(text);</span>
+<span class="nc" id="L316">    }</span>
+
+    /**
+     * some text
+     */
+    @FXML
+    private Text text;
+
+    /**
+     * the method changes some text
+     * @param s line, which include changed text
+     */
+    @FXML
+    public void changeText(String s) throws IOException {
+<span class="nc" id="L330">        text.setText(s);</span>
+        //text.setFont(Font.font(&quot;Arial&quot;, 30));
+<span class="nc" id="L332">    }</span>
+
+    /**
+     * all combinations of buttons for each function
+     */
+    @FXML
+    public GridPane Grid1, Grid2, Grid3, Grid4, Grid5, DeletingGrid, DeletingGrid2;
+
+    /**
+     * the method add subject in timetable
+     * @param s line? which includes new subject
+     */
+    @FXML
+    public void inputTimetable(String s) throws IOException {
+<span class="nc" id="L346">        text.setText(s);</span>
+        //text.setFont(Font.font(&quot;Arial&quot;, 30));
+<span class="nc" id="L348">    }</span>
+
+    /**
+     * text for adding new subject in timetable
+     */
+    public TextField numTimetable, subjectTimetable, teacherTimetable;
+    /**
+     * text for adding new task in tasklist
+     */
+    public TextField task;
+    /**
+     * data for adding new task in tasklist
+     */
+    public DatePicker taskDate;
+    /**
+     * text for adding new hometask in hometask
+     */
+    public TextField hometask, subjectHometask;
+    /**
+     * data for adding nw hometask in hometask
+     */
+    public DatePicker hometaskDate;
+    /**
+     * text for adding new teacher in teachers
+     */
+    public TextField num, name, subjectTeachers, inf;
+    /**
+     * text for addding new marksline in marks
+     */
+    public TextField subject, marks;
+    /**
+     * text for deleting something
+     */
+    public TextField deleteNum, deleteNum1;
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

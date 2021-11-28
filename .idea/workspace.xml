@@ -7,11 +7,6 @@
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +82,15 @@
       <command value="mvn --version" />
       <command value="MAVEN_OPTS=&quot;-Xmx4G&quot;" />
       <command value="mvn install" />
-      <command value="mvn clean" />
       <command value="mvn clean verify sonar:sonar -Dsonar.login=da6bb001b8ebfc2e413f53760fa3ba052146e435" />
       <command value="mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar" />
       <command value="mvn clean verify -P sonar \     -Dsonar.login=$SONAR_LOGIN_TOKEN" />
       <command value="mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Ringo2901_Project_Timetable_New" />
       <command value="mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Ringo2901_Project_Timetable" />
       <command value="mvn clean verify" />
+      <command value="mvn clean" />
+      <command value="mvn verify" />
+      <command value="mvn clean verify sonar:sonar -Dsonar.login=e0742659683923b9536fb663be4e270218cf11dc" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SomeTest">
@@ -181,7 +178,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1638038706299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1638104286362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.project_timetable.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest__1_.ic" NAME="SomeTest (1) Coverage Results" MODIFIED="1637753137777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
