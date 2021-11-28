@@ -98,7 +98,7 @@
       <command value="mvn clean verify sonar:sonar -Dsonar.login=e0742659683923b9536fb663be4e270218cf11dc" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.SomeTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.HelloApplication" />
@@ -138,8 +138,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.SomeTest" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.example.project_timetable.SomeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.084 s <<< FAILURE! - in com.example.project_timetable.SomeTest
+com.example.project_timetable.SomeTest.getNumber  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make com.example.project_timetable.SomeTest() accessible: module com.example.project_timetable does not "opens com.example.project_timetable" to unnamed module @67784306
+
