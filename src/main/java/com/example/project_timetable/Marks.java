@@ -141,6 +141,10 @@ public class Marks {
         output.close();
         return res;
     }
+    /**
+     * The method delete selected line
+     * @param num the number of deleted line
+     */
     public static void deleteMarks(int num) throws IOException {
         SecondaryFunctions.rewrite(filePath, num, "");
     }

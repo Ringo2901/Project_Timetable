@@ -121,6 +121,10 @@ public class TaskList {
 
         //input.close();
     }*/
+    /**
+     * The method delete selected line
+     * @param num the number of deleted line
+     */
     public static void deleteTask(int num) throws IOException {
         SecondaryFunctions.rewrite(filePath, num, "");
     }

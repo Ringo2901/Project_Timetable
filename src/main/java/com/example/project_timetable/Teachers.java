@@ -104,6 +104,11 @@ public class Teachers {
         output.close();
         return res;
     }
+
+    /**
+     * The method delete selected line
+     * @param num the number of deleted line
+     */
     public static void deleteTeacher(int num) throws IOException {
         SecondaryFunctions.rewrite(filePath, num, "");
     }

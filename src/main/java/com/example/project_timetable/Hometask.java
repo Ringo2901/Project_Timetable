@@ -112,6 +112,10 @@ public class Hometask {
         }
         return res;
     }
+    /**
+     * The method delete selected line
+     * @param num the number of deleted line
+     */
     public static void deleteHometask(int num) throws IOException {
         SecondaryFunctions.rewrite(filePath, num, "");
     }

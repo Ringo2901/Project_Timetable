@@ -154,6 +154,12 @@ public class Timetable {
         SecondaryFunctions.rewrite(filePath, ITEMNUM, newItem); // перезапись файла
         sc.close();
     }
+
+    /**
+     * The method delete selected subject
+     * @param day the number of day
+     * @param num the number of deleted subject
+     */
     public static void deleteTimetableItem(String day, int num) throws IOException {
         SecondaryFunctions.rewrite(filePathBeginning  + numOfDay(day) + ".txt", num, "");
     }
