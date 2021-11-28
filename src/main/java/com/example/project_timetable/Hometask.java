@@ -42,22 +42,26 @@ public class Hometask {
     public static void setSubject(String s){
         SUBJECT = s;
     }
+    public static int NUM;
+    public static void setNum(String s){
+        NUM = Integer.parseInt(s);
+    }
 
     /**
      * The method writes hometask like a string in format "num|subject|deadline|hometask" to a file
      */
     public static void addHometask() throws IOException {
-        int num = Hometask.getNum();
-        String newHometask = num + "|" + SUBJECT + "|" + DEADLINE + "|" + HOMETASK;
-        SecondaryFunctions.rewrite(filePath, num, newHometask); // перезапись файла
-        //input.close();
+        //int num = Hometask.getNum();
+        String newHometask = NUM + "|" + SUBJECT + "|" + DEADLINE + "|" + HOMETASK;
+        SecondaryFunctions.rewrite(filePath, NUM, newHometask); // перезапись файла
+
     }
 
     /**
      * The method counts the number of lines written and returns the line number we are writing
      * @return idx the line number we are writing
      */
-    private static int getNum() throws IOException {
+    public static int getNum() throws IOException {
         int idx = 1;
         Scanner sc = new Scanner(new File(filePath));
         try {

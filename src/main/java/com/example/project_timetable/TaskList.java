@@ -36,18 +36,23 @@ public class TaskList {
     /**
      * The method writes task like a string in format "num|subject|deadline|hometask" to a file
      */
-    public static void addTask() throws IOException {
-        int num = TaskList.getNum();
-        String newTask = num + "|" + DEADLINE + "|" + TASK;
-        SecondaryFunctions.rewrite(filePath, num, newTask); // перезапись файла
-        //input.close();
+    public static int NUM;
+    public static void setNum(String s){
+        NUM = Integer.parseInt(s);
     }
+    public static void addTask() throws IOException {
+        //int num = TaskList.getNum();
+        String newTask = NUM + "|" + DEADLINE + "|" + TASK;
+        SecondaryFunctions.rewrite(filePath, NUM, newTask); // перезапись файла
+
+    }
+
 
     /**
      * The method counts the number of lines written and returns the line number we are writing
      * @return idx the line number we are writing
      */
-    private static int getNum() throws IOException {
+    public static int getNum() throws IOException {
         int idx = 1;
         Scanner sc = new Scanner(new File(filePath));
         try {

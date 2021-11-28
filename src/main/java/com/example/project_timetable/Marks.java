@@ -37,6 +37,11 @@ public class Marks {
         MARKS = s;
     }
 
+    public static int NUM;
+    public static void setNum(String s){
+        NUM = Integer.parseInt(s);
+    }
+
     /**
      * The method reads information from a file, calculates a newline number, writes a newline in the format "num|subject|AverajeMark|marks"
      */
@@ -58,10 +63,10 @@ public class Marks {
         sc.close();
 
         String newMarks = "";
-        if(newLine) newMarks = num + "|" + SUBJECT + "|" + Float.toString(averageMark(num)) + "|" + MARKS;
+        if(newLine) newMarks = NUM + "|" + SUBJECT + "|" + Float.toString(averageMark(num)) + "|" + MARKS;
         else newMarks = s + " " + MARKS;
 
-        SecondaryFunctions.rewrite(filePath, num, newMarks); // перезапись файла
+        SecondaryFunctions.rewrite(filePath, NUM, newMarks); // перезапись файла
     }
 
     /**
@@ -106,7 +111,23 @@ public class Marks {
         //return average;
     }
 
+    public static int getNum() throws IOException {
+        int idx = 1;
+        Scanner sc = new Scanner(new File(filePath));
+        try {
+            while (sc.hasNextLine()) {
+                String s = sc.nextLine();
+                if (s.length() == 0) return idx;
+                idx++;
+            }
+        } catch (Exception e) {
+        }
+        finally {
+            sc.close();
 
+        }
+        return idx;
+    }
     /**
      * The method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Average Marks"
      * @return res marks output string

@@ -25,9 +25,9 @@ public class SecondaryFunctions
         while (sc.hasNextLine()) {  //запись текста
 
             String s = sc.nextLine();
-            if (idx == i && newLine.equals("")){
+            if (idx == i && !newLine.equals("")){
                 builder.append(newLine + System.lineSeparator()); // замена необходимой строки
-                System.out.println(1);
+                i++;
             }
             else if (idx != i){
                 String subs = "";

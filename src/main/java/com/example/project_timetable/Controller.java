@@ -76,8 +76,10 @@ public class Controller {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         TaskList.setDeadline(localDate.format(formatter));
         TaskList.setTask(task.getText());
+        TaskList.setNum(numTaskList.getText());
         TaskList.addTask();
         changeText(TaskList.StringOutput());
+
     }
     /**
      * button, which calls hometaskAddButton
@@ -94,6 +96,7 @@ public class Controller {
         localDate = hometaskDate.getValue();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         Hometask.setDeadline(localDate.format(formatter));
+        Hometask.setNum(numHometask.getText());
         Hometask.setSubject(subjectHometask.getText());
         Hometask.setHometask(hometask.getText());
         Hometask.addHometask();
@@ -110,7 +113,7 @@ public class Controller {
      */
     @FXML
     public void addTeacherClick(ActionEvent actionEvent) throws IOException {
-        Teachers.setNum(num.getText());
+        Teachers.setNum(numTeachers.getText());
         Teachers.setSubject(subjectTeachers.getText());
         Teachers.setName(name.getText());
         Teachers.setInf(inf.getText());
@@ -130,6 +133,7 @@ public class Controller {
     public void addMarksClick(ActionEvent actionEvent) throws IOException {
         Marks.setSubject(subject.getText());
         Marks.setMarks(marks.getText());
+        Marks.setNum(numMarks.getText());
         Marks.addMarks();
         changeText(Marks.StringOutput());
     }
@@ -234,6 +238,7 @@ public class Controller {
         grid5.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
+        numHometask.setText(Integer.toString(Hometask.getNum()));
 
     }
     /**
@@ -256,6 +261,7 @@ public class Controller {
         grid5.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
+        numTaskList.setText(Integer.toString(TaskList.getNum()));
 
     }
     /**
@@ -278,6 +284,7 @@ public class Controller {
         grid5.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
+        numMarks.setText(Integer.toString(Marks.getNum()));
     }
     /**
      * button, which calls clickTeachers
@@ -299,6 +306,7 @@ public class Controller {
         grid5.setVisible(true);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
+        numTeachers.setText(Integer.toString(Teachers.getNum()));
     }
 
     /**
@@ -354,7 +362,7 @@ public class Controller {
     /**
      * text for adding new task in tasklist
      */
-    public TextField task;
+    public TextField numTaskList, task;
     /**
      * data for adding new task in tasklist
      */
@@ -362,7 +370,7 @@ public class Controller {
     /**
      * text for adding new hometask in hometask
      */
-    public TextField hometask, subjectHometask;
+    public TextField numHometask, hometask, subjectHometask;
     /**
      * data for adding nw hometask in hometask
      */
@@ -370,11 +378,11 @@ public class Controller {
     /**
      * text for adding new teacher in teachers
      */
-    public TextField num, name, subjectTeachers, inf;
+    public TextField numTeachers, name, subjectTeachers, inf;
     /**
      * text for addding new marksline in marks
      */
-    public TextField subject, marks;
+    public TextField numMarks, subject, marks;
     /**
      * text for deleting something
      */
