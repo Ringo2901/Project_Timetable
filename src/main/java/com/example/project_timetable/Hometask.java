@@ -59,15 +59,18 @@ public class Hometask {
      */
     private static int getNum() throws IOException {
         int idx = 1;
-        Scanner sc = null;
+        Scanner sc = new Scanner(new File(filePath));
         try {
-            sc = new Scanner(new File(filePath));
             while (sc.hasNextLine()) {
                 String s = sc.nextLine();
                 if (s.length() == 0) return idx;
                 idx++;
             }
         } catch (Exception e) {
+        }
+        finally {
+            sc.close();
+
         }
         return idx;
     }
@@ -113,6 +116,7 @@ public class Hometask {
             res += hometask + "\n";
             System.out.println();
         }
+        output.close();
         return res;
     }
     /**
