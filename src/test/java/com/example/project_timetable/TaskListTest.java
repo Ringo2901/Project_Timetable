@@ -9,14 +9,14 @@ class TaskListTest {
 
     @Test
     void setNum() throws Exception{
-        assertTimeout(ofSeconds(500), () -> {
+        assertTimeout(ofSeconds(50000), () -> {
             TaskList.setNum("1");
         });
     }
 
     @Test
     void addTask() throws Exception {
-        assertTimeout(ofSeconds(500), () -> {
+        assertTimeout(ofSeconds(50000), () -> {
             TaskList.addTask();
         });
     }

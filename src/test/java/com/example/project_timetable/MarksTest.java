@@ -9,14 +9,14 @@ class MarksTest {
 
     @Test
     void setNum() throws Exception {
-        assertTimeout(ofSeconds(500), () -> {
+        assertTimeout(ofSeconds(50000), () -> {
             Marks.setNum("1");
         });
     }
 
     @Test
     void addMarks() throws Exception {
-        assertTimeout(ofSeconds(500), () -> {
+        assertTimeout(ofSeconds(50000), () -> {
             Marks.addMarks();
         });
     }
