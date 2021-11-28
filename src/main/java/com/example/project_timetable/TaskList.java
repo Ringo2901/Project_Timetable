@@ -48,14 +48,19 @@ public class TaskList {
      * @return idx the line number we are writing
      */
     private static int getNum() throws IOException {
-        Scanner sc = new Scanner(new File(filePath));
         int idx = 1;
-        while (sc.hasNextLine()) {
-            String s = sc.nextLine();
-            if (s.length() == 0) return idx;
-            idx++;
+        Scanner sc = null;
+        try {
+            sc = new Scanner(new File(filePath));
+            while (sc.hasNextLine()) {
+                String s = sc.nextLine();
+                if (s.length() == 0) return idx;
+                idx++;
+            }
+        } catch (Exception e) {
+        } finally {
+            sc.close();
         }
-        sc.close();
         return idx;
     }
     /*

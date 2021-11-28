@@ -151,7 +151,7 @@ public class Timetable {
         String lessonName = "";
         String teacherName = "";
         String newItem = Integer.toString(ITEMNUM) + "|" + SUBJECT + "|" + TEACHER;
-        SecondaryFunctions.rewrite(filePath, ITEMNUM, newItem); // перезапись файла
+        SecondaryFunctions.rewriteTimetable(filePath, ITEMNUM, newItem); // перезапись файла
         sc.close();
     }
 
@@ -161,7 +161,7 @@ public class Timetable {
      * @param num the number of deleted subject
      */
     public static void deleteTimetableItem(String day, int num) throws IOException {
-        SecondaryFunctions.rewrite(filePathBeginning  + numOfDay(day) + ".txt", num, "");
+        SecondaryFunctions.rewriteTimetable(filePathBeginning  + numOfDay(day) + ".txt", num, "");
     }
 
 }

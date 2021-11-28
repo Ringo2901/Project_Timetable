@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding dependency to javafx-graphics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/marks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days/3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +64,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../new/Project_Timetable/src/main/java/com/example/project_timetable/SecondaryFunctions.java" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48850575" />
@@ -93,7 +98,7 @@
       <command value="mvn clean verify sonar:sonar -Dsonar.login=e0742659683923b9536fb663be4e270218cf11dc" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SomeTest">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.HelloApplication" />
@@ -133,8 +138,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SomeTest" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.SomeTest" />
       </list>
     </recent_temporary>
   </component>
