@@ -9,7 +9,7 @@ public class Timetable {
     /**
      * filePath - path to the file where the input data is written
      */
-    private static String filePathBeginning = "src\\main\\resources\\week_days\\";
+    private static String filePathBeginning = "src\\main\\resources\\week_days";
     /**
      * DAY - the line where the day of week is written,
      * SUBJECT - the line where the subject is written,
@@ -19,7 +19,7 @@ public class Timetable {
     /**
      * ITEMNUM - the number of the line into which the next is written
      */
-    private static int ITEMNUM;
+    private static int ITEMNUM, NUMOFWEEK;
     /**
      * The method assigns the entered day of week to the string
      * @param s a string that accepts the entered value
@@ -48,6 +48,10 @@ public class Timetable {
      */
     public static void setItemNum(int n){
         ITEMNUM = n;
+    }
+
+    public static void setNumOfWeek(int n){
+        NUMOFWEEK = n;
     }
 
     /**
@@ -110,10 +114,10 @@ public class Timetable {
      * The method reads information from a file, generates lines for output, outputs lines in format "Num. Name Subject ContactInf"
      * @return res timetable output string
      */
-    public static String StringOutput() throws IOException {
+    public static String StringOutput(int numOfWeek) throws IOException {
         String res = "";
         for(int dayNum = 1; dayNum <= 7; dayNum++){
-            String filePath = "src\\main\\resources\\week_days\\" + Integer.toString(dayNum) + ".txt";
+            String filePath = "src\\main\\resources\\week_days" + Integer.toString(numOfWeek) + "\\" + Integer.toString(dayNum) + ".txt";
             Scanner output = new Scanner (new File(filePath));
             res += dayOfWeek(dayNum) + " :" + "\n";
 
@@ -128,7 +132,6 @@ public class Timetable {
                 for( ; idx < s.length(); idx++) teacher += s.charAt(idx);
 
                 int itemLen = 4, subjectLen = 10;
-                System.out.println(10000 + idx);
                 String point = "";
                 if(idx > 2) point = ".";
                 res += itemNum + point;
@@ -147,7 +150,7 @@ public class Timetable {
      */
     public static void changeTimetableItem() throws IOException {
         Scanner sc = new Scanner (System.in);
-        String filePath = filePathBeginning + Integer.toString(numOfDay(DAY)) + ".txt";
+        String filePath = filePathBeginning + Integer.toString(NUMOFWEEK) + "\\" + Integer.toString(numOfDay(DAY)) + ".txt";
         String lessonName = "";
         String teacherName = "";
         String newItem = Integer.toString(ITEMNUM) + "|" + SUBJECT + "|" + TEACHER;
@@ -160,8 +163,8 @@ public class Timetable {
      * @param day the number of day
      * @param num the number of deleted subject
      */
-    public static void deleteTimetableItem(String day, int num) throws IOException {
-        SecondaryFunctions.rewriteTimetable(filePathBeginning  + numOfDay(day) + ".txt", num, "");
+    public static void deleteTimetableItem(String day, int numOfWeek, int num) throws IOException {
+        SecondaryFunctions.rewriteTimetable(filePathBeginning + Integer.toString(numOfWeek) + "\\"  + numOfDay(day) + ".txt", num, "");
     }
 
 }

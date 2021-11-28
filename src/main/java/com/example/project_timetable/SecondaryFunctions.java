@@ -38,7 +38,6 @@ public class SecondaryFunctions
                 }
                 int newIndex = i;
                 if(i > idx) newIndex = i - 1;
-                System.out.println(Integer.toString(newIndex) + subs);
                 builder.append(Integer.toString(newIndex) + subs + System.lineSeparator());
             }
 

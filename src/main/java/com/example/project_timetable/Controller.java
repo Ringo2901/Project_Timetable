@@ -1,5 +1,7 @@
 package com.example.project_timetable;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,7 +19,7 @@ import java.time.format.DateTimeFormatter;
  * The class calls all objects
  */
 public class Controller {
-    private static String filePathTimetableBeginning = "src\\main\\resources\\tasks.txt\\";
+    private static String filePathTimetableBeginning = "src\\main\\resources\\week_days";
     private static String filePathTaskList = "src\\main\\resources\\tasks.txt";
     private static String filePathHometask = "src\\main\\resources\\hometask.txt";
     private static String filePathMarks = "src\\main\\resources\\marks.txt";
@@ -60,10 +62,12 @@ public class Controller {
     public void addItemClick(ActionEvent actionEvent) throws IOException {
         Timetable.setDay((String) day.getValue());
         Timetable.setItemNum(Integer.parseInt(numTimetable.getText()));
+        Timetable.setNumOfWeek(weekSpinner.getValue());
         Timetable.setSubject(subjectTimetable.getText());
         Timetable.setTeacher(teacherTimetable.getText());
+        Timetable.setTeacher(teacherTimetable.getText());
         Timetable.changeTimetableItem();
-        changeText(Timetable.StringOutput());
+        changeText(Timetable.StringOutput(weekSpinner.getValue()));
     }
     /**
      * button, which calls addTaskClick
@@ -162,8 +166,8 @@ public class Controller {
             ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
             day.setItems(days);
             day.setValue("Пн");
-            Timetable.deleteTimetableItem((String) dayDeleting.getValue(), Integer.parseInt(deleteNum1.getText()));
-            changeText(Timetable.StringOutput());
+            Timetable.deleteTimetableItem((String) dayDeleting.getValue(), weekSpinner.getValue(), Integer.parseInt(deleteNum1.getText()));
+            changeText(Timetable.StringOutput(weekSpinner.getValue()));
         }
 
             if (status == Status.HOMETASK){
@@ -209,9 +213,13 @@ public class Controller {
     public void clickTimetable(ActionEvent actionEvent) throws IOException {
         status = Status.TIMETABLE;
         ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
+
+
         dayDeleting.setItems(days);
         dayDeleting.setValue("Пн");
-        changeText(Timetable.StringOutput());
+        spinnerInitialize();
+        changeText(Timetable.StringOutput(weekSpinner.getValue()));
+
 
         grid1.setVisible(true);
         grid2.setVisible(false);
@@ -221,6 +229,7 @@ public class Controller {
 
         deletingGrid.setVisible(false);
         deletingGrid2.setVisible(true);
+
 
     }
     /**
@@ -244,6 +253,7 @@ public class Controller {
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
         numHometask.setText(Integer.toString(SecondaryFunctions.getNum(filePathHometask)));
+
 
     }
     /**
@@ -392,5 +402,23 @@ public class Controller {
      * text for deleting something
      */
     public TextField deleteNum, deleteNum1;
+
+    public Spinner<Integer> weekSpinner;
+    public void spinnerInitialize(){
+        weekSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 4));
+        weekSpinner.getValueFactory().setValue(1);
+        weekSpinner.valueProperty().addListener(new ChangeListener<Integer>() {
+
+            @Override
+            public void changed(ObservableValue<? extends Integer> arg0, Integer arg1, Integer arg2) {
+                try {
+                    changeText(Timetable.StringOutput(weekSpinner.getValue()));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
 
 }

@@ -5,6 +5,7 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -188,6 +189,7 @@
                 <TextField fx:id="numMarks" prefHeight="46.0" prefWidth="62.0" />
             </children>
         </GridPane>
+      <Spinner fx:id="weekSpinner" layoutX="2.0" layoutY="84.0" prefHeight="25.0" prefWidth="50.0" />
 
     </children>
 </AnchorPane>
