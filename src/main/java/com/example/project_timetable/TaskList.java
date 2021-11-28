@@ -51,6 +51,7 @@ public class TaskList {
         int idx = 1;
         Scanner sc = null;
         try {
+            
             sc = new Scanner(new File(filePath));
             while (sc.hasNextLine()) {
                 String s = sc.nextLine();
@@ -58,9 +59,7 @@ public class TaskList {
                 idx++;
             }
         } catch (Exception e) {
-        } finally {
-            sc.close();
-        }
+        } 
         return idx;
     }
     /*

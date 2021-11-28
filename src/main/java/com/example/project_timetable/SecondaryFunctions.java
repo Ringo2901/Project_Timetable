@@ -58,14 +58,7 @@ public class SecondaryFunctions
         FileWriter writer = null;
         try {
             writer = new FileWriter(filePath);
-        }
-        catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        catch (IOException e) {
-        }
-        finally {
-            // блок кода, который должен быть выполнен после завершения блока try
+        } catch (Exception e) {
         }
         //System.out.println("new data: "+ fileContents);//иллюстративный вывод нового содержания
         writer.append(fileContents);//запись в файл нового текста
@@ -94,14 +87,7 @@ public class SecondaryFunctions
         FileWriter writer = null;
         try {
             writer = new FileWriter(filePath);
-        }
-        catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        catch (IOException e) {
-        }
-        finally {
-            // блок кода, который должен быть выполнен после завершения блока try
+        } catch (Exception e) {
         }
         //System.out.println("new data: "+ fileContents);//иллюстративный вывод нового содержания
         writer.append(fileContents);//запись в файл нового текста

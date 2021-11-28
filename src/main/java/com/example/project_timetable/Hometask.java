@@ -68,8 +68,6 @@ public class Hometask {
                 idx++;
             }
         } catch (Exception e) {
-        } finally {
-            sc.close();
         }
         return idx;
     }
