@@ -56,10 +56,8 @@
 
     <properties>
         <sonar.jdbc.dialect>mssql</sonar.jdbc.dialect>
-
         <sonar.binaries>build/classes</sonar.binaries>
-
-        <sonar.junit.reportsPath>build/test-reports</sonar.junit.reportsPath>
+        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.organization>ringo2901</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <maven.compiler.source>17</maven.compiler.source>
@@ -220,7 +218,7 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
                 <configuration>
-                    <dataFile>target/jacoco.exec</dataFile>
+                    <dataFile>${project.basedir}/../target/jacoco.exec</dataFile>
                     <append>true</append>
                 </configuration>
                 <executions>
@@ -231,7 +229,7 @@
                         </goals>
                         <configuration>
                             <propertyName>jacoco.agent.argLine</propertyName>
-                            <destFile>target/jacoco.exec</destFile>
+                            <destFile>${project.basedir}/../target/jacoco.exec</destFile>
                         </configuration>
                     </execution>
                     <execution>
