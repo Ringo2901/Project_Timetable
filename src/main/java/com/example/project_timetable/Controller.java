@@ -300,34 +300,84 @@ public class Controller {
         DeletingGrid.setVisible(true);
         DeletingGrid2.setVisible(false);
     }
-    
+
+    /**
+     * text box
+     */
     @FXML
     private TextFlow textflow;
+
+    /**
+     * the method add some text in textbox
+     */
     @FXML
     public void pasteText() throws IOException {
         textflow.getChildren().add(text);
     }
+
+    /**
+     * some text
+     */
     @FXML
     private Text text;
+
+    /**
+     * the method changes some text
+     * @param s line, which include changed text
+     */
     @FXML
     public void changeText(String s) throws IOException {
         text.setText(s);
         //text.setFont(Font.font("Arial", 30));
     }
+
+    /**
+     * all combinations of buttons for each function
+     */
     @FXML
     public GridPane Grid1, Grid2, Grid3, Grid4, Grid5, DeletingGrid, DeletingGrid2;
+
+    /**
+     * the method add subject in timetable
+     * @param s line? which includes new subject
+     */
     @FXML
     public void inputTimetable(String s) throws IOException {
         text.setText(s);
         //text.setFont(Font.font("Arial", 30));
     }
+
+    /**
+     * text for adding new subject in timetable
+     */
     public TextField numTimetable, subjectTimetable, teacherTimetable;
+    /**
+     * text for adding new task in tasklist
+     */
     public TextField task;
+    /**
+     * data for adding new task in tasklist
+     */
     public DatePicker taskDate;
+    /**
+     * text for adding new hometask in hometask
+     */
     public TextField hometask, subjectHometask;
+    /**
+     * data for adding nw hometask in hometask
+     */
     public DatePicker hometaskDate;
+    /**
+     * text for adding new teacher in teachers
+     */
     public TextField num, name, subjectTeachers, inf;
+    /**
+     * text for addding new marksline in marks
+     */
     public TextField subject, marks;
+    /**
+     * text for deleting something
+     */
     public TextField deleteNum, deleteNum1;
 
 }
