@@ -26,7 +26,7 @@ public class Controller {
     private static String filePathMarks = "src\\main\\resources\\marks.txt";
     private static String filePathTeachers = "src\\main\\resources\\teachers.txt";
 
-    public void initialize() throws IOException {
+    public void initialize() throws IOException {//start view
         start();
     }
 
