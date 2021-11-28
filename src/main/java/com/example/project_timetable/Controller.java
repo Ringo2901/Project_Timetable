@@ -7,6 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
@@ -24,6 +25,10 @@ public class Controller {
     private static String filePathHometask = "src\\main\\resources\\hometask.txt";
     private static String filePathMarks = "src\\main\\resources\\marks.txt";
     private static String filePathTeachers = "src\\main\\resources\\teachers.txt";
+
+    public void initialize() throws IOException {
+        start();
+    }
 
     enum Status{
         TIMETABLE,
@@ -167,25 +172,25 @@ public class Controller {
             changeText(Timetable.StringOutput(weekSpinner.getValue()));
         }
 
-            if (status == Status.HOMETASK){
-                Hometask.deleteHometask(Integer.parseInt(deleteNum.getText()));
-                changeText(Hometask.StringOutput());
-            }
+        if (status == Status.HOMETASK){
+            Hometask.deleteHometask(Integer.parseInt(deleteNum.getText()));
+            changeText(Hometask.StringOutput());
+        }
 
-            else if (status == Status.TASKLIST){
-                TaskList.deleteTask(Integer.parseInt(deleteNum.getText()));
-                changeText(TaskList.StringOutput());
-            }
+        else if (status == Status.TASKLIST){
+            TaskList.deleteTask(Integer.parseInt(deleteNum.getText()));
+            changeText(TaskList.StringOutput());
+        }
 
-            else if (status == Status.MARKS){
-                Marks.deleteMarks(Integer.parseInt(deleteNum.getText()));
-                changeText(Marks.StringOutput());
-            }
+        else if (status == Status.MARKS){
+            Marks.deleteMarks(Integer.parseInt(deleteNum.getText()));
+            changeText(Marks.StringOutput());
+        }
 
-            else if (status == Status.CONTACTS){
-                Teachers.deleteTeacher(Integer.parseInt(deleteNum.getText()));
-                changeText(Teachers.StringOutput());
-            }
+        else if (status == Status.CONTACTS){
+            Teachers.deleteTeacher(Integer.parseInt(deleteNum.getText()));
+            changeText(Teachers.StringOutput());
+        }
 
 
 
@@ -218,6 +223,7 @@ public class Controller {
         spinnerInitialize();
         changeText(Timetable.StringOutput(weekSpinner.getValue()));
 
+        weekSpinner.setVisible(true);
 
         grid1.setVisible(true);
         grid2.setVisible(false);
@@ -248,6 +254,7 @@ public class Controller {
         grid3.setVisible(false);
         grid4.setVisible(false);
         grid5.setVisible(false);
+        weekSpinner.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
         numHometask.setText(Integer.toString(SecondaryFunctions.getNum(filePathHometask)));
@@ -272,6 +279,7 @@ public class Controller {
         grid3.setVisible(true);
         grid4.setVisible(false);
         grid5.setVisible(false);
+        weekSpinner.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
         numTaskList.setText(Integer.toString(SecondaryFunctions.getNum(filePathTaskList)));
@@ -295,6 +303,7 @@ public class Controller {
         grid3.setVisible(false);
         grid4.setVisible(true);
         grid5.setVisible(false);
+        weekSpinner.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
         numMarks.setText(Integer.toString(SecondaryFunctions.getNum(filePathMarks)));
@@ -317,6 +326,7 @@ public class Controller {
         grid3.setVisible(false);
         grid4.setVisible(false);
         grid5.setVisible(true);
+        weekSpinner.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
         numTeachers.setText(Integer.toString(SecondaryFunctions.getNum(filePathTeachers)));
@@ -418,5 +428,33 @@ public class Controller {
             }
         });
     }
+
+    @FXML
+    public void start() throws IOException {
+        status = Status.TIMETABLE;
+        ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
+
+        day.setItems(days);
+        day.setValue("Пн");
+        dayDeleting.setItems(days);//
+        dayDeleting.setValue("Пн");
+        spinnerInitialize();
+        changeText(Timetable.StringOutput(weekSpinner.getValue()));
+
+        weekSpinner.setVisible(true);
+
+        grid1.setVisible(true);
+        grid2.setVisible(false);
+        grid3.setVisible(false);
+        grid4.setVisible(false);
+        grid5.setVisible(false);
+
+        deletingGrid.setVisible(false);
+        deletingGrid2.setVisible(true);
+
+
+    }
+
+
 
 }
