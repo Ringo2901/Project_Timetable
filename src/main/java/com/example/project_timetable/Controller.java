@@ -422,7 +422,6 @@ public class Controller {
                 try {
                     changeText(Timetable.StringOutput(weekSpinner.getValue()));
                 } catch (IOException e) {
-                    e.printStackTrace();
                 }
 
             }
