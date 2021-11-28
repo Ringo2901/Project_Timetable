@@ -215,7 +215,7 @@ public class Controller {
         ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
 
 
-        dayDeleting.setItems(days);
+        dayDeleting.setItems(days);//
         dayDeleting.setValue("Пн");
         spinnerInitialize();
         changeText(Timetable.StringOutput(weekSpinner.getValue()));
