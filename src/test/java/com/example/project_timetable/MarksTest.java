@@ -1,6 +1,6 @@
 package com.example.project_timetable;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static java.time.Duration.ofSeconds;
 import static org.junit.jupiter.api.Assertions.*;

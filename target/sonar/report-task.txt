@@ -3,5 +3,5 @@ projectKey=com.example.project_timetable:Project_Timetable
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.25123
 dashboardUrl=https://sonarcloud.io/dashboard?id=com.example.project_timetable%3AProject_Timetable
-ceTaskId=AX1o7VAosgheNjXWXxfV
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX1o7VAosgheNjXWXxfV
+ceTaskId=AX1o8c20ObANQAP1rj4P
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX1o8c20ObANQAP1rj4P
