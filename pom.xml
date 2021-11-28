@@ -12,7 +12,7 @@
     <id>sonar</id>
     <properties>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.organization>Ringo2901</sonar.organization>
+        <sonar.organization>ringo2901</sonar.organization>
     </properties>
     <build>
         <plugins>
