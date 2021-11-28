@@ -13,11 +13,4 @@ class TaskListTest {
             TaskList.setNum("1");
         });
     }
-
-    @Test
-    void addTask() throws Exception {
-        assertTimeout(ofSeconds(5000), () -> {
-            TaskList.addTask();
-        });
-    }
 }

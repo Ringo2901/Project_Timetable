@@ -13,11 +13,4 @@ class MarksTest {
             Marks.setNum("1");
         });
     }
-
-    @Test
-    void addMarks() throws Exception {
-        assertTimeout(ofSeconds(50000), () -> {
-            Marks.addMarks();
-        });
-    }
 }
