@@ -765,12 +765,13 @@ nanoTime()java.lang.System#nanoTime()JB
 <init>(Ljava/lang/String;).java.io.FileWriter#<init>(Ljava/lang/String;)Vx
 0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Djava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)VÄ
 4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Hjava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)VX
- <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)Vı
+ <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)V˚
 (com.example.project_timetable.Controllerjava.lang.ObjectT
 spinnerInitialize()=com.example.project_timetable.Controller#spinnerInitialize()VÄ
 )clickTeachers(Ljavafx/event/ActionEvent;)Scom.example.project_timetable.Controller#clickTeachers(Ljavafx/event/ActionEvent;)Vz
 &clickMarks(Ljavafx/event/ActionEvent;)Pcom.example.project_timetable.Controller#clickMarks(Ljavafx/event/ActionEvent;)VÄ
-)clickHometask(Ljavafx/event/ActionEvent;)Scom.example.project_timetable.Controller#clickHometask(Ljavafx/event/ActionEvent;)VÄ
+)clickHometask(Ljavafx/event/ActionEvent;)Scom.example.project_timetable.Controller#clickHometask(Ljavafx/event/ActionEvent;)V<
+start()1com.example.project_timetable.Controller#start()VÄ
 )addMarksClick(Ljavafx/event/ActionEvent;)Scom.example.project_timetable.Controller#addMarksClick(Ljavafx/event/ActionEvent;)V~
 (addItemClick(Ljavafx/event/ActionEvent;)Rcom.example.project_timetable.Controller#addItemClick(Ljavafx/event/ActionEvent;)VÇ
 *clickTimetable(Ljavafx/event/ActionEvent;)Tcom.example.project_timetable.Controller#clickTimetable(Ljavafx/event/ActionEvent;)VÜ
@@ -778,7 +779,8 @@ nanoTime()java.lang.System#nanoTime()JB
 $deleting(Ljavafx/event/ActionEvent;)Ncom.example.project_timetable.Controller#deleting(Ljavafx/event/ActionEvent;)Vf
 setError(Ljava/lang/String;)Fcom.example.project_timetable.Controller#setError(Ljava/lang/String;)V>
 <init>()2com.example.project_timetable.Controller#<init>()Vj
-changeText(Ljava/lang/String;)Hcom.example.project_timetable.Controller#changeText(Ljava/lang/String;)VÄ
+changeText(Ljava/lang/String;)Hcom.example.project_timetable.Controller#changeText(Ljava/lang/String;)VF
+initialize()6com.example.project_timetable.Controller#initialize()VÄ
 )clickTaskList(Ljavafx/event/ActionEvent;)Scom.example.project_timetable.Controller#clickTaskList(Ljavafx/event/ActionEvent;)VD
 pasteText()5com.example.project_timetable.Controller#pasteText()V~
 (addTaskClick(Ljavafx/event/ActionEvent;)Rcom.example.project_timetable.Controller#addTaskClick(Ljavafx/event/ActionEvent;)Vr
@@ -2478,47 +2480,7 @@ toString()3javafx.scene.text.Text#toString()Ljava/lang/String;<
 !javafx.beans.value.ChangeListenerjava.lang.Object—
 *com.example.project_timetable.Controller$1java.lang.Object!javafx.beans.value.ChangeListener÷
 Schanged(Ljavafx/beans/value/ObservableValue;Ljava/lang/Integer;Ljava/lang/Integer;)com.example.project_timetable.Controller$1#changed(Ljavafx/beans/value/ObservableValue;Ljava/lang/Integer;Ljava/lang/Integer;)Vî
-2<init>(Lcom/example/project_timetable/Controller;)^com.example.project_timetable.Controller$1#<init>(Lcom/example/project_timetable/Controller;)Võ
-java.lang.Throwablejava.lang.Objectjava.io.Serializable;
-printStackTrace()&java.lang.Throwable#printStackTrace()V}
-2validateSuppressedExceptionsList(Ljava/util/List;)Gjava.lang.Throwable#validateSuppressedExceptionsList(Ljava/util/List;)I¡
-ìprintEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)®java.lang.Throwable#printEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VB
-getMessage()2java.lang.Throwable#getMessage()Ljava/lang/String;W
-setCause(Ljava/lang/Throwable;)4java.lang.Throwable#setCause(Ljava/lang/Throwable;)V)
-<init>()java.lang.Throwable#<init>()Vg
-'readObject(Ljava/io/ObjectInputStream;)<java.lang.Throwable#readObject(Ljava/io/ObjectInputStream;)VM
-<init>(Ljava/lang/String;)/java.lang.Throwable#<init>(Ljava/lang/String;)VT
-getLocalizedMessage();java.lang.Throwable#getLocalizedMessage()Ljava/lang/String;e
-&printStackTrace(Ljava/io/PrintWriter;);java.lang.Throwable#printStackTrace(Ljava/io/PrintWriter;)VZ
-getOurStackTrace()Djava.lang.Throwable#getOurStackTrace()[Ljava/lang/StackTraceElement;>
-
-toString()0java.lang.Throwable#toString()Ljava/lang/String;Q
-fillInStackTrace();java.lang.Throwable#fillInStackTrace()Ljava/lang/Throwable;s
--setStackTrace([Ljava/lang/StackTraceElement;)Bjava.lang.Throwable#setStackTrace([Ljava/lang/StackTraceElement;)Va
-$addSuppressed(Ljava/lang/Throwable;)9java.lang.Throwable#addSuppressed(Ljava/lang/Throwable;)Vç
-:printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Ojava.lang.Throwable#printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Vm
- initCause(Ljava/lang/Throwable;)Ijava.lang.Throwable#initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;T
-getStackTrace()Ajava.lang.Throwable#getStackTrace()[Ljava/lang/StackTraceElement;A
-
-getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
-&printStackTrace(Ljava/io/PrintStream;);java.lang.Throwable#printStackTrace(Ljava/io/PrintStream;)V{
-1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
-fillInStackTrace(I)<java.lang.Throwable#fillInStackTrace(I)Ljava/lang/Throwable;S
-<init>(Ljava/lang/Throwable;)2java.lang.Throwable#<init>(Ljava/lang/Throwable;)Vk
-)writeObject(Ljava/io/ObjectOutputStream;)>java.lang.Throwable#writeObject(Ljava/io/ObjectOutputStream;)VL
-getSuppressed()9java.lang.Throwable#getSuppressed()[Ljava/lang/Throwable;Ô
-java.lang.Exceptionjava.lang.Throwable)
-<init>()java.lang.Exception#<init>()VM
-<init>(Ljava/lang/String;)/java.lang.Exception#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V{
-1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
-<init>(Ljava/lang/Throwable;)2java.lang.Exception#<init>(Ljava/lang/Throwable;)VÚ
-java.io.IOExceptionjava.lang.Exception)
-<init>()java.io.IOException#<init>()VM
-<init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
-<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)V∞
+2<init>(Lcom/example/project_timetable/Controller;)^com.example.project_timetable.Controller$1#<init>(Lcom/example/project_timetable/Controller;)V∞
 (javafx.scene.control.SpinnerValueFactoryjava.lang.ObjectÑ
 +setConverter(Ljavafx/util/StringConverter;)Ujavafx.scene.control.SpinnerValueFactory#setConverter(Ljavafx/util/StringConverter;)V>
 <init>()2javafx.scene.control.SpinnerValueFactory#<init>()Vf
