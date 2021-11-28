@@ -19,11 +19,11 @@ import java.time.format.DateTimeFormatter;
 public class Controller {
 
     enum Status{
-        Timetable,
-        Hometask,
-        Tasklist,
-        Marks,
-        Contacts,
+        TIMETABLE,
+        HOMETASK,
+        TASKLIST,
+        MARKS,
+        CONTACTS,
     }
     Status status;
     /**
@@ -121,7 +121,7 @@ public class Controller {
      * button, which calls addMarksClick
      */
     @FXML
-    public Button MarksAddButton;
+    public Button marksAddButton;
     /**
      * the method add line in marks
      * @param actionEvent pressing the button
@@ -149,7 +149,7 @@ public class Controller {
      * the method deletes line in marks
      */
     public void deleting(ActionEvent actionEvent) throws IOException {
-        if (status == Status.Timetable){
+        if (status == Status.TIMETABLE){
             ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
             day.setItems(days);
             day.setValue("Пн");
@@ -157,22 +157,22 @@ public class Controller {
             changeText(Timetable.StringOutput());
         }
 
-            if (status == Status.Hometask){
+            if (status == Status.HOMETASK){
                 Hometask.deleteHometask(Integer.parseInt(deleteNum.getText()));
                 changeText(Hometask.StringOutput());
             }
 
-            else if (status == Status.Tasklist){
+            else if (status == Status.TASKLIST){
                 TaskList.deleteTask(Integer.parseInt(deleteNum.getText()));
                 changeText(TaskList.StringOutput());
             }
 
-            else if (status == Status.Marks){
+            else if (status == Status.MARKS){
                 Marks.deleteMarks(Integer.parseInt(deleteNum.getText()));
                 changeText(Marks.StringOutput());
             }
 
-            else if (status == Status.Contacts){
+            else if (status == Status.CONTACTS){
                 Teachers.deleteTeacher(Integer.parseInt(deleteNum.getText()));
                 changeText(Teachers.StringOutput());
             }
@@ -190,7 +190,7 @@ public class Controller {
      * button, which calls clickTimetable
      */
     @FXML
-    public Button TimetableButton;
+    public Button timetableButton;
 
     /**
      * the method add new line in Timetable
@@ -198,107 +198,107 @@ public class Controller {
      */
     @FXML
     public void clickTimetable(ActionEvent actionEvent) throws IOException {
-        status = Status.Timetable;
+        status = Status.TIMETABLE;
         ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
         dayDeleting.setItems(days);
         dayDeleting.setValue("Пн");
         changeText(Timetable.StringOutput());
 
-        Grid1.setVisible(true);
-        Grid2.setVisible(false);
-        Grid3.setVisible(false);
-        Grid4.setVisible(false);
-        Grid5.setVisible(false);
+        grid1.setVisible(true);
+        grid2.setVisible(false);
+        grid3.setVisible(false);
+        grid4.setVisible(false);
+        grid5.setVisible(false);
 
-        DeletingGrid.setVisible(false);
-        DeletingGrid2.setVisible(true);
+        deletingGrid.setVisible(false);
+        deletingGrid2.setVisible(true);
 
     }
     /**
      * button, which calls clickHometask
      */
     @FXML
-    public Button HometaskButton;
+    public Button hometaskButton;
     /**
      * the method add new line in Hometask
      * @param actionEvent pressing the button
      */
     @FXML
     public void clickHometask(ActionEvent actionEvent) throws IOException {
-        status = Status.Hometask;
+        status = Status.HOMETASK;
         changeText(Hometask.StringOutput());
-        Grid1.setVisible(false);
-        Grid2.setVisible(true);
-        Grid3.setVisible(false);
-        Grid4.setVisible(false);
-        Grid5.setVisible(false);
-        DeletingGrid.setVisible(true);
-        DeletingGrid2.setVisible(false);
+        grid1.setVisible(false);
+        grid2.setVisible(true);
+        grid3.setVisible(false);
+        grid4.setVisible(false);
+        grid5.setVisible(false);
+        deletingGrid.setVisible(true);
+        deletingGrid2.setVisible(false);
 
     }
     /**
      * button, which calls clickTaskList
      */
     @FXML
-    public Button TaskListButton;
+    public Button taskListButton;
     /**
      * the method add new line in Tasklist
      * @param actionEvent pressing the button
      */
     @FXML
     public void clickTaskList(ActionEvent actionEvent) throws IOException {
-        status = Status.Tasklist;
+        status = Status.TASKLIST;
         changeText(TaskList.StringOutput());
-        Grid1.setVisible(false);
-        Grid2.setVisible(false);
-        Grid3.setVisible(true);
-        Grid4.setVisible(false);
-        Grid5.setVisible(false);
-        DeletingGrid.setVisible(true);
-        DeletingGrid2.setVisible(false);
+        grid1.setVisible(false);
+        grid2.setVisible(false);
+        grid3.setVisible(true);
+        grid4.setVisible(false);
+        grid5.setVisible(false);
+        deletingGrid.setVisible(true);
+        deletingGrid2.setVisible(false);
 
     }
     /**
      * button, which calls clickMarks
      */
     @FXML
-    public Button MarksButton;
+    public Button marksButton;
     /**
      * the method add new line in Marks
      * @param actionEvent pressing the button
      */
     @FXML
     public void clickMarks(ActionEvent actionEvent) throws IOException {
-        status = Status.Marks;
+        status = Status.MARKS;
         changeText(Marks.StringOutput());
-        Grid1.setVisible(false);
-        Grid2.setVisible(false);
-        Grid3.setVisible(false);
-        Grid4.setVisible(true);
-        Grid5.setVisible(false);
-        DeletingGrid.setVisible(true);
-        DeletingGrid2.setVisible(false);
+        grid1.setVisible(false);
+        grid2.setVisible(false);
+        grid3.setVisible(false);
+        grid4.setVisible(true);
+        grid5.setVisible(false);
+        deletingGrid.setVisible(true);
+        deletingGrid2.setVisible(false);
     }
     /**
      * button, which calls clickTeachers
      */
     @FXML
-    public Button TeachersButton;
+    public Button teachersButton;
     /**
      * the method add new line in Teachers
      * @param actionEvent pressing the button
      */
     @FXML
     public void clickTeachers(ActionEvent actionEvent) throws IOException {
-        status = Status.Contacts;
+        status = Status.CONTACTS;
         changeText(Teachers.StringOutput());
-        Grid1.setVisible(false);
-        Grid2.setVisible(false);
-        Grid3.setVisible(false);
-        Grid4.setVisible(false);
-        Grid5.setVisible(true);
-        DeletingGrid.setVisible(true);
-        DeletingGrid2.setVisible(false);
+        grid1.setVisible(false);
+        grid2.setVisible(false);
+        grid3.setVisible(false);
+        grid4.setVisible(false);
+        grid5.setVisible(true);
+        deletingGrid.setVisible(true);
+        deletingGrid2.setVisible(false);
     }
 
     /**
@@ -335,7 +335,7 @@ public class Controller {
      * all combinations of buttons for each function
      */
     @FXML
-    public GridPane Grid1, Grid2, Grid3, Grid4, Grid5, DeletingGrid, DeletingGrid2;
+    public GridPane grid1, grid2, grid3, grid4, grid5, deletingGrid, deletingGrid2;
 
     /**
      * the method add subject in timetable

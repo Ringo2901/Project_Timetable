@@ -75,15 +75,6 @@ public class Hometask {
         return idx;
     }
 
-    /*public static void deleteHometask(Scanner input) throws IOException {
-        //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
-        System.out.println("Введите номер выплненного задания.");
-        output();
-        int num = input.nextInt();
-        SecondaryFunctions.rewrite(filePath, num, "");
-        System.out.println("Выполненное задание удалено.");
-        //input.close();
-    }*/
 
     /**
      * The method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Deadline Hometask"

@@ -110,22 +110,7 @@ public class TaskList {
         output.close();
         return res;
     }
-    /*
-    public static void addTask(Scanner input) throws IOException {
-        //Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль
-        System.out.println("Введите свою задачу.");
-        String deadline = "", task = "";
-        while(task.isEmpty()) task = input.nextLine();
-        System.out.println("Введите срок исполнения.");
-        while(deadline.isEmpty()) deadline = input.nextLine();
-        int num = TaskList.getNum();
 
-        String newTask = Integer.toString(num) + "|" + deadline + "|" + task;
-
-        SecondaryFunctions.rewrite(filePath, num, newTask); // перезапись файла
-
-        //input.close();
-    }*/
     /**
      * The method delete selected line
      * @param num the number of deleted line
