@@ -31,11 +31,9 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String args) throws IOException {
 
         launch();
-        Some obj = new Some();
-        System.out.println(obj.Sum(5));
 
 
     }
