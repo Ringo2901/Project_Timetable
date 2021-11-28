@@ -65,7 +65,6 @@ public class Controller {
         Timetable.setNumOfWeek(weekSpinner.getValue());
         Timetable.setSubject(subjectTimetable.getText());
         Timetable.setTeacher(teacherTimetable.getText());
-        Timetable.setTeacher(teacherTimetable.getText());
         Timetable.changeTimetableItem();
         changeText(Timetable.StringOutput(weekSpinner.getValue()));
     }
@@ -163,9 +162,7 @@ public class Controller {
      */
     public void deleting(ActionEvent actionEvent) throws IOException {
         if (status == Status.TIMETABLE){
-            ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
-            day.setItems(days);
-            day.setValue("Пн");
+
             Timetable.deleteTimetableItem((String) dayDeleting.getValue(), weekSpinner.getValue(), Integer.parseInt(deleteNum1.getText()));
             changeText(Timetable.StringOutput(weekSpinner.getValue()));
         }
@@ -214,7 +211,8 @@ public class Controller {
         status = Status.TIMETABLE;
         ObservableList<String> days = FXCollections.observableArrayList("Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс");
 
-
+        day.setItems(days);
+        day.setValue("Пн");
         dayDeleting.setItems(days);//
         dayDeleting.setValue("Пн");
         spinnerInitialize();

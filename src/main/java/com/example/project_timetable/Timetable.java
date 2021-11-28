@@ -155,7 +155,22 @@ public class Timetable {
         String teacherName = "";
         String newItem = Integer.toString(ITEMNUM) + "|" + SUBJECT + "|" + TEACHER;
         SecondaryFunctions.rewriteTimetable(filePath, ITEMNUM, newItem); // перезапись файла
+        newContact();
+        newMarkSubject();
         sc.close();
+    }
+    public static void newContact() throws IOException {
+        Teachers.setNum(Integer.toString(SecondaryFunctions.getNum("src\\main\\resources\\teachers.txt")));
+        Teachers.setSubject(SUBJECT);
+        Teachers.setName(TEACHER);
+        Teachers.setInf("-");
+        Teachers.addTeacher();
+    }
+    public static void newMarkSubject() throws IOException {
+        Marks.setSubject(SUBJECT);
+        Marks.setMarks("-");
+        Marks.setNum(Integer.toString(SecondaryFunctions.getNum("src\\main\\resources\\marks.txt")));
+        Marks.addMarks();
     }
 
     /**
