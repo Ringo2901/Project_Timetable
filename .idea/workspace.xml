@@ -4,30 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Fixing Code Smells">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Adding editing function">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/marks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/SecondaryFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/SecondaryFunctions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days/7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638116769555</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding editing function">
+      <created>1638121824471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638121824471</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +233,8 @@
     <MESSAGE value="Update rewrite function" />
     <MESSAGE value="Fixing bugs" />
     <MESSAGE value="Fixing Code Smells" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Code Smells" />
+    <MESSAGE value="Adding editing function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding editing function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

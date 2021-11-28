@@ -47,27 +47,6 @@ public class TaskList {
 
     }
 
-
-    /**
-     * The method counts the number of lines written and returns the line number we are writing
-     * @return idx the line number we are writing
-     */
-    public static int getNum() throws IOException {
-        int idx = 1;
-        Scanner sc = new Scanner(new File(filePath));
-        try {
-            while (sc.hasNextLine()) {
-                String s = sc.nextLine();
-                if (s.length() == 0) return idx;
-                idx++;
-            }
-        } catch (Exception e) {
-        } finally {
-            sc.close();
-
-        }
-        return idx;
-    }
     /*
     public static void deleteTask(Scanner input) throws IOException {
         Scanner input = new Scanner(System.in); // Сканнер для ввода в консоль

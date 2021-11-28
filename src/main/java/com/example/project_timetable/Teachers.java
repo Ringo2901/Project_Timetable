@@ -58,17 +58,7 @@ public class Teachers {
         //input.close();
     }
 
-    public static int getNum() throws IOException {
-        Scanner sc = new Scanner(new File(filePath));
-        int idx = 1;
-        while (sc.hasNextLine()) {
-            String s = sc.nextLine();
-            if (s.length() == 0) return idx;
-            idx++;
-        }
-        sc.close();
-        return idx;
-    }
+
     /**
      * The method reads information from a file, generates lines for output, outputs lines in format "Num. Name Subject ContactInf"
      * @return res teacher output string

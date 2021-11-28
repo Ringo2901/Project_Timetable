@@ -111,23 +111,7 @@ public class Marks {
         //return average;
     }
 
-    public static int getNum() throws IOException {
-        int idx = 1;
-        Scanner sc = new Scanner(new File(filePath));
-        try {
-            while (sc.hasNextLine()) {
-                String s = sc.nextLine();
-                if (s.length() == 0) return idx;
-                idx++;
-            }
-        } catch (Exception e) {
-        }
-        finally {
-            sc.close();
 
-        }
-        return idx;
-    }
     /**
      * The method reads information from a file, generates lines for output, outputs lines in format "Num.Subject Average Marks"
      * @return res marks output string

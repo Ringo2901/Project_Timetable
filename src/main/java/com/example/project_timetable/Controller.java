@@ -17,6 +17,11 @@ import java.time.format.DateTimeFormatter;
  * The class calls all objects
  */
 public class Controller {
+    private static String filePathTimetableBeginning = "src\\main\\resources\\tasks.txt\\";
+    private static String filePathTaskList = "src\\main\\resources\\tasks.txt";
+    private static String filePathHometask = "src\\main\\resources\\hometask.txt";
+    private static String filePathMarks = "src\\main\\resources\\marks.txt";
+    private static String filePathTeachers = "src\\main\\resources\\teachers.txt";
 
     enum Status{
         TIMETABLE,
@@ -238,7 +243,7 @@ public class Controller {
         grid5.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
-        numHometask.setText(Integer.toString(Hometask.getNum()));
+        numHometask.setText(Integer.toString(SecondaryFunctions.getNum(filePathHometask)));
 
     }
     /**
@@ -261,7 +266,7 @@ public class Controller {
         grid5.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
-        numTaskList.setText(Integer.toString(TaskList.getNum()));
+        numTaskList.setText(Integer.toString(SecondaryFunctions.getNum(filePathTaskList)));
 
     }
     /**
@@ -284,7 +289,7 @@ public class Controller {
         grid5.setVisible(false);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
-        numMarks.setText(Integer.toString(Marks.getNum()));
+        numMarks.setText(Integer.toString(SecondaryFunctions.getNum(filePathMarks)));
     }
     /**
      * button, which calls clickTeachers
@@ -306,7 +311,7 @@ public class Controller {
         grid5.setVisible(true);
         deletingGrid.setVisible(true);
         deletingGrid2.setVisible(false);
-        numTeachers.setText(Integer.toString(Teachers.getNum()));
+        numTeachers.setText(Integer.toString(SecondaryFunctions.getNum(filePathTeachers)));
     }
 
     /**

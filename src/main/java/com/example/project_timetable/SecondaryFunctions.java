@@ -91,6 +91,22 @@ public class SecondaryFunctions
             writer.close();
         }
     }
+    public static int getNum(String filePath) throws IOException {
+        int idx = 1;
+        Scanner sc = new Scanner(new File(filePath));
+        try {
+            while (sc.hasNextLine()) {
+                String s = sc.nextLine();
+                if (s.length() == 0) return idx;
+                idx++;
+            }
+        } catch (Exception e) {
+        } finally {
+            sc.close();
+
+        }
+        return idx;
+    }
 
 
 }
