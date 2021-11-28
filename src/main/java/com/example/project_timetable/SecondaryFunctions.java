@@ -25,7 +25,7 @@ public class SecondaryFunctions
         while (sc.hasNextLine()) {  //запись текста
 
             String s = sc.nextLine();
-            if (idx == i && newLine != ""){
+            if (idx == i && newLine.equals("")){
                 builder.append(newLine + System.lineSeparator()); // замена необходимой строки
                 System.out.println(1);
             }
@@ -55,16 +55,14 @@ public class SecondaryFunctions
         }
         String fileContents = builder.toString();
 
-        FileWriter writer = null;
+        FileWriter writer = new FileWriter(filePath);
         try {
-            writer = new FileWriter(filePath);
+            writer.append(fileContents);//запись в файл нового текста
+            writer.flush();
         } catch (Exception e) {
+        }finally {
+            writer.close();
         }
-        //System.out.println("new data: "+ fileContents);//иллюстративный вывод нового содержания
-        writer.append(fileContents);//запись в файл нового текста
-        writer.flush();
-        writer.close();
-
     }
     public static void rewriteTimetable(String filePath, int idx, String newLine) throws IOException {
         Scanner sc = new Scanner(new File(filePath));
@@ -84,15 +82,14 @@ public class SecondaryFunctions
         }
         String fileContents = builder.toString();
 
-        FileWriter writer = null;
+        FileWriter writer = new FileWriter(filePath);
         try {
-            writer = new FileWriter(filePath);
+            writer.append(fileContents);//запись в файл нового текста
+            writer.flush();
         } catch (Exception e) {
+        }finally {
+            writer.close();
         }
-        //System.out.println("new data: "+ fileContents);//иллюстративный вывод нового содержания
-        writer.append(fileContents);//запись в файл нового текста
-        writer.flush();
-        writer.close();
     }
 
 
