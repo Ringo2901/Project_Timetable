@@ -32,7 +32,7 @@
                     <children>
                         <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello!" wrappingWidth="108.0">
                             <font>
-                                <Font name="Ebrima" size="20.0" />
+                                <Font name="Monospaced Regular" size="20.0" />
                             </font>
                         </Text>
                   <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="19.0" prefWidth="418.0" />
