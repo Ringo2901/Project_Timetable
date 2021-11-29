@@ -90,8 +90,9 @@ public class Controller {
     @FXML
     public void addTaskClick(ActionEvent actionEvent) throws IOException {//
         LocalDate localDate = LocalDate.now();
-        taskDate.setValue(localDate);
         localDate = taskDate.getValue();
+        taskDate.setValue(localDate);
+
 
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
@@ -114,8 +115,9 @@ public class Controller {
     @FXML
     public void addHometaskClick(ActionEvent actionEvent) throws IOException {
         LocalDate localDate = LocalDate.now();
-        hometaskDate.setValue(localDate);
         localDate = hometaskDate.getValue();
+        hometaskDate.setValue(localDate);
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         Hometask.setDeadline(localDate.format(formatter));
         Hometask.setNum(numHometask.getText());
