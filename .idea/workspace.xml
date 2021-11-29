@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Fixing ComboBox">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/marks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/MarksTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/TaskListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" afterDir="false" />
@@ -27,12 +17,86 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/all.typedefs" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/all.typedefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_10.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_10.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_11.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_11.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_12.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_12.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_13.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_13.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_14.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_14.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_15.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_15.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_16.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_16.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_17.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_17.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_18.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_18.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_19.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_19.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_20.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_20.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_21.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_21.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_22.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_22.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_23.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_23.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_24.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_24.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_25.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_25.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_26.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_26.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_27.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_27.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_28.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_28.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_29.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_29.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_3.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_30.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_30.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_31.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_31.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_32.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_32.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_33.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_33.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_34.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_34.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_35.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_35.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_36.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_36.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_37.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_37.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_38.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_38.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_39.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_39.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_4.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_4.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_40.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_40.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_41.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_41.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_42.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_42.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_43.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_43.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_44.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_44.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_45.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_45.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_46.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_46.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_47.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_47.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_48.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_48.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_49.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_49.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_5.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_5.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_50.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_50.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_51.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_51.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_52.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_52.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_53.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_53.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_54.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_54.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_55.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_55.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_56.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_56.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_57.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_57.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_58.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_58.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_59.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_59.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_6.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_6.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_60.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_60.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_61.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_61.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_62.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_62.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_63.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_63.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_64.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_64.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_7.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_7.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_8.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_8.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_9.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/sonar/ucfg2/java/ucfg_9.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.MarksTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.MarksTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.SomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.SomeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.TaskListTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.project_timetable.TaskListTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.MarksTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.MarksTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.TaskListTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.project_timetable.TaskListTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/MarksTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/MarksTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/SomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/SomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/TaskListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/TaskListTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +124,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="enabledProfiles">
-      <list>
-        <option value="coverage" />
-        <option value="sonar" />
-      </list>
-    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -320,10 +376,22 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1638104286362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Project_Timetable$TaskListTest.ic" NAME="TaskListTest Coverage Results" MODIFIED="1638139164281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.project_timetable.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1638136580873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.project_timetable.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Timetable$MarksTest.ic" NAME="MarksTest Coverage Results" MODIFIED="1638139545270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.project_timetable.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Timetable$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1638140605657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.project_timetable.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Project_Timetable$SomeTest__1_.ic" NAME="SomeTest (1) Coverage Results" MODIFIED="1637753137777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.project_timetable.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Timetable$HelloApplicationTest.ic" NAME="HelloApplicationTest Coverage Results" MODIFIED="1638138772960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.project_timetable.*</FILTER>
     </SUITE>
   </component>
