@@ -2530,11 +2530,10 @@ asString()Tjavafx.beans.binding.ObjectExpression#asString()Ljavafx/beans/bindin
 ,javafx.beans.property.ReadOnlyObjectProperty%javafx.beans.binding.ObjectExpression&javafx.beans.property.ReadOnlyPropertyB
 <init>()6javafx.beans.property.ReadOnlyObjectProperty#<init>()VW
 
-toString()Ijavafx.beans.property.ReadOnlyObjectProperty#toString()Ljava/lang/String;ò
+toString()Ijavafx.beans.property.ReadOnlyObjectProperty#toString()Ljava/lang/String;¦
 "com.example.project_timetable.Somejava.lang.Object8
-<init>(),com.example.project_timetable.Some#<init>()V@
-setNumber(I)0com.example.project_timetable.Some#setNumber(I)V>
-getNumber()/com.example.project_timetable.Some#getNumber()IŽ
+<init>(),com.example.project_timetable.Some#<init>()V4
+Sum(I)*com.example.project_timetable.Some#Sum(I)IŽ
 javafx.application.Applicationjava.lang.Objectl
 getParameters()Yjavafx.application.Application#getParameters()Ljavafx/application/Application$Parameters;Z
 launch([Ljava/lang/String;);javafx.application.Application#launch([Ljava/lang/String;)V®
@@ -2545,10 +2544,10 @@ EnotifyPreloader(Ljavafx/application/Preloader$PreloaderNotification;)ejavafx.a
 getHostServices()Qjavafx.application.Application#getHostServices()Ljavafx/application/HostServices;|
 ,launch(Ljava/lang/Class;[Ljava/lang/String;)Ljavafx.application.Application#launch(Ljava/lang/Class;[Ljava/lang/String;)V0
 init()&javafx.application.Application#init()Ve
-getUserAgentStylesheet()Ijavafx.application.Application#getUserAgentStylesheet()Ljava/lang/String;ê
-.com.example.project_timetable.HelloApplicationjavafx.application.ApplicationD
-<init>()8com.example.project_timetable.HelloApplication#<init>()Vf
-main([Ljava/lang/String;)Icom.example.project_timetable.HelloApplication#main([Ljava/lang/String;)Vj
+getUserAgentStylesheet()Ijavafx.application.Application#getUserAgentStylesheet()Ljava/lang/String;è
+.com.example.project_timetable.HelloApplicationjavafx.application.Applicationd
+main(Ljava/lang/String;)Hcom.example.project_timetable.HelloApplication#main(Ljava/lang/String;)VD
+<init>()8com.example.project_timetable.HelloApplication#<init>()Vj
 start(Ljavafx/stage/Stage;)Kcom.example.project_timetable.HelloApplication#start(Ljavafx/stage/Stage;)V‹
 "java.lang.reflect.AnnotatedElementjava.lang.Object§
 /getDeclaredAnnotationsByType(Ljava/lang/Class;)tjava.lang.reflect.AnnotatedElement#getDeclaredAnnotationsByType(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;t

@@ -54,7 +54,7 @@ public class Marks {
         return CORRECTNESS;
     }
 
-    /**
+      /**
      * The method reads information from a file, calculates a newline number, writes a newline in the format "num|subject|AverajeMark|marks"
      */
     public static void addMarks() throws IOException {
@@ -174,4 +174,3 @@ public class Marks {
     }
 
 }
-

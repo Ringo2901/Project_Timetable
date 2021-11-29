@@ -5,11 +5,12 @@ import org.junit.jupiter.api.Test;
 import static java.time.Duration.ofSeconds;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 
-import static org.junit.jupiter.api.Assertions.*;
-class SomeTest {
+class TaskListTest {
+
     @Test
-    void getNumber() {
-        Some obj = new Some();
-        assertEquals(5, obj.Sum(5));
+    void setNum() throws Exception{
+        assertTimeout(ofSeconds(5000), () -> {
+            TaskList.setNum("1");
+        });
     }
 }

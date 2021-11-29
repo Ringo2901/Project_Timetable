@@ -31,9 +31,10 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String args) throws IOException {
 
         launch();
+
 
     }
 }
