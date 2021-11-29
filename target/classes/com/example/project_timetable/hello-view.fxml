@@ -7,7 +7,8 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -17,30 +18,36 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_timetable.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="809.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_timetable.Controller">
 
     <children>
         <!-- ТЕКСТОВАЯ ОБЛАСТЬ -->
-        <ScrollPane layoutX="55.0" layoutY="84.0" prefHeight="200.0" prefWidth="486.0">
+        <ScrollPane layoutX="67.0" layoutY="84.0" prefHeight="438.0" prefWidth="678.0">
             <content>
-                <TextFlow fx:id="textflow" prefHeight="200.0" prefWidth="520.0" style="-fx-background-color: grey;" textAlignment="LEFT">
+                <TextFlow fx:id="textflow" prefHeight="439.0" prefWidth="675.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970; -fx-border-width: 3;">
                     <effect>
-                        <Glow level="0.4" />
+                  <InnerShadow />
+
                     </effect>
                     <children>
-                        <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="55">
+                        <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello!" wrappingWidth="108.0">
                             <font>
-                                <Font name="Arial" size="20.0" />
+                                <Font name="Ebrima" size="20.0" />
                             </font>
                         </Text>
-                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="19.0" prefWidth="418.0" />
+                    <Label fx:id="errorLabel" prefHeight="18.0" prefWidth="291.0">
+                     <font>
+                        <Font name="Dubai Regular" size="12.0" />
+                     </font>
+                  </Label>
                     </children>
                 </TextFlow>
             </content>
         </ScrollPane>
 
         <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
-        <GridPane prefHeight="40.0" prefWidth="600.0">
+        <GridPane alignment="TOP_CENTER" layoutX="69.0" layoutY="34.0" prefHeight="40.0" prefWidth="678.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -52,18 +59,33 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button fx:id="timetableButton" mnemonicParsing="false" onAction="#clickTimetable" prefHeight="100.0" prefWidth="130.0" text="Timetable" GridPane.columnIndex="0" />
-                <Button fx:id="hometaskButton" mnemonicParsing="false" onAction="#clickHometask" prefHeight="100.0" prefWidth="130.0" text="Hometask" GridPane.columnIndex="1" />
-                <Button fx:id="taskListButton" mnemonicParsing="false" onAction="#clickTaskList" prefHeight="100.0" prefWidth="130.0" text="Task list" GridPane.columnIndex="2" />
-                <Button fx:id="marksButton" mnemonicParsing="false" onAction="#clickMarks" prefHeight="100.0" prefWidth="130.0" text="Marks" GridPane.columnIndex="3" />
-                <Button fx:id="teachersButton" mnemonicParsing="false" onAction="#clickTeachers" prefHeight="100.0" prefWidth="130.0" text="Teachers" GridPane.columnIndex="4" />
+                <Button fx:id="timetableButton" mnemonicParsing="false" onAction="#clickTimetable" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #191970;" text="Timetable" textFill="WHITE" GridPane.columnIndex="0">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font></Button>
+                <Button fx:id="hometaskButton" mnemonicParsing="false" onAction="#clickHometask" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #191970;" text="Hometask" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font></Button>
+                <Button fx:id="taskListButton" mnemonicParsing="false" onAction="#clickTaskList" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #191970;" text="Task list" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font></Button>
+                <Button fx:id="marksButton" mnemonicParsing="false" onAction="#clickMarks" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #191970;" text="Marks" textFill="#fffefe" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font></Button>
+                <Button fx:id="teachersButton" mnemonicParsing="false" onAction="#clickTeachers" prefHeight="100.0" prefWidth="130.0" style="-fx-background-color: #191970;" text="Contacts" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Dubai Medium" size="18.0" />
+               </font></Button>
             </children>
 
         </GridPane>
         <!-- ПАНЕЛЬ ВВОДА РАСПИСАНИЯ -->
-        <GridPane fx:id="grid1" layoutX="55.0" layoutY="301.0" prefHeight="30.0" prefWidth="493.0">
+        <GridPane fx:id="grid1" layoutX="69.0" layoutY="532.0" prefHeight="42.0" prefWidth="670.0">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="75" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="75.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="43.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="153.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="162.0" />
@@ -73,18 +95,29 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <TextField fx:id="numTimetable" prefHeight="30.0" prefWidth="73.0" promptText="№" GridPane.columnIndex="1" />
-                <TextField fx:id="subjectTimetable" prefHeight="30.0" prefWidth="162.0" promptText="subject" GridPane.columnIndex="2" />
-                <TextField fx:id="teacherTimetable" prefHeight="30.0" prefWidth="150.0" promptText="teacher" GridPane.columnIndex="3" />
-                <Button fx:id="timetableAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addItemClick" prefHeight="30.0" prefWidth="144.0" text="Add" GridPane.columnIndex="4" />
-                <ComboBox fx:id="day" prefHeight="27.0" prefWidth="81.0" promptText="День" />
+                <TextField fx:id="numTimetable" prefHeight="43.0" prefWidth="78.0" promptText="№" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" />
+                <TextField fx:id="subjectTimetable" prefHeight="49.0" prefWidth="189.0" promptText="Subject" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <TextField fx:id="teacher" prefHeight="58.0" prefWidth="198.0" promptText="Teacher" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <Button fx:id="timetableAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addItemClick" prefHeight="71.0" prefWidth="97.0" style="-fx-background-color: #191970;" text="Add" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </Button>
+                <ComboBox fx:id="day" prefHeight="44.0" prefWidth="110.0" promptText="Day" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" />
 
-            </children>
+                        </children>
         </GridPane>
-        <Label fx:id="errorLabel" layoutX="55.0" layoutY="368.0" prefHeight="18.0" prefWidth="291.0" />
 
-        <!-- ПАНЕЛЬ ВВОДА ДОМАШНЕГО ЗАДАНИЯ -->
-        <GridPane fx:id="grid2" layoutX="55.0" layoutY="301.0" prefHeight="30.0" prefWidth="493.0">
+                                            <!-- ПАНЕЛЬ ВВОДА ДОМАШНЕГО ЗАДАНИЯ -->
+        <GridPane fx:id="grid2" layoutX="69.0" layoutY="532.0" prefHeight="42.0" prefWidth="670.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="58.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="100.0" />
@@ -96,15 +129,31 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <TextField fx:id="hometask" prefHeight="30.0" prefWidth="235.0" promptText="hometask" GridPane.columnIndex="3" />
-                <Button fx:id="hometaskAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addHometaskClick" prefHeight="30.0" prefWidth="144.0" text="Add" GridPane.columnIndex="4" />
-                <TextField fx:id="subjectHometask" prefHeight="45.0" prefWidth="103.0" promptText="subject" GridPane.columnIndex="2" />
-                <TextField fx:id="numHometask" prefHeight="58.0" prefWidth="57.0" />
-                <DatePicker fx:id="hometaskDate" prefHeight="52.0" prefWidth="119.0" GridPane.columnIndex="1" />
+                <TextField fx:id="hometask" prefHeight="71.0" prefWidth="214.0" promptText="Hometask" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <Button fx:id="hometaskAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addHometaskClick" prefHeight="46.0" prefWidth="102.0" style="-fx-background-color: #191970;" text="Add" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </Button>
+                <TextField fx:id="subjectHometask" prefHeight="45.0" prefWidth="103.0" promptText="Subject" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <TextField fx:id="numHometask" prefHeight="58.0" prefWidth="57.0" promptText="№" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+                <DatePicker fx:id="hometaskDate" prefHeight="42.0" prefWidth="134.0" style="-fx-background-color: #191970;" GridPane.columnIndex="1" />
             </children>
         </GridPane>
         <!-- ПАНЕЛЬ ВВОДА ЗАДАЧ -->
-        <GridPane fx:id="grid3" layoutX="55.0" layoutY="301.0" prefHeight="30.0" prefWidth="493.0">
+        <GridPane fx:id="grid3" layoutX="69.0" layoutY="532.0" prefHeight="42.0" prefWidth="670.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="59.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="100.0" />
@@ -115,16 +164,32 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <TextField fx:id="task" prefHeight="30.0" prefWidth="311.0" promptText="task" GridPane.columnIndex="2" />
-                <Button fx:id="taskListAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addTaskClick" prefHeight="30.0" prefWidth="144.0" text="Add" GridPane.columnIndex="3" />
-                <DatePicker fx:id="taskDate" prefHeight="30.0" prefWidth="115.0" GridPane.columnIndex="1" />
-                <TextField fx:id="numTaskList" prefHeight="40.0" prefWidth="90.0" />
+                <TextField fx:id="task" prefHeight="48.0" prefWidth="315.0" promptText="Task" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <Button fx:id="taskListAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addTaskClick" prefHeight="44.0" prefWidth="108.0" style="-fx-background-color: #191970;" text="Add" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </Button>
+                <DatePicker fx:id="taskDate" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #191970;" GridPane.columnIndex="1">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </DatePicker>
+                <TextField fx:id="numTaskList" prefHeight="42.0" prefWidth="110.0" promptText="№" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
             </children>
         </GridPane>
 
-
-        <!-- ПАНЕЛЬ ВВОДА КОНТАКТОВ -->
-        <GridPane fx:id="grid5" layoutX="55.0" layoutY="301.0" prefHeight="30.0" prefWidth="493.0">
+                        
+                                <!-- ПАНЕЛЬ ВВОДА КОНТАКТОВ -->
+        <GridPane fx:id="grid5" layoutX="69.0" layoutY="532.0" prefHeight="42.0" prefWidth="670.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="46.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="124.0" />
@@ -136,46 +201,78 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <TextField fx:id="numTeachers" prefHeight="30.0" prefWidth="30.0" promptText="№" />
-                <TextField fx:id="name" prefHeight="30.0" prefWidth="162.0" promptText="ФИО" GridPane.columnIndex="1" />
-                <TextField fx:id="inf" prefHeight="30.0" prefWidth="150.0" promptText="контактная информация" GridPane.columnIndex="3" />
-                <Button fx:id="teachersAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addTeacherClick" prefHeight="30.0" prefWidth="144.0" text="Add" GridPane.columnIndex="4" />
-                <TextField fx:id="subjectTeachers" prefHeight="47.0" prefWidth="66.0" promptText="должность" GridPane.columnIndex="2" />
+                <TextField fx:id="numTeachers" prefHeight="43.0" prefWidth="77.0" promptText="№" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;">
+               <font>
+                  <Font name="Dubai Regular" size="16.0" />
+               </font>
+            </TextField>
+                <TextField fx:id="name" prefHeight="42.0" prefWidth="154.0" promptText="Name" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <TextField fx:id="inf" prefHeight="48.0" prefWidth="221.0" promptText="Information" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <Button fx:id="teachersAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addTeacherClick" prefHeight="41.0" prefWidth="113.0" style="-fx-background-color: #191970;" text="Add" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </Button>
+                <TextField fx:id="subjectTeachers" prefHeight="47.0" prefWidth="66.0" promptText="Post" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
             </children>
         </GridPane>
 
-        <GridPane fx:id="deletingGrid" layoutX="55.0" layoutY="338.0" prefHeight="30.0" prefWidth="138.0">
+        <GridPane fx:id="deletingGrid" layoutX="67.0" layoutY="583.0" prefHeight="42.0" prefWidth="185.0">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="73.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="65.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="75.20001831054688" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="110.79998168945312" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button fx:id="deletingButton" mnemonicParsing="false" onAction="#deleting" prefHeight="37.0" prefWidth="65.0" text="Button" GridPane.columnIndex="1" />
-                <TextField fx:id="deleteNum" prefHeight="48.0" prefWidth="73.0" promptText="№" />
+                <Button fx:id="deletingButton" mnemonicParsing="false" onAction="#deleting" prefHeight="51.0" prefWidth="111.0" style="-fx-background-color: #191970;" text="Delete" textFill="#fffefe" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font></Button>
+                <TextField fx:id="deleteNum" prefHeight="48.0" prefWidth="73.0" promptText="№" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" />
             </children>
         </GridPane>
 
-        <GridPane fx:id="deletingGrid2" layoutX="55.0" layoutY="338.0" prefHeight="30.0" prefWidth="174.0">
+                    <GridPane fx:id="deletingGrid2" layoutX="69.0" layoutY="583.0" prefHeight="42.0" prefWidth="240.0">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="68.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="41.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="62.0" />
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.6" minWidth="10.0" prefWidth="64.5999755859375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="0.0" prefWidth="60.00003662109374" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="105.79996337890626" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button fx:id="deletingButton1" mnemonicParsing="false" onAction="#deleting" prefHeight="30.0" prefWidth="69.0" text="Button" GridPane.columnIndex="2" />
-                <TextField fx:id="deleteNum1" prefHeight="49.0" prefWidth="42.0" promptText="№" GridPane.columnIndex="1" />
-                <ComboBox fx:id="dayDeleting" prefHeight="30.0" prefWidth="73.0" promptText="День" />
+                <Button fx:id="deletingButton1" mnemonicParsing="false" onAction="#deleting" prefHeight="44.0" prefWidth="109.0" style="-fx-background-color: #191970;" text="Delete" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </Button>
+                <TextField fx:id="deleteNum1" prefHeight="44.0" prefWidth="64.0" promptText="№" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+                <ComboBox fx:id="dayDeleting" prefHeight="44.0" prefWidth="68.0" promptText="День" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="1" />
             </children>
         </GridPane>
 
-        <!-- ПАНЕЛЬ ВВОДА ОЦЕНОК -->
-        <GridPane fx:id="grid4" layoutX="55.0" layoutY="301.0" prefHeight="30.0" prefWidth="493.0">
+                                <!-- ПАНЕЛЬ ВВОДА ОЦЕНОК -->
+        <GridPane fx:id="grid4" layoutX="69.0" layoutY="532.0" prefHeight="42.0" prefWidth="670.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="71.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.99999237060547" minWidth="10.0" prefWidth="149.0" />
@@ -186,13 +283,29 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <TextField fx:id="subject" prefHeight="30.0" prefWidth="149.0" promptText="предмет" GridPane.columnIndex="1" />
-                <TextField fx:id="marks" prefHeight="30.0" prefWidth="150.0" promptText="оценки" GridPane.columnIndex="2" />
-                <Button fx:id="marksAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addMarksClick" prefHeight="30.0" prefWidth="144.0" text="Add" GridPane.columnIndex="3" />
-                <TextField fx:id="numMarks" prefHeight="46.0" prefWidth="62.0" />
+                <TextField fx:id="subject" prefHeight="42.0" prefWidth="184.0" promptText="Subject" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <TextField fx:id="marks" prefHeight="40.0" prefWidth="270.0" promptText="Marks" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </TextField>
+                <Button fx:id="marksAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addMarksClick" prefHeight="54.0" prefWidth="107.0" style="-fx-background-color: #191970;" text="Add" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Dubai Medium" size="16.0" />
+               </font>
+            </Button>
+                <TextField fx:id="numMarks" prefHeight="46.0" prefWidth="62.0" promptText="№" style="-fx-background-color: #FFFFFF; -fx-border-color: #191970;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
             </children>
         </GridPane>
-      <Spinner fx:id="weekSpinner" layoutX="2.0" layoutY="84.0" prefHeight="25.0" prefWidth="50.0" />
+      <Spinner fx:id="weekSpinner" layoutX="14.0" layoutY="111.0" prefHeight="40.0" prefWidth="47.0" style="-fx-background-color: #E0FFFF; -fx-border-style: #E0FFFF;" />
 
     </children>
 </AnchorPane>

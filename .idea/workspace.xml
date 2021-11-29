@@ -4,61 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Fixing bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/marks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days2/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days2/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days2/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days2/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days2/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days2/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days2/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days2/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days2/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days2/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days3/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days3/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days3/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days3/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days3/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days3/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days3/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days3/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days3/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days3/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days4/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days4/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days4/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days4/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days4/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days4/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days4/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days4/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days4/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days4/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days2/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days2/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days2/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days2/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days2/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days2/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days2/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days2/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days2/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days2/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days3/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days3/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days3/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days3/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days3/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days3/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days3/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days3/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days3/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days3/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days4/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days4/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days4/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days4/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days4/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days4/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days4/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days4/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/week_days4/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days4/5.txt" afterDir="false" />
-    </list>
+    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Fixing bugs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638146343637</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixing bugs">
+      <created>1638148710322</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1638148710322</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
