@@ -101,6 +101,7 @@ public class Controller {
         TaskList.setNum(numTaskList.getText());
         TaskList.addTask();
         changeText(TaskList.StringOutput());
+        numTaskList.setText(Integer.toString(SecondaryFunctions.getNum(filePathTaskList)));
 
     }
     /**
@@ -125,6 +126,7 @@ public class Controller {
         Hometask.setHometask(hometask.getText());
         Hometask.addHometask();
         changeText(Hometask.StringOutput());
+        numHometask.setText(Integer.toString(SecondaryFunctions.getNum(filePathHometask)));
     }
     /**
      * button, which calls addTeacherClick
@@ -143,6 +145,7 @@ public class Controller {
         Teachers.setInf(inf.getText());
         Teachers.addTeacher();
         changeText(Teachers.StringOutput());
+        numTeachers.setText(Integer.toString(SecondaryFunctions.getNum(filePathTeachers)));
     }
     /**
      * button, which calls addMarksClick
@@ -160,6 +163,7 @@ public class Controller {
         Marks.setNum(numMarks.getText());
         Marks.addMarks();
         changeText(Marks.StringOutput());
+        numMarks.setText(Integer.toString(SecondaryFunctions.getNum(filePathMarks)));
     }
 
     /**
@@ -186,24 +190,26 @@ public class Controller {
         if (status == Status.HOMETASK){
             Hometask.deleteHometask(Integer.parseInt(deleteNum.getText()));
             changeText(Hometask.StringOutput());
+            numHometask.setText(Integer.toString(SecondaryFunctions.getNum(filePathHometask)));
         }
 
         else if (status == Status.TASKLIST){
             TaskList.deleteTask(Integer.parseInt(deleteNum.getText()));
             changeText(TaskList.StringOutput());
+            numTaskList.setText(Integer.toString(SecondaryFunctions.getNum(filePathTaskList)));
         }
 
         else if (status == Status.MARKS){
             Marks.deleteMarks(Integer.parseInt(deleteNum.getText()));
             changeText(Marks.StringOutput());
+            numMarks.setText(Integer.toString(SecondaryFunctions.getNum(filePathMarks)));
         }
 
         else if (status == Status.CONTACTS){
             Teachers.deleteTeacher(Integer.parseInt(deleteNum.getText()));
             changeText(Teachers.StringOutput());
+            numTeachers.setText(Integer.toString(SecondaryFunctions.getNum(filePathTeachers)));
         }
-
-
 
     }
 
