@@ -159,7 +159,7 @@ public class Marks {
                 if(idx > 3) {
                     point = ".";
                     d = ":";
-                }
+                }//
                 res += itemNum + point;
                 for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
                 res += subject + d;
