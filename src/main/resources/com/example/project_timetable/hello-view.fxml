@@ -101,7 +101,7 @@
                   <Font name="Dubai Medium" size="16.0" />
                </font>
             </TextField>
-                <TextField fx:id="teacher" prefHeight="58.0" prefWidth="198.0" promptText="Teacher" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3">
+                <TextField fx:id="teacherTimetable" prefHeight="58.0" prefWidth="198.0" promptText="Teacher" style="-fx-border-color: #191970; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3">
                <font>
                   <Font name="Dubai Medium" size="16.0" />
                </font>
