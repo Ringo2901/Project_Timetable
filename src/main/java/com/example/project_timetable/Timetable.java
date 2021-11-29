@@ -19,7 +19,7 @@ public class Timetable {
     /**
      * ITEMNUM - the number of the line into which the next is written
      */
-    private static int ITEMNUM, NUMOFWEEK;
+    private static int ITEMNUM, NUMOFWEEK = 1;
     /**
      * The method assigns the entered day of week to the string
      * @param s a string that accepts the entered value
@@ -46,8 +46,19 @@ public class Timetable {
      * The method assigns the number of the line into which the next is written to the string
      * @param n a number of string that accepts the value
      */
-    public static void setItemNum(int n){
-        ITEMNUM = n;
+    private static boolean CORRECTNESS;
+
+    public static void setItemNum(String s) throws IOException {
+
+        if(SecondaryFunctions.isDigit(s)){
+            ITEMNUM = Integer.parseInt(s);
+            CORRECTNESS = true;
+        }
+        else CORRECTNESS = false;
+
+    }
+    public static boolean isCorrect(){
+        return CORRECTNESS;
     }
 
     public static void setNumOfWeek(int n){

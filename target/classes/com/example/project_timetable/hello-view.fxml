@@ -75,7 +75,7 @@
             <children>
                 <TextField fx:id="numTimetable" prefHeight="30.0" prefWidth="73.0" promptText="№" GridPane.columnIndex="1" />
                 <TextField fx:id="subjectTimetable" prefHeight="30.0" prefWidth="162.0" promptText="subject" GridPane.columnIndex="2" />
-                <TextField fx:id="teacher" prefHeight="30.0" prefWidth="150.0" promptText="teacher" GridPane.columnIndex="3" />
+                <TextField fx:id="teacherTimetable" prefHeight="30.0" prefWidth="150.0" promptText="teacher" GridPane.columnIndex="3" />
                 <Button fx:id="timetableAddButton" minHeight="21.0" minWidth="39.0" mnemonicParsing="false" onAction="#addItemClick" prefHeight="30.0" prefWidth="144.0" text="Add" GridPane.columnIndex="4" />
                 <ComboBox fx:id="day" prefHeight="27.0" prefWidth="81.0" promptText="День" />
 

@@ -4,11 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Fixing Security Hotspot">
+    <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="Fixing ComboBox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Hometask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Marks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/SecondaryFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/project_timetable/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hometask.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/marks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Hometask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/SecondaryFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/SecondaryFunctions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Teachers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +85,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../new/Project_Timetable/src/main/java/com/example/project_timetable/SecondaryFunctions.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../new3/Project_Timetable" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48850575" />
@@ -240,7 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638129022389</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixing ComboBox">
+      <created>1638129717338</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638129717338</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixing ComboBox">
+      <created>1638129751888</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638129751888</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +302,18 @@
     <MESSAGE value="Adding 4 types of week" />
     <MESSAGE value="Start view" />
     <MESSAGE value="Fixing Security Hotspot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Security Hotspot" />
+    <MESSAGE value="Fixing ComboBox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing ComboBox" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="7" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

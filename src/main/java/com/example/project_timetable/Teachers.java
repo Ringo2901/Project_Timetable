@@ -42,12 +42,23 @@ public class Teachers {
     public static void setSubject(String s){
         SUBJECT = s;
     }
+    private static boolean CORRECTNESS;
     /**
      * The method assigns the number of the line into which the next is written to the string
      * @param s a string that accepts the value
      */
-    public static void setNum(String s){
-        NUM = Integer.parseInt(s);
+
+    public static void setNum(String s) throws IOException {
+        if(SecondaryFunctions.isDigit(s)){
+            NUM = Integer.parseInt(s);
+            if(NUM <= SecondaryFunctions.getNum(filePath)) CORRECTNESS = true;
+            else CORRECTNESS = false;
+        }
+        else CORRECTNESS = false;
+
+    }
+    public static boolean isCorrect(){
+        return CORRECTNESS;
     }
     /**
      * The method writes task like a string in format "num|name|subject|inf" to a file

@@ -66,7 +66,7 @@ public class Controller {
     @FXML
     public void addItemClick(ActionEvent actionEvent) throws IOException {
         Timetable.setDay((String) day.getValue());
-        Timetable.setItemNum(Integer.parseInt(numTimetable.getText()));
+        Timetable.setItemNum(numTimetable.getText());
         Timetable.setNumOfWeek(weekSpinner.getValue());
         Timetable.setSubject(subjectTimetable.getText());
         Timetable.setTeacher(teacherTimetable.getText());

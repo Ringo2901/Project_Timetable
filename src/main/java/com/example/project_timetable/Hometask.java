@@ -42,9 +42,19 @@ public class Hometask {
     public static void setSubject(String s){
         SUBJECT = s;
     }
-    public static int NUM;
-    public static void setNum(String s){
-        NUM = Integer.parseInt(s);
+    private static boolean CORRECTNESS;
+    private static int NUM;
+    public static void setNum(String s) throws IOException {
+        if(SecondaryFunctions.isDigit(s)){
+            NUM = Integer.parseInt(s);
+            if(NUM <= SecondaryFunctions.getNum(filePath)) CORRECTNESS = true;
+            else CORRECTNESS = false;
+        }
+        else CORRECTNESS = false;
+
+    }
+    public static boolean isCorrect(){
+        return CORRECTNESS;
     }
 
     /**

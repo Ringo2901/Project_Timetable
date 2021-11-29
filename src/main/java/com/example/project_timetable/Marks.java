@@ -1,8 +1,8 @@
 package com.example.project_timetable;
 import java.io.File;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 /**
  * This class works with Marks
@@ -21,6 +21,8 @@ public class Marks {
      */
     private static String SUBJECT, MARKS;
 
+
+
     /**
      * The method assigns the entered subject to the string
      * @param s a string that accepts the entered value
@@ -37,9 +39,19 @@ public class Marks {
         MARKS = s;
     }
 
-    public static int NUM;
-    public static void setNum(String s){
-        NUM = Integer.parseInt(s);
+    private static boolean CORRECTNESS;
+    private static int NUM;
+    public static void setNum(String s) throws IOException {
+        if(SecondaryFunctions.isDigit(s)){
+            NUM = Integer.parseInt(s);
+            if(NUM <= SecondaryFunctions.getNum(filePath)) CORRECTNESS = true;
+            else CORRECTNESS = false;
+        }
+        else CORRECTNESS = false;
+
+    }
+    public static boolean isCorrect(){
+        return CORRECTNESS;
     }
 
     /**
@@ -56,17 +68,19 @@ public class Marks {
             for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
             idx++;
             for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) sub += s.charAt(idx);
-            if (sub.equals(SUBJECT)) {System.out.println("equal"); newLine = false;}
+            if (sub.equals(SUBJECT)) {; newLine = false;}
             else num++;
             sub = "";
         }
         sc.close();
 
         String newMarks = "";
-        if(newLine) newMarks = NUM + "|" + SUBJECT + "|" + Float.toString(averageMark(num)) + "|" + MARKS;
-        else newMarks = s + " " + MARKS;
+        if(newLine) newMarks = NUM + "|" + SUBJECT + "|" + MARKS;
+        else {
+            newMarks = s + " " + MARKS;
+        }
 
-        SecondaryFunctions.rewrite(filePath, NUM, newMarks); // перезапись файла
+        SecondaryFunctions.rewrite(filePath, num, newMarks); // перезапись файла
     }
 
     /**
@@ -74,41 +88,42 @@ public class Marks {
      * @param numOfSubject the number of the subject, the average mark for which you want to calculate
      * @return res an average mark
      */
-    public static float averageMark(int numOfSubject) throws IOException {
-        /*Scanner Marks = new Scanner(new File(filePath));
-        float average = 0;
-        while (Marks.hasNextLine()) {
+    private static float averageMark(int numOfSubject) throws IOException {
+        Scanner Marks = new Scanner(new File(filePath));
+        float res = 0;
+        String s = "";
+        int j = 0;
+        while (Marks.hasNextLine() && j != numOfSubject) {
 
-            String s = Marks.nextLine();
-            int idx;
-            String itemNum = "", subject = "", marksLine = "";
-            for (idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
-            idx++;
-            for (; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
-            idx++;
-            for (; idx < s.length(); idx++) marksLine += s.charAt(idx);
-            /*int Sum = 0;
-            int N = 0;
-            String[] marks = marksLine.split(" ");
-            for (String mark : marks) {
-                Sum += Integer.valueOf(mark);
+            s = Marks.nextLine();
+            j++;
+
+        }
+        int idx;
+        String itemNum = "", subject = "", marksLine = "", average = "";
+        for (idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+        idx++;
+        for (; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
+        idx++;
+            /*for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) average += s.charAt(idx);
+            idx++;*/
+        for (; idx < s.length(); idx++) marksLine += s.charAt(idx);
+        int Sum = 0;
+        int N = 0;
+        int x = 0;
+        for(int i = 0; i < marksLine.length(); i++){
+            if(marksLine.charAt(i) >= '0' && marksLine.charAt(i) <= '9') x = x*10 + marksLine.charAt(i) - '0';
+            else {
+                Sum += x;
                 N++;
-                res = (float) Sum / N;
-            }*/
-            /*if (Integer.valueOf(itemNum) == numOfSubject) {
-                int Sum = 0;
-                int N = 0;
-                String[] marks = marksLine.split(" ");
-                for (String mark : marks) {
-                    Sum += Integer.valueOf(mark);
-                    N++;
-                    average = (float) Sum / N;
-                }
+                x = 0;
             }
-        }*/
-        float res = 10;
+        }
+        Sum += x;
+        N++;
+        res = (float) Sum / N;
         return res;
-        //return average;
+
     }
 
 
@@ -126,17 +141,21 @@ public class Marks {
             for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
             idx++;
             for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
-            idx++;
-            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) average += s.charAt(idx);
+            DecimalFormat df = new DecimalFormat("###.##");
+            String avMark = df.format(averageMark(Integer.parseInt(itemNum)));
+            average = avMark;
             idx++;
             for( ; idx < s.length(); idx++) marks += s.charAt(idx);
 
             int  NumLen = 3, subjectLen = 15, averageLen = 10;
-            String point = "";
-            if(idx > 3) point = ".";
+            String point = "", d = "";
+            if(idx > 3) {
+                point = ".";
+                d = ":";
+            }
             res += itemNum + point;
             for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
-            res += subject + ":";
+            res += subject + d;
             for(int i = 0; i < subjectLen - subject.length(); i++) res+=" ";
             res += average;
             for(int i = 0; i < averageLen - average.length(); i++) res+=" ";
