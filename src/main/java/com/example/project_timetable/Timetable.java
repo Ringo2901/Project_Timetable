@@ -179,7 +179,7 @@ public class Timetable {
     }
     public static void newMarkSubject() throws IOException {
         Marks.setSubject(SUBJECT);
-        Marks.setMarks("-");
+        Marks.setMarks("");
         Marks.setNum(Integer.toString(SecondaryFunctions.getNum("src\\main\\resources\\marks.txt")));
         Marks.addMarks();
     }

@@ -89,16 +89,22 @@ public class Marks {
      * @return res an average mark
      */
     private static float averageMark(int numOfSubject) throws IOException {
-        Scanner Marks = new Scanner(new File(filePath));
-        float res = 0;
         String s = "";
-        int j = 0;
-        while (Marks.hasNextLine() && j != numOfSubject) {
+        Scanner Marks = new Scanner(new File(filePath));
+        try {
+            int j = 0;
+            while (Marks.hasNextLine() && j != numOfSubject) {
 
-            s = Marks.nextLine();
-            j++;
+                s = Marks.nextLine();
+                j++;
 
+            }
+
+        } catch (Exception e) {
+        }finally {
+            Marks.close();
         }
+        float res = 0;
         int idx;
         String itemNum = "", subject = "", marksLine = "", average = "";
         for (idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
@@ -132,36 +138,43 @@ public class Marks {
      * @return res marks output string
      */
     public static String StringOutput() throws IOException {
-        Scanner output = new Scanner (new File(filePath));
         String res = "";
-        while(output.hasNextLine()){
-            String s = output.nextLine();
-            int idx;
-            String itemNum ="", subject = "", average = "", marks = "";
-            for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
-            idx++;
-            for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
-            DecimalFormat df = new DecimalFormat("###.##");
-            String avMark = df.format(averageMark(Integer.parseInt(itemNum)));
-            average = avMark;
-            idx++;
-            for( ; idx < s.length(); idx++) marks += s.charAt(idx);
+        Scanner output = new Scanner (new File(filePath));
+        try {
+            while(output.hasNextLine()){
+                String s = output.nextLine();
+                int idx;
+                String itemNum ="", subject = "", average = "", marks = "";
+                for(idx = 0; idx < s.length() && s.charAt(idx) != '|'; idx++) itemNum += s.charAt(idx);
+                idx++;
+                for( ; idx < s.length() && s.charAt(idx) != '|'; idx++) subject += s.charAt(idx);
+                DecimalFormat df = new DecimalFormat("###.##");
+                String avMark = df.format(averageMark(Integer.parseInt(itemNum)));
+                average = avMark;
+                idx++;
+                for( ; idx < s.length(); idx++) marks += s.charAt(idx);
 
-            int  NumLen = 3, subjectLen = 15, averageLen = 10;
-            String point = "", d = "";
-            if(idx > 3) {
-                point = ".";
-                d = ":";
+                int  NumLen = 3, subjectLen = 15, averageLen = 10;
+                String point = "", d = "";
+                if(idx > 3) {
+                    point = ".";
+                    d = ":";
+                }
+                res += itemNum + point;
+                for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
+                res += subject + d;
+                for(int i = 0; i < subjectLen - subject.length(); i++) res+=" ";
+                res += average;
+                for(int i = 0; i < averageLen - average.length(); i++) res+=" ";
+                res += marks;
+                res += "\n";
             }
-            res += itemNum + point;
-            for(int i = 0; i < NumLen - itemNum.length(); i++) res+=" ";
-            res += subject + d;
-            for(int i = 0; i < subjectLen - subject.length(); i++) res+=" ";
-            res += average;
-            for(int i = 0; i < averageLen - average.length(); i++) res+=" ";
-            res += marks;
-            res += "\n";
+
+        } catch (Exception e) {
+        }finally {
+            output.close();
         }
+
         output.close();
         return res;
     }

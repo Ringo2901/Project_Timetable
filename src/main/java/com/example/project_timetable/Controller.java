@@ -38,11 +38,12 @@ public class Controller {
         CONTACTS,
     }
     Status status;
+    String errorMessage = "Пожалуйста введите корректные данные";
     /**
      * label, which appears on error
      */
     @FXML
-    public static Label errorLabel;
+    public static Label errorLabel = new Label();
 
     /**
      * the method shows errorLabel when we have an error in line
@@ -70,6 +71,10 @@ public class Controller {
         Timetable.setNumOfWeek(weekSpinner.getValue());
         Timetable.setSubject(subjectTimetable.getText());
         Timetable.setTeacher(teacherTimetable.getText());
+        if(!Timetable.isCorrect()) {
+            errorLabel.setVisible(true);
+            return;
+        }else errorLabel.setVisible(false);
         Timetable.changeTimetableItem();
         changeText(Timetable.StringOutput(weekSpinner.getValue()));
     }
@@ -85,7 +90,10 @@ public class Controller {
     @FXML
     public void addTaskClick(ActionEvent actionEvent) throws IOException {//
         LocalDate localDate = LocalDate.now();
+        taskDate.setValue(localDate);
         localDate = taskDate.getValue();
+
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         TaskList.setDeadline(localDate.format(formatter));
         TaskList.setTask(task.getText());
@@ -106,6 +114,7 @@ public class Controller {
     @FXML
     public void addHometaskClick(ActionEvent actionEvent) throws IOException {
         LocalDate localDate = LocalDate.now();
+        hometaskDate.setValue(localDate);
         localDate = hometaskDate.getValue();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         Hometask.setDeadline(localDate.format(formatter));
@@ -451,6 +460,7 @@ public class Controller {
 
         deletingGrid.setVisible(false);
         deletingGrid2.setVisible(true);
+        errorLabel.setVisible(false);
 
 
     }
