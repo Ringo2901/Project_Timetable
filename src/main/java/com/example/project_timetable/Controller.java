@@ -83,7 +83,7 @@ public class Controller {
      * @param actionEvent pressing the button
      */
     @FXML
-    public void addTaskClick(ActionEvent actionEvent) throws IOException {
+    public void addTaskClick(ActionEvent actionEvent) throws IOException {//
         LocalDate localDate = LocalDate.now();
         localDate = taskDate.getValue();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
