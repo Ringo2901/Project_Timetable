@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Project_Timetable:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26356069-f529-4d3d-b12e-c0bee94eeafa" name="Changes" comment="files updates">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Project_Timetable_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/Timetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Project_Timetable_jar/Project_Timetable.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project_timetable/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hometask.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/marks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/teachers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/week_days1/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days1/6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days2/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days2/6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/week_days3/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days3/6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/week_days4/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/week_days4/6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/project_timetable/SomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Timetable-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller$Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Marks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Some.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Some.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/project_timetable/Timetable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hometask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hometask.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/teachers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/teachers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days1/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days1/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/week_days3/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/week_days3/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/jpms.args" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/project_timetable/SomeTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +62,7 @@
       <list>
         <option value="module-info" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,8 +93,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../new3/Project_Timetable" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.openjfx/cache/17.0.0.1/vcruntime140_1.dll" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.48850575" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -108,6 +143,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.project_timetable.Main" />
+      <module name="Project_Timetable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.project_timetable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project_Timetable" />
       <extension name="coverage">
@@ -128,11 +176,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.HelloApplication" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.SomeTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.SomeTest" />
       </list>
     </recent_temporary>

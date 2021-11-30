@@ -1,4 +1,4 @@
-package com.example.project_timetable;
+/*package com.example.project_timetable;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,4 +12,4 @@ class SomeTest {
         Some obj = new Some();
         assertEquals(5, obj.Sum(5));
     }
-}
+}*/
